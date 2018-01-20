@@ -68,7 +68,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1367437629906342}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: c588f1ad19328a94cbe55fa165f7bf40, type: 2}
   m_IsTrigger: 0
@@ -78,7 +78,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.81, y: 0.81}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.81, y: 0.81}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
