@@ -7,6 +7,7 @@ TagManager:
   - Background
   - Tile
   - Ladder
+  - Fake_platform
   layers:
   - Default
   - TransparentFX
