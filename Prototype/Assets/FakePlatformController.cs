@@ -33,7 +33,7 @@ public class FakePlatformController : MonoBehaviour {
 			}
 		}
 
-		if (sum == 240) 
+		if (sum == 480) 
 		{
 			gameObject.SetActive (false);
 		}
@@ -56,7 +56,7 @@ public class FakePlatformController : MonoBehaviour {
 	{
 		if(other.gameObject.CompareTag("Tile"))
 		{
-			gameObject.SetActive (false);
+			//gameObject.SetActive (false);
 		}
 	}
 }
