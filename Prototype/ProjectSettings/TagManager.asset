@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Background
   - Tile
+  - Ladder
   layers:
   - Default
   - TransparentFX
