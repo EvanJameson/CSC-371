@@ -19,7 +19,7 @@ public class FakePlatformController : MonoBehaviour {
 		if (touching) 
 		{
 			sum += 1;
-			if(sum == 120)
+			if(sum == 60)
 			{
 				falling = true;
 				rb.isKinematic = false;
