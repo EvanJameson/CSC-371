@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f837a43361fc64350ba7654983eb205b, type: 3}
-  m_Name: Rat
+  m_Name: Monkey
   m_EditorClassIdentifier: 
   characterName: Default
   startingHP: 100
