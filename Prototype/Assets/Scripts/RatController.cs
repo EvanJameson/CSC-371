@@ -11,8 +11,11 @@ public class RatController : MonoBehaviour
 
 	public bool gt1 = false, gt2 = false;
 
-	// Use this for initialization
-	void Start () 
+    public GameObject leftPuff;
+    public GameObject rightPuff;
+
+    // Use this for initialization
+    void Start () 
 	{
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
@@ -28,13 +31,28 @@ public class RatController : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
-		
+        // These booleans used for ground puffs 
+        bool oldgt1 = gt1;
+        bool oldgt2 = gt2;
 
-		Move_H (Input.GetAxisRaw("Horizontal"));
+        Move_H (Input.GetAxisRaw("Horizontal"));
 		gt1 = Physics2D.Linecast(tf.position, ground_tf1.position, player_mask);
 		gt2 = Physics2D.Linecast(tf.position, ground_tf2.position, player_mask);
 
-		if(Input.GetButtonDown("Jump"))
+        if (oldgt2 == false && gt2 == true && oldgt1 == false)
+        {
+            //left puff
+            GameObject tempL = Instantiate(leftPuff, tf.transform.position, transform.rotation);
+            Destroy(tempL, 0.5f);
+        }
+        if (oldgt1 == false && gt1 == true && oldgt2 == false)
+        {
+            //right puff
+            GameObject tempR = Instantiate(rightPuff, tf.transform.position, transform.rotation);
+            Destroy(tempR, 0.5f);
+        }
+
+        if (Input.GetButtonDown("Jump"))
 		{
 			Jump ();
 		}
