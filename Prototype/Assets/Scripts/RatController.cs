@@ -43,13 +43,13 @@ public class RatController : MonoBehaviour
         {
             //left puff
             GameObject tempL = Instantiate(leftPuff, tf.transform.position, transform.rotation);
-            Destroy(tempL, 1.0f);
+            Destroy(tempL, 0.5f);
         }
         if (oldgt1 == false && gt1 == true && oldgt2 == false)
         {
             //right puff
             GameObject tempR = Instantiate(rightPuff, tf.transform.position, transform.rotation);
-            Destroy(tempR, 1.0f);
+            Destroy(tempR, 0.5f);
         }
 
 		if(Input.GetButtonDown("Jump"))
