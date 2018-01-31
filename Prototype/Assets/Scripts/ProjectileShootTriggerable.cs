@@ -11,8 +11,10 @@ public class ProjectileShootTriggerable : MonoBehaviour {
 	{
 		//Instantiate a copy of our projectile and store it in a new rigidbody variable called clonedBullet
 		Rigidbody2D clonedBullet = Instantiate(projectile, bulletSpawn.position, transform.rotation) as Rigidbody2D;
-
+		Vector2 mousePosition = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint (Input.mousePosition).y);
 		//Add force to the instantiated bullet, pushing it forward away from the bulletSpawn location, using projectile force for how hard to push it away
-		clonedBullet.AddForce(bulletSpawn.transform.right * projectileForce);
+		Vector2 myPos = new Vector2(bulletSpawn.position.x, bulletSpawn.position.y);
+		Vector2 direction = mousePosition - myPos;
+		clonedBullet.AddForce(direction * projectileForce);
 	}
 }

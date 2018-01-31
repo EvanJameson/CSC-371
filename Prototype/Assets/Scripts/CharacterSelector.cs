@@ -17,7 +17,7 @@ public class CharacterSelector : MonoBehaviour {
 	public void OnCharacterSelect(int characterChoice)
 	{
 		sprite_renderer = player.GetComponent<SpriteRenderer> ();
-		characterSelectPanel.SetActive (true);
+		characterSelectPanel.SetActive (false);
 		abilityPanel.SetActive (true);
 
 		WeaponMarker weaponMarker = player.GetComponentInChildren<WeaponMarker> ();
@@ -27,7 +27,6 @@ public class CharacterSelector : MonoBehaviour {
 			coolDownButtons [i].Initialize (selectedCharacter.characterAbilities [i], weaponMarker.gameObject);
 		}
 		sprite_renderer.sprite = selectedCharacter.sprite;
-
 
 	}
 	public void Update()
