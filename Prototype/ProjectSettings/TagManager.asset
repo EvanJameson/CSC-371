@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Background
   - Tile
+  - Ladder
+  - Fake_platform
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - Background
   - 
   - 
   - 
@@ -40,11 +42,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 4000223591
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Tiles
     uniqueID: 180863095
