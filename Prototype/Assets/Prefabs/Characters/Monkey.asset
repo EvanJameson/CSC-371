@@ -14,4 +14,4 @@ MonoBehaviour:
   characterName: Default
   startingHP: 100
   characterAbilities: []
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 2d99bcc679d03457d92faaffa65b6f25, type: 3}

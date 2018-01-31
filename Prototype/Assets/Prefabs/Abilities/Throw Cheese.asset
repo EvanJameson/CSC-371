@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c711ec82564c4baaa2c982d1bad3ce0, type: 3}
   m_Name: Throw Cheese
   m_EditorClassIdentifier: 
-  aName: New Ability
-  aSprite: {fileID: 0}
-  aSound: {fileID: 0}
+  aName: Throw Cheese
+  aSprite: {fileID: 21300000, guid: a9d5d09de489a4b0bb3ed80ac3b1b4c7, type: 3}
+  aSound: {fileID: 8300000, guid: 66c76e3c98b764401886c03edba003f2, type: 3}
   aBaseCoolDown: 1
   projectileForce: 500
   projectile: {fileID: 0}
