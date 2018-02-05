@@ -39,17 +39,26 @@ public class RatController : MonoBehaviour
 		gt1 = Physics2D.Linecast(tf.position, ground_tf1.position, player_mask);
 		gt2 = Physics2D.Linecast(tf.position, ground_tf2.position, player_mask);
 
+        bool hasLanded = false;
+
         if (oldgt2 == false && gt2 == true && oldgt1 == false)
         {
             //left puff
             GameObject tempL = Instantiate(leftPuff, tf.transform.position, transform.rotation);
             Destroy(tempL, 0.5f);
+
+            FindObjectOfType<AudioManager>().Play("LandingSound");
+            hasLanded = true;
         }
         if (oldgt1 == false && gt1 == true && oldgt2 == false)
         {
             //right puff
             GameObject tempR = Instantiate(rightPuff, tf.transform.position, transform.rotation);
             Destroy(tempR, 0.5f);
+            if(!hasLanded)
+            {
+                FindObjectOfType<AudioManager>().Play("LandingSound");
+            }
         }
 
         if (Input.GetButtonDown("Jump"))
@@ -94,7 +103,8 @@ public class RatController : MonoBehaviour
 		{
 			//vector2.up is a vector of (0,1)
 			rb.velocity += jump_velocity * Vector2.up;
-		}	
+            FindObjectOfType<AudioManager>().Play("Jump");
+        }	
 	}
 
 	public void Sprint()

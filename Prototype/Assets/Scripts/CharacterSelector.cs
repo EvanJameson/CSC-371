@@ -28,7 +28,9 @@ public class CharacterSelector : MonoBehaviour {
 		}
 		sprite_renderer.sprite = selectedCharacter.sprite;
 
-	}
+        FindObjectOfType<AudioManager>().Play("Transform");
+
+    }
 	public void Update()
 	{
 		for (int i = 0; i < charCodes.Length; i++) {
