@@ -7268,7 +7268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2057910013}
-  m_RootOrder: 9
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!233 &407263332
 HingeJoint2D:
@@ -7284,7 +7284,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0.0059999824, y: 0.48700005}
-  m_ConnectedAnchor: {x: 0, y: -0.3310001}
+  m_ConnectedAnchor: {x: 0.006000519, y: -0.012999535}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -8881,7 +8881,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2057910013}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.800003}
 --- !u!1 &669530194
 GameObject:
@@ -9105,8 +9105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -294743705
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4aa8fbd9bdb039f42b36fd103100a5d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9385,7 +9385,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2057910013}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.800003}
 --- !u!233 &783837720
 HingeJoint2D:
@@ -9484,8 +9484,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 180863095
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 80085b9787fc06643a00bd39d7524f57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10891,7 +10891,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2057910013}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.800003}
 --- !u!1 &1213655248
 GameObject:
@@ -11232,7 +11232,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2057910013}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.800003}
 --- !u!1 &1259614638
 GameObject:
@@ -13442,7 +13442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2057910013}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.800003}
 --- !u!1 &1518514227
 GameObject:
@@ -14946,7 +14946,7 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0.5}
+  m_Anchor: {x: 0, y: 0.58699894}
   m_ConnectedAnchor: {x: 0.00000047683716, y: -0.4130001}
   m_UseMotor: 0
   m_Motor:
@@ -15154,7 +15154,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -15178,7 +15178,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1 &1800514596
 GameObject:
   m_ObjectHideFlags: 0
@@ -16397,7 +16397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2057910013}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.800003}
 --- !u!1 &1945728292
 GameObject:
@@ -17394,13 +17394,13 @@ Transform:
   - {fileID: 77047730}
   - {fileID: 1422779865}
   - {fileID: 1742741767}
+  - {fileID: 407263331}
   - {fileID: 1514435220}
   - {fileID: 662192630}
   - {fileID: 1258125925}
   - {fileID: 1944983913}
   - {fileID: 1211543295}
   - {fileID: 783837719}
-  - {fileID: 407263331}
   - {fileID: 706691745}
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -27247,6 +27247,10 @@ CompositeCollider2D:
       - X: 460000000
         Y: 140000000
       - X: 460000000
+        Y: 170000000
+      - X: 510000000
+        Y: 170000000
+      - X: 510000000
         Y: 190000000
       - X: 390000000
         Y: 190000000
@@ -27450,7 +27454,9 @@ CompositeCollider2D:
       - {x: 44, y: 17}
       - {x: 44, y: 14}
       - {x: 46, y: 14}
-      - {x: 46, y: 19}
+      - {x: 46, y: 17}
+      - {x: 51, y: 17}
+      - {x: 51, y: 19}
       - {x: 39, y: 19}
       - {x: 39, y: 17}
       - {x: 27, y: 17}
