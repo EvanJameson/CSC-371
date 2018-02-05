@@ -8,10 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: GemBrush
+  m_Script: {fileID: 11500000, guid: f8c2f1769ffc40640a175f8df8d86b34, type: 3}
+  m_Name: Prefab_brush
   m_EditorClassIdentifier: 
   m_Prefabs:
-  - {fileID: 1764816090862790, guid: 75cabef8c622f42229b80fec978c6a10, type: 2}
+  - {fileID: 1459115622568960, guid: 66eba81b51a411b49b759b29042c0c38, type: 2}
   m_PerlinScale: 0.5
   m_Z: 0

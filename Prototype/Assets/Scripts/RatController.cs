@@ -7,6 +7,8 @@ public class RatController : MonoBehaviour
 	public float speed = 2, jump_velocity = 5;
 	private Transform tf, ground_tf1, ground_tf2;
 	private Rigidbody2D rb;
+	private float left_trigger;
+	private float right_trigger;
 	public LayerMask player_mask;
 
 	public bool gt1 = false, gt2 = false;
@@ -25,7 +27,7 @@ public class RatController : MonoBehaviour
 
 	void LateUpdate()
 	{
-		Sprint ();
+		//Sprint ();
 	}
 
 	// Update is called once per frame
@@ -51,8 +53,11 @@ public class RatController : MonoBehaviour
             GameObject tempR = Instantiate(rightPuff, tf.transform.position, transform.rotation);
             Destroy(tempR, 0.5f);
         }
+		left_trigger = Input.GetAxis ("Fire3");
+		right_trigger = Input.GetAxis ("Fire3");
+		Sprint (left_trigger, right_trigger);
 
-        if (Input.GetButtonDown("Jump"))
+		if (Input.GetButtonDown("Jump"))
 		{
 			Jump ();
 		}
@@ -97,16 +102,17 @@ public class RatController : MonoBehaviour
 		}	
 	}
 
-	public void Sprint()
+	public void Sprint(float left, float right)
 	{
+		
 		//Sprinting
-		if(Input.GetKeyDown(KeyCode.LeftShift))
+		if((left > .1f) || (right > .1f) || Input.GetButtonDown("Fire3"))
 		{
 			speed = 4f;
 			jump_velocity = 5f; //should change for other animals\
 
 		}
-		else if(Input.GetKeyUp(KeyCode.LeftShift))
+		else if((left < .1f) || (right < .1f) ||  Input.GetButtonUp("Fire3"))
 		{
 			speed = 2f;
 			jump_velocity = 5f;
