@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 48980874}
   - component: {fileID: 48980873}
   - component: {fileID: 48980872}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (6)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 72143583}
   - component: {fileID: 72143582}
   - component: {fileID: 72143581}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (20)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &141242551
 Prefab:
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 151530562}
   - component: {fileID: 151530561}
   - component: {fileID: 151530560}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (7)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &172173351
 GameObject:
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 172173355}
   - component: {fileID: 172173354}
   - component: {fileID: 172173353}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (37)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -864,7 +864,7 @@ Transform:
   - {fileID: 1585687515}
   - {fileID: 401936215}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232888017
 GameObject:
@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 234764610}
   - component: {fileID: 234764609}
   - component: {fileID: 234764608}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (3)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -1182,7 +1182,7 @@ GameObject:
   - component: {fileID: 254451764}
   - component: {fileID: 254451763}
   - component: {fileID: 254451762}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (7)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   - component: {fileID: 258057893}
   - component: {fileID: 258057892}
   - component: {fileID: 258057891}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (1)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -1432,7 +1432,7 @@ GameObject:
   - component: {fileID: 267810609}
   - component: {fileID: 267810608}
   - component: {fileID: 267810607}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (35)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -1557,7 +1557,7 @@ GameObject:
   - component: {fileID: 376555470}
   - component: {fileID: 376555469}
   - component: {fileID: 376555468}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (26)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -1867,7 +1867,7 @@ Transform:
   - {fileID: 1164538093}
   - {fileID: 942217087}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &388758107
 MonoBehaviour:
@@ -1926,7 +1926,7 @@ GameObject:
   - component: {fileID: 390574273}
   - component: {fileID: 390574272}
   - component: {fileID: 390574271}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (5)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -7139,7 +7139,7 @@ GameObject:
   - component: {fileID: 416701939}
   - component: {fileID: 416701938}
   - component: {fileID: 416701937}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (15)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -7264,7 +7264,7 @@ GameObject:
   - component: {fileID: 420180750}
   - component: {fileID: 420180749}
   - component: {fileID: 420180748}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (6)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -7440,7 +7440,7 @@ GameObject:
   - component: {fileID: 444506520}
   - component: {fileID: 444506519}
   - component: {fileID: 444506518}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (24)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -7626,7 +7626,7 @@ GameObject:
   - component: {fileID: 469989767}
   - component: {fileID: 469989766}
   - component: {fileID: 469989765}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (39)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -7991,7 +7991,7 @@ GameObject:
   - component: {fileID: 572068886}
   - component: {fileID: 572068885}
   - component: {fileID: 572068884}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (18)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -8141,7 +8141,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4659678854333612, guid: 76e0ef621edbded4aa2c3b89ca721e01, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4213774853945130, guid: 76e0ef621edbded4aa2c3b89ca721e01, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8161,6 +8161,14 @@ Prefab:
       propertyPath: m_Size.x
       value: 5.0243225
       objectReference: {fileID: 0}
+    - target: {fileID: 1732340132689480, guid: 76e0ef621edbded4aa2c3b89ca721e01, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542735176630548, guid: 76e0ef621edbded4aa2c3b89ca721e01, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76e0ef621edbded4aa2c3b89ca721e01, type: 2}
   m_IsPrefabParent: 0
@@ -8176,7 +8184,7 @@ GameObject:
   - component: {fileID: 621799957}
   - component: {fileID: 621799956}
   - component: {fileID: 621799955}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (11)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -8301,7 +8309,7 @@ GameObject:
   - component: {fileID: 645358773}
   - component: {fileID: 645358772}
   - component: {fileID: 645358771}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (16)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -8500,7 +8508,7 @@ GameObject:
   - component: {fileID: 669530198}
   - component: {fileID: 669530197}
   - component: {fileID: 669530196}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (8)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -8686,7 +8694,7 @@ GameObject:
   - component: {fileID: 764874814}
   - component: {fileID: 764874813}
   - component: {fileID: 764874812}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (25)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -8862,7 +8870,7 @@ GameObject:
   - component: {fileID: 794447372}
   - component: {fileID: 794447371}
   - component: {fileID: 794447370}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (40)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -8987,7 +8995,7 @@ GameObject:
   - component: {fileID: 842312978}
   - component: {fileID: 842312977}
   - component: {fileID: 842312976}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (33)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -9200,7 +9208,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &862992404
 Prefab:
@@ -9473,7 +9481,7 @@ GameObject:
   - component: {fileID: 959093632}
   - component: {fileID: 959093631}
   - component: {fileID: 959093630}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (3)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -9677,7 +9685,7 @@ RectTransform:
   - {fileID: 2017638436}
   - {fileID: 1495861492}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9753,7 +9761,7 @@ GameObject:
   - component: {fileID: 1154465021}
   - component: {fileID: 1154465020}
   - component: {fileID: 1154465019}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (17)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -9906,7 +9914,7 @@ GameObject:
   - component: {fileID: 1167707699}
   - component: {fileID: 1167707698}
   - component: {fileID: 1167707697}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -10224,7 +10232,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229088312
 GameObject:
@@ -10238,7 +10246,7 @@ GameObject:
   - component: {fileID: 1229088316}
   - component: {fileID: 1229088315}
   - component: {fileID: 1229088314}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (45)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -10363,7 +10371,7 @@ GameObject:
   - component: {fileID: 1259614642}
   - component: {fileID: 1259614641}
   - component: {fileID: 1259614640}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (13)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -10536,7 +10544,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1279638878
 GameObject:
@@ -10773,7 +10781,7 @@ GameObject:
   - component: {fileID: 1326330422}
   - component: {fileID: 1326330421}
   - component: {fileID: 1326330420}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (19)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -10898,7 +10906,7 @@ GameObject:
   - component: {fileID: 1333540451}
   - component: {fileID: 1333540450}
   - component: {fileID: 1333540449}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (10)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -11134,7 +11142,7 @@ GameObject:
   - component: {fileID: 1336903852}
   - component: {fileID: 1336903851}
   - component: {fileID: 1336903850}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (43)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -11259,7 +11267,7 @@ GameObject:
   - component: {fileID: 1340674048}
   - component: {fileID: 1340674047}
   - component: {fileID: 1340674046}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (2)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -11442,7 +11450,7 @@ GameObject:
   - component: {fileID: 1402059409}
   - component: {fileID: 1402059408}
   - component: {fileID: 1402059407}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (41)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -11572,7 +11580,7 @@ GameObject:
   - component: {fileID: 1423488487}
   - component: {fileID: 1423488486}
   - component: {fileID: 1423488485}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (38)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -11748,7 +11756,7 @@ GameObject:
   - component: {fileID: 1457227413}
   - component: {fileID: 1457227412}
   - component: {fileID: 1457227411}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (1)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -11873,7 +11881,7 @@ GameObject:
   - component: {fileID: 1460611283}
   - component: {fileID: 1460611282}
   - component: {fileID: 1460611281}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (4)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -12023,7 +12031,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4553715477321490, guid: 2c82feb99f69fe74c8b783d294bc9429, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1491762630536818, guid: 2c82feb99f69fe74c8b783d294bc9429, type: 2}
       propertyPath: m_Name
@@ -12337,7 +12345,7 @@ GameObject:
   - component: {fileID: 1518514231}
   - component: {fileID: 1518514230}
   - component: {fileID: 1518514229}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (44)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -12462,7 +12470,7 @@ GameObject:
   - component: {fileID: 1520183338}
   - component: {fileID: 1520183337}
   - component: {fileID: 1520183336}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (29)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -12575,6 +12583,160 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1542697559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1542697564}
+  - component: {fileID: 1542697563}
+  - component: {fileID: 1542697562}
+  - component: {fileID: 1542697561}
+  - component: {fileID: 1542697560}
+  - component: {fileID: 1542697565}
+  m_Layer: 0
+  m_Name: bat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1542697560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542697559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3379e58446f0448b2ffaafceb510de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 388758106}
+  updateRate: 2
+  speed: 600
+  fMode: 0
+  pathIsEnded: 0
+  nextWaypointDistance: 3
+--- !u!50 &1542697561
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542697559}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &1542697562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542697559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!212 &1542697563
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542697559}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: f88f7b4df08bb0a4bad6ce5bb422dcb3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 6.74}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &1542697564
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542697559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.84, y: 11.79, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1542697565
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542697559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.37
 --- !u!1 &1569540710
 GameObject:
   m_ObjectHideFlags: 0
@@ -12587,7 +12749,7 @@ GameObject:
   - component: {fileID: 1569540714}
   - component: {fileID: 1569540713}
   - component: {fileID: 1569540712}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (28)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -13025,7 +13187,7 @@ GameObject:
   - component: {fileID: 1610889360}
   - component: {fileID: 1610889359}
   - component: {fileID: 1610889358}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (2)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -13189,6 +13351,89 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ead916380554cd14d919ceac47810083, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1649705353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1649705355}
+  - component: {fileID: 1649705354}
+  m_Layer: 0
+  m_Name: A*
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1649705354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1649705353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAACAn+tbTfinDgIAAHAEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzqVjCIG4t9YktAcCE9LpWchrW4MsefRRAhn+e1eyHLvu9OT1e29Xb1drvxMuTQPMKr3RPN+qHMiXCfEx+TQhNHAv1HKF8AwRblQNVnP2VZbCaxMEneSF0vVjXkKmjDUIF1QYQEor67MlQu8T8oaPaepTLhjNVz66YpQmkxuGDKQF3Us7YSdrVU4yQesG8gO/Qi+eJZ0coyCU2E3UeOtMCcFN9ELspQmtHpoKNPhmc06xtXB+8vkegQp4WVlvdJi9KwoDNrrS9LLmGmfUliXflK18rZqaU2vtNxUuOEjmi+Cqrbr9RzCdBbrQqv7eHdz2ZCvOTi/0wqixg9EO4XXvfRZGdKbiRI8CflUgn9VGKydzJK12PtUZmK/714/esgrYqcdbqyPQNf+/IN/DLbT/lgleHyOFrwehwrzD5YPGm/mBdsNqmKhC1Hv4aeCVlsMdisQT18YiFXuU3txROe2l5DFMzPfibKa0hABHyw1IKuxlj2Xs+AZH3ODYEfNE/VcSD49c9xGMUgLc65NkRO3V+eOqTKXOWzDVzlnBJfSmPfGMc8qUlO2CDWfSpR2cLigbpJWO538vFlmkq3z2sExTupqz+4d8ukrY8m6+WjC6XN4tISFh87jEPqnYt0bjePDWZF9c4pZ1/4fJRtMmLHuu6XnDr7UajJzLQh2YBpC7tkIwfvsDUEsDBBQAAAgIAACAn+tu4XRLNAAAADcAAAASACQAZ3JhcGgwX2VkaXRvci5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1bKyU/OTk1RslIoKSpN1VFQKs7IL3etKClKBAqlJeYUg8QKMsvyS4B8JefUvJLUIqVaAFBLAwQUAAAICAAAgJ/r3cBB1m0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9QzNNBRUEovSizIKAaKGII4pZkpIHa0komleYqhhZmlZaK5UbKpRYquuUGymbGRuUlyopmZsVmqgVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAgJ/rW034pw4CAABwBAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAgJ/rbuF0SzQAAAA3AAAAEgAkAAAAAAAAAAAAAABbAgAAZ3JhcGgwX2VkaXRvci5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAICf693AQdZtAAAAeAAAAAkAJAAAAAAAAAAAAAAA4wIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAwADABwBAACbAwAAAAA=
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _NodeConnection: {r: 1, g: 1, b: 1, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors: []
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  minAreaSize: 0
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
+--- !u!4 &1649705355
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1649705353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1691016614
 GameObject:
   m_ObjectHideFlags: 0
@@ -13201,7 +13446,7 @@ GameObject:
   - component: {fileID: 1691016618}
   - component: {fileID: 1691016617}
   - component: {fileID: 1691016616}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (8)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -13326,7 +13571,7 @@ GameObject:
   - component: {fileID: 1696267819}
   - component: {fileID: 1696267818}
   - component: {fileID: 1696267817}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (5)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -13451,7 +13696,7 @@ GameObject:
   - component: {fileID: 1700813558}
   - component: {fileID: 1700813557}
   - component: {fileID: 1700813556}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (30)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -13576,7 +13821,7 @@ GameObject:
   - component: {fileID: 1711645069}
   - component: {fileID: 1711645068}
   - component: {fileID: 1711645067}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (23)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -13726,7 +13971,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4998792985643726, guid: ead916380554cd14d919ceac47810083, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1182227372571258, guid: ead916380554cd14d919ceac47810083, type: 2}
       propertyPath: m_Name
@@ -13954,7 +14199,7 @@ GameObject:
   - component: {fileID: 1800514600}
   - component: {fileID: 1800514599}
   - component: {fileID: 1800514598}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (21)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -14079,7 +14324,7 @@ GameObject:
   - component: {fileID: 1815219203}
   - component: {fileID: 1815219202}
   - component: {fileID: 1815219201}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single (9)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -14342,7 +14587,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1878162538
 GameObject:
@@ -14416,7 +14661,7 @@ Transform:
   m_LocalScale: {x: 6.74114, y: 6.74114, z: 6.74114}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1878162541
 MonoBehaviour:
@@ -14495,7 +14740,7 @@ GameObject:
   - component: {fileID: 1904947379}
   - component: {fileID: 1904947378}
   - component: {fileID: 1904947377}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (4)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -14620,7 +14865,7 @@ GameObject:
   - component: {fileID: 1906418890}
   - component: {fileID: 1906418889}
   - component: {fileID: 1906418888}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (27)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -14745,7 +14990,7 @@ GameObject:
   - component: {fileID: 1912955751}
   - component: {fileID: 1912955750}
   - component: {fileID: 1912955749}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (14)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -14870,7 +15115,7 @@ GameObject:
   - component: {fileID: 1923859832}
   - component: {fileID: 1923859831}
   - component: {fileID: 1923859830}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (31)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -15124,7 +15369,7 @@ GameObject:
   - component: {fileID: 1985570013}
   - component: {fileID: 1985570012}
   - component: {fileID: 1985570011}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (34)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -15626,7 +15871,7 @@ GameObject:
   - component: {fileID: 1997806957}
   - component: {fileID: 1997806956}
   - component: {fileID: 1997806955}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (36)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -15827,7 +16072,7 @@ GameObject:
   - component: {fileID: 2011764041}
   - component: {fileID: 2011764040}
   - component: {fileID: 2011764039}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (32)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -16074,7 +16319,7 @@ GameObject:
   - component: {fileID: 2085126276}
   - component: {fileID: 2085126275}
   - component: {fileID: 2085126274}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (12)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -16199,7 +16444,7 @@ GameObject:
   - component: {fileID: 2104933568}
   - component: {fileID: 2104933567}
   - component: {fileID: 2104933566}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (42)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -16324,7 +16569,7 @@ GameObject:
   - component: {fileID: 2112690848}
   - component: {fileID: 2112690847}
   - component: {fileID: 2112690846}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (9) single
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -25795,7 +26040,7 @@ GameObject:
   - component: {fileID: 2119333144}
   - component: {fileID: 2119333143}
   - component: {fileID: 2119333142}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Tile (22)
   m_TagString: Tile
   m_Icon: {fileID: 0}
