@@ -139,13 +139,11 @@ public class RatController : MonoBehaviour
 		if(Input.GetButtonDown("Fire3"))
 		{
 			speed = 4f;
-			//jump_velocity = 5f; //should change for other animals\
 
 		}
 		else if(Input.GetButtonUp("Fire3"))
 		{
 			speed = 2f;
-			//jump_velocity = 5f;
 
 		}
 	}

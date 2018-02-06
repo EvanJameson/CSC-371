@@ -664,6 +664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 160286479}
   - component: {fileID: 160286478}
+  - component: {fileID: 160286480}
   m_Layer: 0
   m_Name: _GM
   m_TagString: Untagged
@@ -697,6 +698,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &160286480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 160286477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17a46720661f49beb73e4cc28265191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 388758102}
+  jump_velocity: 5
 --- !u!1 &172173351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,6 +2096,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jump_velocity: 5
+  ground_tf1: {fileID: 1063260018}
+  ground_tf2: {fileID: 1164538093}
   player_mask:
     serializedVersion: 2
     m_Bits: 4294967039
@@ -9573,7 +9589,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
-  bulletSpawn: {fileID: 1508376146}
   projectileForce: 500
 --- !u!1 &951165445 stripped
 GameObject:
@@ -9851,7 +9866,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8651bb4fd00460e98fcacab64bccef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 388758102}
   characters:
   - {fileID: 11400000, guid: 5ba3e30b8e9dc42c2b2ed0201c8783fd, type: 2}
   - {fileID: 11400000, guid: 511c9e3368bd042a9862397ba4fc774c, type: 2}
