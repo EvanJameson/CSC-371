@@ -25,7 +25,7 @@ public class RatController : MonoBehaviour
 
 	void LateUpdate()
 	{
-		Sprint ();
+		//Sprint ();
 	}
 
 	// Update is called once per frame
@@ -61,7 +61,10 @@ public class RatController : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Jump"))
+
+		Sprint ();
+
+		if (Input.GetButtonDown("Jump"))
 		{
 			Jump ();
 		}
@@ -72,6 +75,20 @@ public class RatController : MonoBehaviour
 		if(other.gameObject.CompareTag("Ladder"))
 		{
 			Climb ();
+		}
+
+		if(other.gameObject.CompareTag("Rope"))
+		{
+			Chew (other);
+		}
+	}
+
+	public void Chew(Collider2D other)
+	{
+		if(Input.GetButtonDown("Fire1"))
+		{
+			
+			other.gameObject.SetActive (false);
 		}
 	}
 
@@ -109,14 +126,15 @@ public class RatController : MonoBehaviour
 
 	public void Sprint()
 	{
+		
 		//Sprinting
-		if(Input.GetKeyDown(KeyCode.LeftShift))
+		if(Input.GetButtonDown("Fire3"))
 		{
 			speed = 4f;
 			jump_velocity = 5f; //should change for other animals\
 
 		}
-		else if(Input.GetKeyUp(KeyCode.LeftShift))
+		else if(Input.GetButtonUp("Fire3"))
 		{
 			speed = 2f;
 			jump_velocity = 5f;

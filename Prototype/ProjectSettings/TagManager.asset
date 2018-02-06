@@ -8,6 +8,8 @@ TagManager:
   - Tile
   - Ladder
   - Fake_platform
+  - Rope
+  - Box
   layers:
   - Default
   - TransparentFX
