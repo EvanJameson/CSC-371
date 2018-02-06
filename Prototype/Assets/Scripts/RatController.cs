@@ -7,6 +7,7 @@ public class RatController : MonoBehaviour
 	public float speed = 2, jump_velocity = 5;
 	private Transform tf, ground_tf1, ground_tf2;
 	private Rigidbody2D rb;
+	private SpriteRenderer sp;
 	public LayerMask player_mask;
 
 	public bool gt1 = false, gt2 = false;
@@ -17,6 +18,7 @@ public class RatController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
+		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
 		ground_tf1 = GameObject.Find (this.name + "/Ground_tag").transform;
@@ -97,6 +99,11 @@ public class RatController : MonoBehaviour
 		//move left and right
 		Vector2 move_velocity = rb.velocity;
 		move_velocity.x = horizontal_input * speed;
+		if (horizontal_input < 0) {
+			sp.flipX = true;
+		} else if (horizontal_input > 0){
+			sp.flipX = false;
+		}
 		rb.velocity = move_velocity;
 	}
 
