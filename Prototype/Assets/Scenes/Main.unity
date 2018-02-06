@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 0}
+  m_AmbientSkyColor: {r: 0.048133742, g: 0.049999595, b: 0.04154371, a: 0.05}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -477,7 +477,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &141242551
 Prefab:
@@ -2060,14 +2060,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 388758102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.35, y: 13.62, z: -1.2548233}
+  m_LocalPosition: {x: -12, y: 3.4, z: -1.2548233}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1063260018}
   - {fileID: 1164538093}
   - {fileID: 942217087}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &388758107
 MonoBehaviour:
@@ -9926,7 +9926,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1063260017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: -0.326, z: -0.05439639}
+  m_LocalPosition: {x: -0.1651, y: -0.346, z: -0.05439639}
   m_LocalScale: {x: 1, y: 3.4768364, z: 1}
   m_Children: []
   m_Father: {fileID: 388758106}
@@ -10209,7 +10209,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1164538092}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: -0.326, z: -0.05439639}
+  m_LocalPosition: {x: 0.1647, y: -0.346, z: -0.05439639}
   m_LocalScale: {x: 1.0000005, y: 3.476842, z: 1}
   m_Children: []
   m_Father: {fileID: 388758106}
@@ -10545,7 +10545,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229088312
 GameObject:
@@ -12487,7 +12487,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4553715477321490, guid: 2c82feb99f69fe74c8b783d294bc9429, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1491762630536818, guid: 2c82feb99f69fe74c8b783d294bc9429, type: 2}
       propertyPath: m_Name
@@ -14190,7 +14190,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4998792985643726, guid: ead916380554cd14d919ceac47810083, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1182227372571258, guid: ead916380554cd14d919ceac47810083, type: 2}
       propertyPath: m_Name
