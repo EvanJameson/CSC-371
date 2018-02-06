@@ -29,6 +29,7 @@ public class PauseMenu : MonoBehaviour {
         isPaused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+        FindObjectOfType<AudioManager>().Play("Sewer1");
     }
 
     void pauseGame()
@@ -36,6 +37,7 @@ public class PauseMenu : MonoBehaviour {
         isPaused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
+        FindObjectOfType<AudioManager>().Pause("Sewer1");
     }
 
     public void restart()

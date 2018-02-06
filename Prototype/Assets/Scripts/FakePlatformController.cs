@@ -7,6 +7,9 @@ public class FakePlatformController : MonoBehaviour {
 	private bool touching = false,falling = false;
 	private Rigidbody2D rb;
 	private BoxCollider2D bc;
+
+    private bool hasPlayed = false;
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent <Rigidbody2D> ();
@@ -41,6 +44,13 @@ public class FakePlatformController : MonoBehaviour {
 		if(falling)
 		{
 			sum += 1;
+
+            if(!hasPlayed)
+            {
+                FindObjectOfType<AudioManager>().Play("blockFall");
+                hasPlayed = true;
+            }
+
 		}
 	}
 
