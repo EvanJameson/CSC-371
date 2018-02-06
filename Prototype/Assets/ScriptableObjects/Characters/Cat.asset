@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f837a43361fc64350ba7654983eb205b, type: 3}
-  m_Name: Monkey
+  m_Name: Cat
   m_EditorClassIdentifier: 
   characterName: Default
   startingHP: 100
   characterAbilities:
-  - {fileID: 11400000, guid: d2b3e4f7d73f940d2873f7e8486c5c79, type: 2}
-  prefab: {fileID: 1501262334681740, guid: e09b22f0c362f43fd8692db524bdc43d, type: 2}
-  jump_velocity: 5
+  - {fileID: 11400000, guid: 41657e12278944abfa029cc8a7978020, type: 2}
+  prefab: {fileID: 1393066649035416, guid: 8eece988cd03c49989187eccc586838f, type: 2}
+  jump_velocity: 10

@@ -8,6 +8,7 @@ public class Character : ScriptableObject {
 	public string characterName = "Default";
 	public int startingHP = 100;
 	public Ability[] characterAbilities;
-	public Sprite sprite;
+	public GameObject prefab;
+	public float jump_velocity = 5;
 
 }

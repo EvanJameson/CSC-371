@@ -5,7 +5,8 @@ using UnityEngine;
 public class RatController : MonoBehaviour 
 {
 	public float speed = 2, jump_velocity = 5;
-	private Transform tf, ground_tf1, ground_tf2;
+	public Transform ground_tf1, ground_tf2;
+	private Transform tf;
 	private Rigidbody2D rb;
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
@@ -21,8 +22,8 @@ public class RatController : MonoBehaviour
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
-		ground_tf1 = GameObject.Find (this.name + "/Ground_tag").transform;
-		ground_tf2 = GameObject.Find (this.name + "/Ground_tag (1)").transform;
+		//ground_tf1 = GameObject.Find (this.name + "/Ground_tag").transform;
+		//ground_tf2 = GameObject.Find (this.name + "/Ground_tag (1)").transform;
 	}
 
 	void LateUpdate()
@@ -126,7 +127,7 @@ public class RatController : MonoBehaviour
 		if(gt1 || gt2)
 		{
 			//vector2.up is a vector of (0,1)
-			rb.velocity += jump_velocity * Vector2.up;
+			rb.velocity += CharacterControl.instance.jump_velocity * Vector2.up;
             FindObjectOfType<AudioManager>().Play("Jump");
         }	
 	}
@@ -138,13 +139,13 @@ public class RatController : MonoBehaviour
 		if(Input.GetButtonDown("Fire3"))
 		{
 			speed = 4f;
-			jump_velocity = 5f; //should change for other animals\
+			//jump_velocity = 5f; //should change for other animals\
 
 		}
 		else if(Input.GetButtonUp("Fire3"))
 		{
 			speed = 2f;
-			jump_velocity = 5f;
+			//jump_velocity = 5f;
 
 		}
 	}

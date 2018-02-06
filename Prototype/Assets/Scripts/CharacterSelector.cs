@@ -4,29 +4,32 @@ using UnityEngine;
 
 public class CharacterSelector : MonoBehaviour {
 
-	public GameObject player;
 	public Character[] characters;
 	public GameObject characterSelectPanel;
-	private SpriteRenderer sprite_renderer;
 	public GameObject abilityPanel;
 	private KeyCode[] charCodes = {
 		KeyCode.Alpha1,
 		KeyCode.Alpha2,
+		KeyCode.Alpha3,
 	};
 		
 	public void OnCharacterSelect(int characterChoice)
 	{
-		sprite_renderer = player.GetComponent<SpriteRenderer> ();
 		characterSelectPanel.SetActive (false);
 		abilityPanel.SetActive (true);
 
-		WeaponMarker weaponMarker = player.GetComponentInChildren<WeaponMarker> ();
+		WeaponMarker weaponMarker = CharacterControl.instance.player.GetComponentInChildren<WeaponMarker> ();
 		AbilityCoolDown[] coolDownButtons = GetComponentsInChildren<AbilityCoolDown> ();
 		Character selectedCharacter = characters [characterChoice];
 		for (int i = 0; i < coolDownButtons.Length; i++) {
 			coolDownButtons [i].Initialize (selectedCharacter.characterAbilities [i], weaponMarker.gameObject);
 		}
-		sprite_renderer.sprite = selectedCharacter.sprite;
+
+		/* Destroy current character and instantiate new character */
+		Transform t = CharacterControl.instance.player.transform;
+		Destroy (CharacterControl.instance.player);
+		CharacterControl.instance.player = Instantiate(selectedCharacter.prefab, t.transform.position, t.transform.rotation);
+		CharacterControl.instance.jump_velocity = selectedCharacter.jump_velocity;
 
         FindObjectOfType<AudioManager>().Play("Transform");
 
