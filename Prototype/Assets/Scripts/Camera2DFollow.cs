@@ -19,6 +19,7 @@ using UnityEngine;
 		// Use this for initialization
 		private void Start()
 		{
+			target = CharacterControl.instance.player.transform;
 			m_LastTargetPosition = target.position;
 			m_OffsetZ = (transform.position - target.position).z;
 			transform.parent = null;
