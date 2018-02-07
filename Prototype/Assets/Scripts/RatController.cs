@@ -1,12 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RatController : MonoBehaviour 
 {
 	public float speed = 2, jump_velocity = 5;
 	private Transform tf, ground_tf1, ground_tf2;
 	private Rigidbody2D rb;
+
+	public Text countText;
+
+	public  int livesCount;
+
+
 	public LayerMask player_mask;
 
 	public bool gt1 = false, gt2 = false;
@@ -14,13 +21,26 @@ public class RatController : MonoBehaviour
     public GameObject leftPuff;
     public GameObject rightPuff;
 
+	//camera shaking
+	public float camShakeAmt = 0.1f;
+	CameraShake camShake; 
+	
+
     // Use this for initialization
     void Start () 
 	{
+
+		livesCount = 5;
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
 		ground_tf1 = GameObject.Find (this.name + "/Ground_tag").transform;
 		ground_tf2 = GameObject.Find (this.name + "/Ground_tag (1)").transform;
+		countText.text = "Count: " + livesCount.ToString ();
+
+		camShake = GameObject.Find ("_GM").GetComponent<CameraShake> ();
+		if (camShake == null) {
+			Debug.LogError ("No Camerashake script found on object");
+		}
 	}
 
 	void LateUpdate()
@@ -112,5 +132,22 @@ public class RatController : MonoBehaviour
 			jump_velocity = 5f;
 
 		}
+	}
+
+
+	void OnTriggerEnter2D(Collider2D other)  
+	{
+		//Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
+		if (other.gameObject.CompareTag("Enemy"))
+		{
+			//other.gameObject.SetActive(false);
+			if(livesCount > 0){
+				livesCount = livesCount - 1;	
+				countText.text = "Count: " + livesCount.ToString ();
+				camShake.Shake (camShakeAmt, 0.2f);
+			}
+		}
+
+
 	}
 }
