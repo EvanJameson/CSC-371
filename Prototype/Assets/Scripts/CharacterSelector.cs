@@ -13,7 +13,7 @@ public class CharacterSelector : MonoBehaviour {
 		KeyCode.Alpha3,
 	};
 
-	void Awake() {
+	void Start() {
 		OnCharacterSelect (0);
 	}
 		

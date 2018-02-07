@@ -9,7 +9,6 @@ public class CompleteLevel : MonoBehaviour {
 
 	public void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.CompareTag ("Player")) {
-			print ("in trigger");
 			SceneManager.LoadScene (nextLevel);
 		}
 	}
