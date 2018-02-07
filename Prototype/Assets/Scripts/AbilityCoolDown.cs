@@ -72,8 +72,10 @@ public class AbilityCoolDown : MonoBehaviour {
 		darkMask.enabled = true;
 		coolDownTextDisplay.enabled = true;
 
-		abilitySource.clip = ability.aSound;
-		abilitySource.Play ();
+		if (abilitySource != null) {
+			abilitySource.clip = ability.aSound;
+			abilitySource.Play ();
+		}
 		ability.TriggerAbility ();
 	}
 }

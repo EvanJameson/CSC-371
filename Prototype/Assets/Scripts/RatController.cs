@@ -22,8 +22,6 @@ public class RatController : MonoBehaviour
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
-		//ground_tf1 = GameObject.Find (this.name + "/Ground_tag").transform;
-		//ground_tf2 = GameObject.Find (this.name + "/Ground_tag (1)").transform;
 	}
 
 	void LateUpdate()

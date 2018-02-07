@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 61597495051408456}
   - component: {fileID: 50962163314554972}
   - component: {fileID: 114743204650494322}
+  - component: {fileID: 95873829560629928}
   m_Layer: 8
   m_Name: CatPlayer
   m_TagString: Player
@@ -307,6 +308,23 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1223575666450180}
   m_Enabled: 1
+--- !u!95 &95873829560629928
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1393066649035416}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d4fba820ba2044d829f3e41dccfd048e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114566097523582622
 MonoBehaviour:
   m_ObjectHideFlags: 1
