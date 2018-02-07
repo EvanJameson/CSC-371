@@ -8,6 +8,7 @@ TagManager:
   - Tile
   - Ladder
   - Fake_platform
+  - Enemy
   layers:
   - Default
   - TransparentFX
