@@ -1756,6 +1756,61 @@ Prefab:
       propertyPath: m_ConnectedAnchor.y
       value: 13.009534
       objectReference: {fileID: 0}
+    - target: {fileID: 61072517379271084, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.14328822
+      objectReference: {fileID: 0}
+    - target: {fileID: 61072517379271084, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.2161245
+      objectReference: {fileID: 0}
+    - target: {fileID: 61072517379271084, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.2532706
+      objectReference: {fileID: 0}
+    - target: {fileID: 61072517379271084, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -1.8640902
+      objectReference: {fileID: 0}
+    - target: {fileID: 61685658845974044, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.10814661
+      objectReference: {fileID: 0}
+    - target: {fileID: 61685658845974044, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.6337385
+      objectReference: {fileID: 0}
+    - target: {fileID: 61685658845974044, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.9046636
+      objectReference: {fileID: 0}
+    - target: {fileID: 61400088004213018, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.020357132
+      objectReference: {fileID: 0}
+    - target: {fileID: 61400088004213018, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.4019856
+      objectReference: {fileID: 0}
+    - target: {fileID: 61400088004213018, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.4341702
+      objectReference: {fileID: 0}
+    - target: {fileID: 61400088004213018, guid: cfb5f90ad09eee641abf7be706f52b10,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.8006163
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
   m_IsPrefabParent: 0
@@ -26097,14 +26152,6 @@ CompositeCollider2D:
         Y: 120000000
       - X: 410000000
         Y: 170000000
-      - X: 440000000
-        Y: 170000000
-      - X: 440000000
-        Y: 140000000
-      - X: 460000000
-        Y: 140000000
-      - X: 460000000
-        Y: 170000000
       - X: 510000000
         Y: 170000000
       - X: 510000000
@@ -26308,10 +26355,6 @@ CompositeCollider2D:
     - - {x: 51, y: 12}
       - {x: 41, y: 12}
       - {x: 41, y: 17}
-      - {x: 44, y: 17}
-      - {x: 44, y: 14}
-      - {x: 46, y: 14}
-      - {x: 46, y: 17}
       - {x: 51, y: 17}
       - {x: 51, y: 19}
       - {x: 39, y: 19}
