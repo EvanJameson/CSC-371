@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Tutorial_1_Manager : MonoBehaviour {
+public class Tutorial_Manager : MonoBehaviour {
 
     public static bool isStart = false;
+
+    public GameObject tutorialScreen;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +19,8 @@ public class Tutorial_1_Manager : MonoBehaviour {
 		if(Input.GetKeyDown("space"))
         {
             Time.timeScale = 1;
+            tutorialScreen.SetActive(false);
+            FindObjectOfType<AudioManager>().Play("Sewer1");
         }
 	}
 }
