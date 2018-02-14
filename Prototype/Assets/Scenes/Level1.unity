@@ -1760,7 +1760,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &326719218
 MonoBehaviour:
@@ -1774,62 +1774,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: Scenes/Level2
---- !u!1001 &363474324
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4868804418151556, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868804418151556, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 9.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868804418151556, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868804418151556, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868804418151556, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868804418151556, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868804418151556, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4868804418151556, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1386564684243652, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-      propertyPath: m_Name
-      value: 'Hanging Box '
-      objectReference: {fileID: 0}
-    - target: {fileID: 233540753281039088, guid: cfb5f90ad09eee641abf7be706f52b10,
-        type: 2}
-      propertyPath: m_ConnectedAnchor.x
-      value: 44.515472
-      objectReference: {fileID: 0}
-    - target: {fileID: 233540753281039088, guid: cfb5f90ad09eee641abf7be706f52b10,
-        type: 2}
-      propertyPath: m_ConnectedAnchor.y
-      value: 13.009534
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: cfb5f90ad09eee641abf7be706f52b10, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &376555466
 GameObject:
   m_ObjectHideFlags: 0
@@ -11103,7 +11047,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 472496, guid: e9ffb25489352e54b94a35ebbdf7fc91, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 11456560, guid: e9ffb25489352e54b94a35ebbdf7fc91, type: 2}
       propertyPath: Camera
@@ -26808,14 +26752,6 @@ CompositeCollider2D:
         Y: 120000000
       - X: 410000000
         Y: 170000000
-      - X: 440000000
-        Y: 170000000
-      - X: 440000000
-        Y: 140000000
-      - X: 460000000
-        Y: 140000000
-      - X: 460000000
-        Y: 170000000
       - X: 510000000
         Y: 170000000
       - X: 510000000
@@ -27019,10 +26955,6 @@ CompositeCollider2D:
     - - {x: 51, y: 12}
       - {x: 41, y: 12}
       - {x: 41, y: 17}
-      - {x: 44, y: 17}
-      - {x: 44, y: 14}
-      - {x: 46, y: 14}
-      - {x: 46, y: 17}
       - {x: 51, y: 17}
       - {x: 51, y: 19}
       - {x: 39, y: 19}
