@@ -1702,7 +1702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5396894dc644e9592c33b735dcb06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Scenes/Level2
+  nextLevel: Scenes/sewer_level2
 --- !u!1 &376555466
 GameObject:
   m_ObjectHideFlags: 0
