@@ -18,7 +18,7 @@ public class RopeController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.gameObject.CompareTag("Rope") && Input.GetButtonDown("Fire1"))
+		if(Input.GetButtonDown("Fire1") && other.gameObject.CompareTag("Player"))//other.gameObject.CompareTag("Rope") && Input.GetButtonDown("Fire1"))
 		{
 			other.gameObject.SetActive (false);
 			//this.gameObject.SetActive (false);
