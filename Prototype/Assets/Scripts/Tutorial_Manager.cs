@@ -22,5 +22,5 @@ public class Tutorial_Manager : MonoBehaviour {
             tutorialScreen.SetActive(false);
             FindObjectOfType<AudioManager>().Play("Sewer1");
         }
-	}
+    }
 }

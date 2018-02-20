@@ -319,7 +319,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
-  bulletSpawn: {fileID: 4777359792964222}
   projectileForce: 500
 --- !u!114 &114422967292741322
 MonoBehaviour:
