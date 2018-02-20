@@ -21,7 +21,10 @@ public class BoxController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(player == null)
+		{
+			player = GameObject.Find ("RatPlayer(Clone)");
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D other)
