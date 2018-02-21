@@ -19,6 +19,7 @@ using UnityEngine;
 		// Use this for initialization
 		private void Start()
 		{
+			target = CharacterControl.instance.player.transform;
 			m_LastTargetPosition = target.position;
 			m_OffsetZ = (transform.position - target.position).z;
 			transform.parent = null;
@@ -28,6 +29,7 @@ using UnityEngine;
 		// Update is called once per frame
 		private void Update()
 		{
+			target = CharacterControl.instance.player.transform;
 			// only update lookahead pos if accelerating or changed direction
 			float xMoveDelta = (target.position - m_LastTargetPosition).x;
 
