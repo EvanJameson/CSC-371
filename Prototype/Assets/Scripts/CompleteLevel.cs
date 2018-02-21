@@ -12,6 +12,6 @@ public class CompleteLevel : MonoBehaviour {
 			SceneManager.LoadScene (nextLevel);
 			print ("what");
 		}
-		print ("its the tag");
+		//print ("its the tag");
 	}
 }

@@ -84,14 +84,17 @@ public class RatController : MonoBehaviour
 			Chew (other);
 		}
 
-		/*if(other.gameObject.CompareTag("Box"))
+		if(other.gameObject.CompareTag("Box"))
 		{
-			Vector2 move_velocity = rb.velocity;
+			/*Vector2 move_velocity = rb.velocity;
 			Rigidbody2D orb = GetComponent<Rigidbody2D> ();
 			Vector2 box_velocity = orb.velocity;
 			move_velocity.x += box_velocity.x;// * speed;
-			rb.velocity = move_velocity;
-		}*/
+			rb.velocity = move_velocity;*/
+			Transform otf = GetComponent<Transform> ();
+			transform.position = otf.position;
+			print ("yeah");
+		}
 	}
 
 	public void Chew(Collider2D other)
