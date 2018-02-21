@@ -9632,6 +9632,11 @@ Prefab:
       propertyPath: Arrow
       value: 
       objectReference: {fileID: 1869355898}
+    - target: {fileID: 114282996694137684, guid: 51a87d558f17b4836b14b8e9b10e6aa0,
+        type: 2}
+      propertyPath: nextLevel
+      value: Maze
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
   m_IsPrefabParent: 0
