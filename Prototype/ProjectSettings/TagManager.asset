@@ -8,6 +8,9 @@ TagManager:
   - Tile
   - Ladder
   - Fake_platform
+  - Rope
+  - Box
+  - Toxic
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,10 @@ public class PipeController : MonoBehaviour {
 		}
 		if(Input.GetButtonDown("Jump"))
 		{
-			tf = other.gameObject.GetComponent<Transform> ();
+
+            FindObjectOfType<AudioManager>().Play("PipeWarp");
+
+            tf = other.gameObject.GetComponent<Transform> ();
 			tf.position += new Vector3 (2.5f,0,0); 
 		}
 
