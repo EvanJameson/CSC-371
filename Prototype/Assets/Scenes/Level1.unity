@@ -1773,7 +1773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5396894dc644e9592c33b735dcb06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Scenes/Level2
+  nextLevel: sewer_level2
 --- !u!1 &376555466
 GameObject:
   m_ObjectHideFlags: 0
@@ -10724,7 +10724,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1213655248}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1213655250
 Behaviour:
   m_ObjectHideFlags: 0
