@@ -353,7 +353,7 @@ MonoBehaviour:
   gt1: 0
   gt2: 0
   leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}
-  rightPuff: {fileID: 1204221191556324, guid: 8c647aaea68520a4dbee2f0c257d11d9, type: 2}
+  rightPuff: {fileID: 1565872402223004, guid: cf0a8c918dfdc994196dc0e632827b83, type: 2}
 --- !u!124 &124382227602304142
 Behaviour:
   m_ObjectHideFlags: 1

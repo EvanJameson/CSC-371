@@ -15979,7 +15979,7 @@ GameObject:
   - component: {fileID: 1989787495}
   - component: {fileID: 1989787494}
   - component: {fileID: 1989787493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LadderTilemap
   m_TagString: Ladder
   m_Icon: {fileID: 0}
