@@ -78,7 +78,8 @@ public class RatController : MonoBehaviour
 		if(other.gameObject.CompareTag("Toxic") && !immortal)
 		{
 			//died, add a menu, sound or something
-			gameObject.SetActive (false);
+			Application.LoadLevel (Application.loadedLevel);
+
 		}
 	}
 
