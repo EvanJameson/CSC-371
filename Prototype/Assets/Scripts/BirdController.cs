@@ -6,7 +6,7 @@ public class BirdController : MonoBehaviour {
 
 	private Rigidbody2D rb;
 	private bool attack = false;
-	private float bird_speed = 0.5f;
+	private float bird_speed = 5f;
 
 	void Start() {
 		rb = GetComponentInChildren<Rigidbody2D> ();
