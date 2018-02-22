@@ -67,7 +67,7 @@ public class RatController : MonoBehaviour
 
 		Sprint ();
 
-		if (Input.GetButtonDown("Jump"))
+		if (Input.GetKey("space"))
 		{
 			Jump ();
 		}
