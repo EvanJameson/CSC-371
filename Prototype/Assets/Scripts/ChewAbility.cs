@@ -12,9 +12,7 @@ public class ChewAbility : Ability {
 
 	public override void TriggerAbility()
 	{
-		if (!chewer.other_collider.CompareTag ("Rope")) {
-			FindObjectOfType<AudioManager>().Play("Clink");
-		}
+
 	}
 
 }
