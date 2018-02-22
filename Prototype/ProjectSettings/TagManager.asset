@@ -10,6 +10,7 @@ TagManager:
   - Fake_platform
   - Rope
   - Box
+  - Enemy
   layers:
   - Default
   - TransparentFX
