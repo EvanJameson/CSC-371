@@ -7,11 +7,14 @@ public class ChewAbility : Ability {
 	private ChewTriggerable chewer;
 	public override void Initialize(GameObject obj)
 	{
-		chewer = obj.GetComponent<ChewTriggerable> ();
+		chewer = FindObjectOfType<ChewTriggerable> ();
 	}
 
 	public override void TriggerAbility()
 	{
-		chewer.Chew();
+		if (!chewer.other_collider.CompareTag ("Rope")) {
+			FindObjectOfType<AudioManager>().Play("Clink");
+		}
 	}
+
 }

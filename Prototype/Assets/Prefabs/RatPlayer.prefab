@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61307451213762996}
   - component: {fileID: 50206043891230504}
   - component: {fileID: 114932416247290016}
+  - component: {fileID: 114437008030477672}
   m_Layer: 8
   m_Name: RatPlayer
   m_TagString: Player
@@ -307,6 +308,17 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1716802800747412}
   m_Enabled: 1
+--- !u!114 &114437008030477672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1189898005830368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef53d9be458f41288ade90af7469b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114636142330999252
 MonoBehaviour:
   m_ObjectHideFlags: 1
