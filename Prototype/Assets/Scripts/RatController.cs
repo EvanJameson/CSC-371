@@ -10,6 +10,7 @@ public class RatController : MonoBehaviour
 	private Rigidbody2D rb;
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
+	public bool immortal;
 
 	public bool gt1 = false, gt2 = false;
 	//private bool moving = false; //for moving platforms
@@ -69,6 +70,16 @@ public class RatController : MonoBehaviour
 		if (Input.GetKey("space"))
 		{
 			Jump ();
+		}
+	}
+
+	public void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.gameObject.CompareTag("Toxic") && !immortal)
+		{
+			//died, add a menu, sound or something
+			Application.LoadLevel (Application.loadedLevel);
+
 		}
 	}
 
@@ -139,7 +150,7 @@ public class RatController : MonoBehaviour
 		if(gt1 || gt2)
 		{
 			//vector2.up is a vector of (0,1)
-			rb.velocity += CharacterControl.instance.jump_velocity * high;
+			rb.velocity += CharacterControl.instance.jump_velocity * Vector2.up;// * high;
             FindObjectOfType<AudioManager>().Play("Jump");
         }	
 	}

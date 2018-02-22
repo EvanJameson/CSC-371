@@ -2705,6 +2705,11 @@ Prefab:
       propertyPath: m_Name
       value: pipe(enter)
       objectReference: {fileID: 0}
+    - target: {fileID: 114282996694137684, guid: 51a87d558f17b4836b14b8e9b10e6aa0,
+        type: 2}
+      propertyPath: nextLevel
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
   m_IsPrefabParent: 0
@@ -16758,7 +16763,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  iconContainers: []
   jump_velocity: 5
+  characterNumber: 0
 --- !u!114 &1179455005
 MonoBehaviour:
   m_ObjectHideFlags: 0
