@@ -8,6 +8,7 @@ using Pathfinding;
 public class EnemyAI : MonoBehaviour {
 
 	public Transform target;
+	public GameObject player;
 
 	public float updateRate = 2f;
 
@@ -45,6 +46,16 @@ public class EnemyAI : MonoBehaviour {
 
 
 	}
+	
+	void Update()
+	{
+		if(player == null)
+		{
+			player =  GameObject.Find ("RatPlayer(Clone)");
+			target = player.GetComponent<Transform>();
+		}
+	}
+
 
 	IEnumerator UpdatePath(){
 		if (target == null) {
@@ -64,6 +75,7 @@ public class EnemyAI : MonoBehaviour {
 		}
 	}
 
+	
 	void FixedUpdate(){
 		if (target == null) {
 			return;
