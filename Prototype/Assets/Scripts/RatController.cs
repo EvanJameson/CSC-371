@@ -82,6 +82,11 @@ public class RatController : MonoBehaviour
 		{
 			Chew (other);
 		}
+
+		if (other.gameObject.CompareTag ("Enemy") &&
+			Input.GetButtonDown("Fire1")) {
+
+		}
 	}
 
 	public void Chew(Collider2D other)
