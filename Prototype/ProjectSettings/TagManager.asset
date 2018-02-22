@@ -11,6 +11,13 @@ TagManager:
   - Rope
   - Box
   - Toxic
+  - Obstacle
+  - bawss
+  - ground
+  - PlayerShipTag
+  - AsteroidTag
+  - EnemyBulletTag
+  - EnemyShipTag
   layers:
   - Default
   - TransparentFX
