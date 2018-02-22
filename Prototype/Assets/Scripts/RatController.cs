@@ -135,7 +135,7 @@ public class RatController : MonoBehaviour
 
 	public void Jump()
 	{
-		Vector2 high = new Vector2 (0f,2.3f);
+		Vector2 high = new Vector2 (0f,1.7f);
 		if(gt1 || gt2)
 		{
 			//vector2.up is a vector of (0,1)
