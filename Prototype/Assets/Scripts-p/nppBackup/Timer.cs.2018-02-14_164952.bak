@@ -1,0 +1,28 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Timer : MonoBehaviour {
+
+	public int timeStart = 0;
+	public Text countup;
+	
+	// Use this for initialization
+	void Start () {
+		StartCoroutine("GainTime");
+		Time.timescale = 1;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		countdown.text = ("" + timeStart);
+	}
+	
+	IEnumerator LoseTime()
+	{
+		while (true) {
+			yield return new WaitForSeconds (1);
+			timeStart++; 
+		}
+	}
+}
