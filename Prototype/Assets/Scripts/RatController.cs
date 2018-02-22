@@ -46,8 +46,8 @@ public class RatController : MonoBehaviour
 
         if (oldgt2 == false && gt2 == true && oldgt1 == false)
         {
-            //left puff
-            GameObject tempL = Instantiate(leftPuff, ground_tf1.transform.position, ground_tf1.transform.rotation);
+            //right puff
+            GameObject tempL = Instantiate(rightPuff, ground_tf2.transform.position, ground_tf2.transform.rotation);
             Destroy(tempL, 0.5f);
 
             FindObjectOfType<AudioManager>().Play("LandingSound");
@@ -55,8 +55,8 @@ public class RatController : MonoBehaviour
         }
         if (oldgt1 == false && gt1 == true && oldgt2 == false)
         {
-            //right puff
-            GameObject tempR = Instantiate(rightPuff, ground_tf2.transform.position, ground_tf2.transform.rotation);
+            //left puff
+            GameObject tempR = Instantiate(leftPuff, ground_tf1.transform.position, ground_tf1.transform.rotation);
             Destroy(tempR, 0.5f);
             if(!hasLanded)
             {
