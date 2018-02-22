@@ -18,7 +18,6 @@ public class EnemyAI : MonoBehaviour {
 	//The calculated path
 
 	public Path path;
-
 	//AI's speed
 	public float speed = 600f;
 	public ForceMode2D fMode;
