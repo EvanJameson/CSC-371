@@ -40,9 +40,7 @@ public class EnemyAI : MonoBehaviour {
 			Debug.LogError ("No player");
 			return;
 		}
-		seeker.StartPath (transform.position, target.position, OnPathComplete);
 
-		StartCoroutine (UpdatePath());
 
 
 	}
@@ -53,6 +51,14 @@ public class EnemyAI : MonoBehaviour {
 		{
 			player =  GameObject.Find ("RatPlayer(Clone)");
 			target = player.GetComponent<Transform>();
+			//player.gameObject.SetActive (false);
+			if(target == null)
+			{
+				Debug.LogError ("No player2");
+			}
+			seeker.StartPath (transform.position, target.position, OnPathComplete);
+
+			StartCoroutine (UpdatePath());
 		}
 	}
 
