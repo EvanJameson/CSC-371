@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class RatController : MonoBehaviour 
 {
-	public float speed = 2, jump_velocity = 5;
+	public float speed = 4, jump_velocity = 100;
 	public Transform ground_tf1, ground_tf2;
 	private Transform tf;
 	private Rigidbody2D rb;
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
+	public bool immortal;
 
 	public bool gt1 = false, gt2 = false;
+	//private bool moving = false; //for moving platforms
 
     public GameObject leftPuff;
     public GameObject rightPuff;
@@ -65,9 +67,18 @@ public class RatController : MonoBehaviour
 
 		Sprint ();
 
-		if (Input.GetButtonDown("Jump"))
+		if (Input.GetKey("space"))
 		{
 			Jump ();
+		}
+	}
+
+	public void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.gameObject.CompareTag("Toxic") && !immortal)
+		{
+			//died, add a menu, sound or something
+			gameObject.SetActive (false);
 		}
 	}
 
@@ -81,6 +92,18 @@ public class RatController : MonoBehaviour
 		if(other.gameObject.CompareTag("Rope"))
 		{
 			Chew (other);
+		}
+
+		if(other.gameObject.CompareTag("Box"))
+		{
+			/*Vector2 move_velocity = rb.velocity;
+			Rigidbody2D orb = GetComponent<Rigidbody2D> ();
+			Vector2 box_velocity = orb.velocity;
+			move_velocity.x += box_velocity.x;// * speed;
+			rb.velocity = move_velocity;*/
+			Transform otf = GetComponent<Transform> ();
+			transform.position = otf.position;
+			print ("yeah");
 		}
 	}
 
@@ -122,10 +145,11 @@ public class RatController : MonoBehaviour
 
 	public void Jump()
 	{
+		Vector2 high = new Vector2 (0f,2.3f);
 		if(gt1 || gt2)
 		{
 			//vector2.up is a vector of (0,1)
-			rb.velocity += CharacterControl.instance.jump_velocity * Vector2.up;
+			rb.velocity += CharacterControl.instance.jump_velocity * Vector2.up;// * high;
             FindObjectOfType<AudioManager>().Play("Jump");
         }	
 	}
@@ -136,12 +160,12 @@ public class RatController : MonoBehaviour
 		//Sprinting
 		if(Input.GetButtonDown("Fire3"))
 		{
-			speed = 4f;
+			speed = 6f;
 
 		}
 		else if(Input.GetButtonUp("Fire3"))
 		{
-			speed = 2f;
+			speed = 4f;
 
 		}
 	}
