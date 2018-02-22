@@ -188,7 +188,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1311389392830196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.519, y: -0.7, z: -0.05439639}
+  m_LocalPosition: {x: -0.51, y: -0.7, z: -0.05439639}
   m_LocalScale: {x: 1, y: 3.4768364, z: 1}
   m_Children: []
   m_Father: {fileID: 4510114560888264}
@@ -342,13 +342,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512a719917b841f458d82d48080a08d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  jump_velocity: 5
+  speed: 4
+  jump_velocity: 999999
   ground_tf1: {fileID: 4807889502265464}
   ground_tf2: {fileID: 4371453381917116}
   player_mask:
     serializedVersion: 2
     m_Bits: 4294967039
+  immortal: 1
   gt1: 0
   gt2: 0
   leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}

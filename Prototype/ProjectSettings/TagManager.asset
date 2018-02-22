@@ -10,7 +10,7 @@ TagManager:
   - Fake_platform
   - Rope
   - Box
-  - Obstacle
+  - Toxic
   layers:
   - Default
   - TransparentFX
