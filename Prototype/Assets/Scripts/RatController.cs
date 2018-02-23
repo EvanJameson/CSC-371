@@ -12,6 +12,8 @@ public class RatController : MonoBehaviour
 	public LayerMask player_mask;
 	public bool immortal;
 
+    public bool onLadder;
+
 	public bool gt1 = false, gt2 = false;
 	//private bool moving = false; //for moving platforms
 
@@ -44,30 +46,38 @@ public class RatController : MonoBehaviour
 
         bool hasLanded = false;
 
+
+        //the following are for ground puffs
         if (oldgt2 == false && gt2 == true && oldgt1 == false)
         {
-            //right puff
-            GameObject tempL = Instantiate(rightPuff, ground_tf2.transform.position, ground_tf2.transform.rotation);
-            Destroy(tempL, 0.5f);
+            if (rb.velocity.y <= 0 && !onLadder)
+            {
+                //right puff
+                GameObject tempL = Instantiate(rightPuff, ground_tf2.transform.position, ground_tf2.transform.rotation);
+                Destroy(tempL, 0.5f);
 
-            FindObjectOfType<AudioManager>().Play("LandingSound");
-            hasLanded = true;
+                FindObjectOfType<AudioManager>().Play("LandingSound");
+                hasLanded = true;
+            }
         }
         if (oldgt1 == false && gt1 == true && oldgt2 == false)
         {
-            //left puff
-            GameObject tempR = Instantiate(leftPuff, ground_tf1.transform.position, ground_tf1.transform.rotation);
-            Destroy(tempR, 0.5f);
-            if(!hasLanded)
+            if (rb.velocity.y <= 0 && !onLadder)
             {
-                FindObjectOfType<AudioManager>().Play("LandingSound");
+                //left puff
+                GameObject tempR = Instantiate(leftPuff, ground_tf1.transform.position, ground_tf1.transform.rotation);
+                Destroy(tempR, 0.5f);
+                if (!hasLanded)
+                {
+                    FindObjectOfType<AudioManager>().Play("LandingSound");
+                }
             }
         }
 
 
 		Sprint ();
 
-		if (Input.GetKey("space"))
+		if (Input.GetKey("space")) //this works better than getkeydown
 		{
 			Jump ();
 		}
@@ -87,7 +97,15 @@ public class RatController : MonoBehaviour
 		if(other.gameObject.CompareTag("Ladder"))
 		{
 			Climb ();
+
+
+            //this bool used for ground puffs
+            onLadder = true;
 		}
+        else
+        {
+            onLadder = false;
+        }
 
 		if(other.gameObject.CompareTag("Rope"))
 		{
