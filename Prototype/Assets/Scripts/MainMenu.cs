@@ -2,13 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
 
+	string currentLevel;
+
+	public Text start;
+
+	public void Start()
+	{
+		
+		if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainMenu"))
+		{
+			start.text +=  "\n" + PlayerPrefs.GetString("LevelAccess");
+		}
+	}
+
 	public void gameStart()
     {
-		//Maybe change this to previously loaded level?
-        SceneManager.LoadScene("1 - 1");
+		//this loads the first level on first play
+		//or current level based on progress
+		currentLevel = PlayerPrefs.GetString("LevelAccess");
+        SceneManager.LoadScene(currentLevel);
     }
 
 	public void levelSelect()
