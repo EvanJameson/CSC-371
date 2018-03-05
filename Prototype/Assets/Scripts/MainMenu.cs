@@ -13,13 +13,25 @@ public class MainMenu : MonoBehaviour {
 
 	public void levelSelect()
 	{
-		//figure out how to store these inbetween game launches yo
+		//just load new scene with level select
+		SceneManager.LoadScene("LevelSelect");
+	}
 
+	public void back()
+	{
+		SceneManager.LoadScene("MainMenu");
 	}
 
 	public void exit()
 	{
 		//quit game
 		Application.Quit();
+	}
+
+	//load the selected level
+	public void loadLevel(GameObject button)
+	{
+		//print (button.name);
+		SceneManager.LoadScene (button.name);
 	}
 }
