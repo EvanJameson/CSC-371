@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour {
 	public void gameStart()
     {
 		//Maybe change this to previously loaded level?
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("1 - 1");
     }
 
 	public void levelSelect()
