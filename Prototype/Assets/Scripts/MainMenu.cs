@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour {
 		
 		if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainMenu"))
 		{
-			start.text +=  "\n" + PlayerPrefs.GetString("LevelAccess");
+			start.text +=  "\n\n" + PlayerPrefs.GetString("LevelAccess");
 		}
 	}
 
@@ -49,5 +49,11 @@ public class MainMenu : MonoBehaviour {
 	{
 		//print (button.name);
 		SceneManager.LoadScene (button.name);
+	}
+
+	//for debug purposes wont be active in final version
+	public void wipeSave()
+	{
+		PlayerPrefs.SetString ("LevelAccess", "1 - 1");
 	}
 }

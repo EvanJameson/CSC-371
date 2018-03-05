@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class SavePrefs : MonoBehaviour {
 
+
+
 	string lvlKey = "LevelAccess";
 	string first;
 
 	// Use this for initialization
 	void Start () {
 		//only sets on first run
+		//PlayerPrefs.DeleteAll();
 		first = PlayerPrefs.GetString(lvlKey,"1 - 1");
 
 		if(first == "1 - 1")
 		{
+			
 			PlayerPrefs.SetString (lvlKey, "1 - 1");
 		}
 	}

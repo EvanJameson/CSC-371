@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage 1 - Sewer/1 - 1.unity
     guid: 886bf51ce422ade4a9d494bda735121e
   - enabled: 1
+    path: Assets/Scenes/Stage 1 - Sewer/1 - 1 maze.unity
+    guid: 55e86455c606ba547ae27ebe04a5a70c
+  - enabled: 1
     path: Assets/Scenes/Stage 1 - Sewer/1 - 2.unity
     guid: 507cfe29b43f5ae4d9d3eae1f39dc8e9
   - enabled: 1
@@ -44,7 +47,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/sewer_level4.unity
     guid: d68f5a9828f71f74392472170e18aae6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage 1 - Sewer/Maze.unity
     guid: e10b137f027fd40179ff8f4096f7b688
   - enabled: 1
