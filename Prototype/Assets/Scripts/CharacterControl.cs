@@ -18,9 +18,8 @@ public class CharacterControl : MonoBehaviour {
 		} else {
 			Destroy (gameObject);
 		}
-		DontDestroyOnLoad (gameObject);
-
 		this.characterNumber = -1;
+		DontDestroyOnLoad (gameObject);
 	}		
 
 }
