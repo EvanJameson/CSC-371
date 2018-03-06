@@ -25,7 +25,7 @@ public class PaperController : MonoBehaviour {
 				transform.RotateAround (transform.position, new Vector3 (0, 0, 1), -24.0f);
 				transform.localScale += new Vector3 (0.05f, 0.05f, 0.05f);
 			} else {
-				canvas.SendMessage ("RenderPaper");
+				canvas.SendMessage ("RenderPaper", gameObject);
 				animateIn = false;
 				Destroy (gameObject);
 			}
