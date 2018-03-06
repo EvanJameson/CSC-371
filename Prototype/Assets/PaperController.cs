@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PaperController : MonoBehaviour {
 
-	public GameObject xbutton;
-
 	private Vector3 offset = Vector3.zero;
 	private bool followCamera = false;
 	private bool animateIn = false;
@@ -37,7 +35,6 @@ public class PaperController : MonoBehaviour {
 			offset = transform.position - CharacterControl.instance.player.transform.position;
 			followCamera = true;
 			animateIn = true;
-			xbutton.SetActive (true);
 		}
 	}
 

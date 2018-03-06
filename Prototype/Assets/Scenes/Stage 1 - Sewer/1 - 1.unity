@@ -885,7 +885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b35f413430d3e4c00baac1558a5d9da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xbutton: {fileID: 289466721}
 --- !u!61 &184038878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2076,7 +2075,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: AnimateOut
+          m_StringArgument: Exit
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2100,7 +2099,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4638d82609e2b4f96b934312c4999eca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b7286e1e35de1439b8505d4a0f163921, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10682,11 +10681,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4283585508254610, guid: 8d26307dd97249042bb4896d011cb67e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 34.02
+      value: 44.82
       objectReference: {fileID: 0}
     - target: {fileID: 4283585508254610, guid: 8d26307dd97249042bb4896d011cb67e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.1
+      value: 2.06
       objectReference: {fileID: 0}
     - target: {fileID: 4283585508254610, guid: 8d26307dd97249042bb4896d011cb67e, type: 2}
       propertyPath: m_LocalPosition.z

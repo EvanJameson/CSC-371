@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61660864242311678}
   - component: {fileID: 114606899324126812}
   m_Layer: 11
-  m_Name: first-paper
+  m_Name: paper-prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b35f413430d3e4c00baac1558a5d9da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xbutton: {fileID: 0}
 --- !u!212 &212167836098669052
 SpriteRenderer:
   m_ObjectHideFlags: 1
