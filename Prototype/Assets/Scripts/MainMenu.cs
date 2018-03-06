@@ -54,6 +54,7 @@ public class MainMenu : MonoBehaviour {
 	//for debug purposes wont be active in final version
 	public void wipeSave()
 	{
+		PlayerPrefs.DeleteAll ();
 		PlayerPrefs.SetString ("LevelAccess", "1 - 1");
 	}
 }

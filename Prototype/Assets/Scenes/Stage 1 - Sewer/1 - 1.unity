@@ -2328,6 +2328,7 @@ MonoBehaviour:
   lives: {fileID: 229771838}
   gradeIcon: {fileID: 575843553}
   grade: {fileID: 1016237044}
+  currentLevel: 1 - 1
 --- !u!1 &376555466
 GameObject:
   m_ObjectHideFlags: 0
@@ -9206,6 +9207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 232888017}
+  levelComplete: {fileID: 0}
 --- !u!114 &972523709
 MonoBehaviour:
   m_ObjectHideFlags: 0

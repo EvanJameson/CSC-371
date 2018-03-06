@@ -23,6 +23,7 @@ public class CompleteLevel : MonoBehaviour {
 
 	private int gradeCase = 0;
 	private string[] grades = new string[]{"C","B","A","S"};
+	private string checkGrade;
 	//C = no pages, you died, and didnt complete in time
 	//B = 1/3
 	//A = 2/3
@@ -44,6 +45,7 @@ public class CompleteLevel : MonoBehaviour {
 	public Text grade;
 
 	private string currentGrade;
+	public string currentLevel;
 
 	public void Start()
 	{
@@ -148,15 +150,15 @@ public class CompleteLevel : MonoBehaviour {
 	//called by on click of button in end stage overlay
 	public void levelAccess()
 	{
-		progress = PlayerPrefs.GetString ("LevelAccess");
-		progressIndex = SceneManager.GetSceneByName (progress).buildIndex;
-		nextIndex = SceneManager.GetSceneByName (nextLevel).buildIndex;
+		//check if the current level has a grade, if yes then set, else no
+		checkGrade = PlayerPrefs.GetString(currentLevel, "none");
 
 		//so if you have progressed further and go backwards it doesnt reset progress
 		//pipes tho
-		print("progress index: " + progressIndex + " nextIndex: " + nextIndex);
-		if(progressIndex <= nextIndex)
+	
+		if(checkGrade == "none")
 		{
+			print ("worked");
 			PlayerPrefs.SetString ("LevelAccess", nextLevel);
 		}
 

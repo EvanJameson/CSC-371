@@ -20,8 +20,8 @@ public class PauseMenu : MonoBehaviour {
             }
             else
             {
-                //pauseGame();
-				exitToMenu();
+                pauseGame();
+				//exitToMenu();
 			}
         }
 	}
@@ -51,6 +51,7 @@ public class PauseMenu : MonoBehaviour {
 	public void exitToMenu()
 	{
 		Time.timeScale = 1;
+		pauseMenu.SetActive(false);
 		SceneManager.LoadScene("MainMenu");
 	}
 }
