@@ -19,8 +19,9 @@ public class PauseMenu : MonoBehaviour {
             }
             else
             {
-                pauseGame();
-            }
+                //pauseGame();
+				exitToMenu();
+			}
         }
 	}
 
@@ -45,4 +46,10 @@ public class PauseMenu : MonoBehaviour {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+	public void exitToMenu()
+	{
+		Time.timeScale = 1;
+		SceneManager.LoadScene("MainMenu");
+	}
 }
