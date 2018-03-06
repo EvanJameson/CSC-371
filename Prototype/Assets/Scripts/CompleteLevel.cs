@@ -19,6 +19,7 @@ public class CompleteLevel : MonoBehaviour {
 
 			//so if you have progressed further and go backwards it doesnt reset progress
 			//pipes tho
+			print("progress index: " + progressIndex + " nextIndex: " + nextIndex);
 			if(progressIndex <= nextIndex)
 			{
 				PlayerPrefs.SetString ("LevelAccess", nextLevel);
