@@ -18,6 +18,7 @@ TagManager:
   - AsteroidTag
   - EnemyBulletTag
   - EnemyShipTag
+  - PlayerBulletTag
   layers:
   - Default
   - TransparentFX
