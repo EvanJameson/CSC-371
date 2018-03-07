@@ -8,7 +8,7 @@ public class catShockwave : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		speed = 8f;
+		speed = 4f;
 	}
 	
 	// Update is called once per frame
