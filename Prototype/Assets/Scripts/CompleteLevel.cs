@@ -111,7 +111,7 @@ public class CompleteLevel : MonoBehaviour {
 		//so if you have progressed further and go backwards it doesnt reset progress
 		//pipes tho
 
-		print (checkGrade);
+		//print (checkGrade);
 
 		if(checkGrade.Equals("none"))
 		{
