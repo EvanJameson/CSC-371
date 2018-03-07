@@ -26,6 +26,9 @@ public class SavePrefs : MonoBehaviour {
 			
 			PlayerPrefs.SetString (lvlKey, "1 - 1");
 		}
+
+		//everytime you enter main menu lives resets
+		PlayerPrefs.SetInt ("lives",5);
 	}
 	
 	// Update is called once per frame
