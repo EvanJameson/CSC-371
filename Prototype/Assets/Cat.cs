@@ -10,6 +10,7 @@ public class Cat : MonoBehaviour {
 	bool isgrounded = false;
 	bool hasWaved= false;
 
+    private float myX;
 
 	public GameObject PlayerBulletGO;
 	public GameObject PlayerBulletGO2;
@@ -18,17 +19,25 @@ public class Cat : MonoBehaviour {
 
 	void Awake(){
 		myRigidbody = GetComponent<Rigidbody2D> ();
-
 	}
 	// Use this for initialization
 	void Start () {
+        myX = transform.position.x;
 		StartCoroutine (Jump ());
 	}
 
-	IEnumerator Jump(){
+    private void Update()
+    {
+        if(transform.position.x != 8.53)
+        {
+            transform.position = new Vector3(myX, transform.position.y, transform.position.z) ;
+        }
+    }
+
+    IEnumerator Jump(){
 		yield return new WaitForSeconds (Random.Range (3, 10));
 		//forceY = Random.Range (250, 400);
-		myRigidbody.AddForce (new Vector2 (0, 500f));
+		myRigidbody.AddForce (new Vector2 (0, 500f * 1500f));
 		hasWaved = false;
 		yield return new WaitForSeconds (2.0f);
 		GameObject bullet01 = (GameObject)Instantiate (PlayerBulletGO);
