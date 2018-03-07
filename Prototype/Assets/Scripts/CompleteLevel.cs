@@ -88,56 +88,11 @@ public class CompleteLevel : MonoBehaviour {
 			//display grade
 			grade.text = "Grade: " + grades[gradeCase];
 
-			//set grade for this level in PlayerPrefs, will be displayed on level select
-			//only sets if new grade is better than past grade
-			currentGrade = PlayerPrefs.GetString(SceneManager.GetActiveScene().name);
-			if(currentGrade == grades[gradeCase]) //same value
-			{
-				PlayerPrefs.SetString(SceneManager.GetActiveScene().name, grades[gradeCase]);
-			}
-			else if(currentGrade != "S")//set if anything other than S in past score
-			{
-				
-				if(currentGrade == "A")
-				{
-					if(grades[gradeCase] == "S")
-					{
-						PlayerPrefs.SetString(SceneManager.GetActiveScene().name, grades[gradeCase]);
-					}
-				}
-				else if(currentGrade == "B")
-				{
-					if(grades[gradeCase] == "S")
-					{
-						PlayerPrefs.SetString(SceneManager.GetActiveScene().name, grades[gradeCase]);
-					}
-					else if(grades[gradeCase] == "A")
-					{
-						PlayerPrefs.SetString(SceneManager.GetActiveScene().name, grades[gradeCase]);
-					}
-				}
-				else if(currentGrade == "C")
-				{
-					if(grades[gradeCase] == "S")
-					{
-						PlayerPrefs.SetString(SceneManager.GetActiveScene().name, grades[gradeCase]);
-					}
-					else if(grades[gradeCase] == "A")
-					{
-						PlayerPrefs.SetString(SceneManager.GetActiveScene().name, grades[gradeCase]);
-					}
-					else if(grades[gradeCase] == "B")
-					{
-						PlayerPrefs.SetString(SceneManager.GetActiveScene().name, grades[gradeCase]);
-					}
-				}
-				else //if nothing 
-				{
-					PlayerPrefs.SetString(SceneManager.GetActiveScene().name, grades[gradeCase]);
-				}
-			}
-			complete = false;
+
+
 		}
+		complete = false;
+
 	}
 
 	public void OnTriggerEnter2D(Collider2D other) {
@@ -155,16 +110,49 @@ public class CompleteLevel : MonoBehaviour {
 
 		//so if you have progressed further and go backwards it doesnt reset progress
 		//pipes tho
-	
-		if(checkGrade == "none")
+
+		print (checkGrade);
+
+		if(checkGrade.Equals("none"))
 		{
 			print ("worked");
 			PlayerPrefs.SetString ("LevelAccess", nextLevel);
 		}
 
+		//set grade for this level in PlayerPrefs, will be displayed on level select
+		//only sets if new grade is better than past grade
+		currentGrade = PlayerPrefs.GetString(SceneManager.GetActiveScene().name);
+
+		if (currentGrade == grades [gradeCase]) { //same value
+			PlayerPrefs.SetString (SceneManager.GetActiveScene ().name, grades [gradeCase]);
+		} else if (currentGrade != "S") {//set if anything other than S in past score
+
+			if (currentGrade == "A") {
+				if (grades [gradeCase] == "S") {
+					PlayerPrefs.SetString (SceneManager.GetActiveScene ().name, grades [gradeCase]);
+				}
+			} else if (currentGrade == "B") {
+				if (grades [gradeCase] == "S") {
+					PlayerPrefs.SetString (SceneManager.GetActiveScene ().name, grades [gradeCase]);
+				} else if (grades [gradeCase] == "A") {
+					PlayerPrefs.SetString (SceneManager.GetActiveScene ().name, grades [gradeCase]);
+				}
+			} else if (currentGrade == "C") {
+				if (grades [gradeCase] == "S") {
+					PlayerPrefs.SetString (SceneManager.GetActiveScene ().name, grades [gradeCase]);
+				} else if (grades [gradeCase] == "A") {
+					PlayerPrefs.SetString (SceneManager.GetActiveScene ().name, grades [gradeCase]);
+				} else if (grades [gradeCase] == "B") {
+					PlayerPrefs.SetString (SceneManager.GetActiveScene ().name, grades [gradeCase]);
+				}
+			} else { //if nothing 
+				PlayerPrefs.SetString (SceneManager.GetActiveScene ().name, grades [gradeCase]);
+			}
+		}
 		panel (false);
 
 		Time.timeScale = 1;
+		Destroy (GameObject.Find("Canvas"));
 		SceneManager.LoadScene (nextLevel);
 	}
 

@@ -44,7 +44,9 @@ public class PauseMenu : MonoBehaviour {
 
     public void restart()
     {
+		pauseMenu.SetActive (false);
         Time.timeScale = 1;
+		Destroy (GameObject.Find("Canvas"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -52,6 +54,7 @@ public class PauseMenu : MonoBehaviour {
 	{
 		Time.timeScale = 1;
 		pauseMenu.SetActive(false);
+		Destroy (GameObject.Find("Canvas"));
 		SceneManager.LoadScene("MainMenu");
 	}
 }
