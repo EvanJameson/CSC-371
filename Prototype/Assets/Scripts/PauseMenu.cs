@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour {
 	public static bool isPaused = false;
 
     public GameObject pauseMenu;
+	public GameObject levelComplete;
 
 	// Update is called once per frame
 	void Update () {
@@ -20,7 +21,8 @@ public class PauseMenu : MonoBehaviour {
             else
             {
                 pauseGame();
-            }
+				//exitToMenu();
+			}
         }
 	}
 
@@ -42,7 +44,17 @@ public class PauseMenu : MonoBehaviour {
 
     public void restart()
     {
+		pauseMenu.SetActive (false);
         Time.timeScale = 1;
+		Destroy (GameObject.Find("Canvas"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+	public void exitToMenu()
+	{
+		Time.timeScale = 1;
+		pauseMenu.SetActive(false);
+		Destroy (GameObject.Find("Canvas"));
+		SceneManager.LoadScene("MainMenu");
+	}
 }
