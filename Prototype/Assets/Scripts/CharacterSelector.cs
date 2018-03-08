@@ -12,6 +12,10 @@ public class CharacterSelector : MonoBehaviour {
 		KeyCode.Alpha3,
 	};
 
+	void Awake(){
+		DontDestroyOnLoad (gameObject);
+	}
+
 	void Start() {
 		OnCharacterSelect (0);
 	}
