@@ -26,7 +26,7 @@ public class CatBossLevelController : MonoBehaviour {
         {
             if(!box1.activeInHierarchy)
             {
-                hanging2.SetActive(true);
+                hanging3.SetActive(true);
             }
         }
         if(hanging3.activeInHierarchy)
