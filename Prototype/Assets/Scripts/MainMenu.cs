@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour {
 		
 		if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainMenu"))
 		{
-			start.text +=  "\n\n" + PlayerPrefs.GetString("LevelAccess");
+			start.text +=  "  " + PlayerPrefs.GetString("LevelAccess");
 		}
 	}
 
@@ -31,6 +31,11 @@ public class MainMenu : MonoBehaviour {
 	{
 		//just load new scene with level select
 		SceneManager.LoadScene("LevelSelect");
+	}
+
+	public void pageCollection()
+	{
+		SceneManager.LoadScene("PageCollection");
 	}
 
 	public void back()

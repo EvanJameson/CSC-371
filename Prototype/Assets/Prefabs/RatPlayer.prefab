@@ -349,7 +349,7 @@ MonoBehaviour:
   player_mask:
     serializedVersion: 2
     m_Bits: 4294967039
-  immortal: 1
+  immortal: 0
   gt1: 0
   gt2: 0
   leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}

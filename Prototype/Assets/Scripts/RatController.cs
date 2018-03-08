@@ -13,6 +13,8 @@ public class RatController : MonoBehaviour
 	public bool immortal;
 	private int lives;
 
+	private LivesController lc;
+
 	public bool gt1 = false, gt2 = false;
 	//private bool moving = false; //for moving platforms
 
@@ -77,6 +79,7 @@ public class RatController : MonoBehaviour
 
 
 	//CHECK FOR DEATH HERE
+	//bug, touching toxic triggers this twice
 	public void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.CompareTag("Toxic") && !immortal)
@@ -84,6 +87,9 @@ public class RatController : MonoBehaviour
 			//died, add a menu, sound or something
 			lives--;
 			PlayerPrefs.SetInt ("lives", lives);
+			lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
+			lc.removeLife ();
+
 			if(lives == 0)
 			{
 				//add menu that asks to retry or exit to main menu
