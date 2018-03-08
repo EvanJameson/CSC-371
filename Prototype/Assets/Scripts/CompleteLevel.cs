@@ -49,7 +49,8 @@ public class CompleteLevel : MonoBehaviour {
 
 	public void Start()
 	{
-		goalLives = PlayerPrefs.GetInt ("lives");
+		PlayerPrefs.SetInt ("lives", 5);
+		goalLives = 5;//PlayerPrefs.GetInt ("lives");
 	}
 
 	public void Update()
@@ -151,6 +152,8 @@ public class CompleteLevel : MonoBehaviour {
 		}
 		panel (false);
 
+
+
 		Time.timeScale = 1;
 		Destroy (GameObject.Find("Canvas"));
 		SceneManager.LoadScene (nextLevel);
@@ -168,7 +171,7 @@ public class CompleteLevel : MonoBehaviour {
 		levelComplete.SetActive (active);
 		pageIcon.SetActive (active);
 		timerIcon.SetActive (active);
-		nextLevelButton.SetActive(active);
+		nextLevelButton.SetActive (active);
 		lifeIcon.SetActive (active);
 		gradeIcon.SetActive (active);
 	}

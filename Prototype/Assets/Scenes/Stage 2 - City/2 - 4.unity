@@ -2519,7 +2519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5396894dc644e9592c33b735dcb06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 1 - 4
+  nextLevel: 3 - 1
   goalPages: 1
   pagesGot: 0
   goalTime: 10
@@ -2533,7 +2533,7 @@ MonoBehaviour:
   lives: {fileID: 229771838}
   gradeIcon: {fileID: 575843553}
   grade: {fileID: 1016237044}
-  currentLevel: 1 - 3
+  currentLevel: 2 - 4
 --- !u!1 &376555466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5304,8 +5304,8 @@ Tilemap:
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 2
-      m_ColliderType: 1
+      m_TileFlags: 0
+      m_ColliderType: 0
   - first: {x: -24, y: -3, z: 0}
     second:
       m_TileIndex: 4
@@ -6011,31 +6011,31 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 255
     m_Data: {fileID: 21300000, guid: 2a7ce037412604ff5a358326af515a62, type: 3}
-  - m_RefCount: 85
+  - m_RefCount: 84
     m_Data: {fileID: 21300000, guid: aa66532c0125a6e458b8a3e585dd088a, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1
+  - m_RefCount: 0
     m_Data:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
+      e00: 5
+      e01: 3e-45
+      e02: -0.00000011990323
+      e03: 8.791365e-39
+      e10: 16
+      e11: 0
+      e12: 6.3814e-41
       e13: 0
       e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
+      e21: 27.13733
+      e22: NaN
+      e23: 0.00000036769757
       e30: 0
       e31: 0
-      e32: 0
-      e33: 1
+      e32: 1e-45
+      e33: 0
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: 0, g: 0, b: 21.71306, a: 1e-45}
-  - m_RefCount: 340
+  - m_RefCount: 339
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 0.14143598, g: 0.8014706, b: 0.16767682, a: 1}
