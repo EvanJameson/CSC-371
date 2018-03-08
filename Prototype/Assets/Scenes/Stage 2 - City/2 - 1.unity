@@ -5401,7 +5401,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ba3e30b8e9dc42c2b2ed0201c8783fd, type: 2}
   - {fileID: 11400000, guid: 95a43266651354c25a0f694daf36faf1, type: 2}
   - {fileID: 11400000, guid: 511c9e3368bd042a9862397ba4fc774c, type: 2}
-  characterSelectPanel: {fileID: 1735893307}
   abilityPanel: {fileID: 2136439556}
 --- !u!114 &79327975
 MonoBehaviour:
@@ -5415,6 +5414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1421856378}
+  levelComplete: {fileID: 0}
 --- !u!114 &79327976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6266,7 +6266,7 @@ Transform:
   m_LocalScale: {x: 0.11226498, y: 0.11226498, z: 0.11226498}
   m_Children: []
   m_Father: {fileID: 1847923703}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.61}
 --- !u!50 &589233018
 Rigidbody2D:
@@ -8521,6 +8521,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 235526160}
+  - {fileID: 589233017}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -107,6 +107,7 @@ public class RatController : MonoBehaviour
 
 		if (other.gameObject.CompareTag ("Enemy") &&
 			Input.GetButtonDown("Fire1")) {
+		}
 
 		if(other.gameObject.CompareTag("Box"))
 		{
