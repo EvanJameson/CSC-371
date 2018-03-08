@@ -1,0 +1,4332 @@
+fileFormatVersion: 2
+guid: ddb4f11bc15eef0479127fe24310c9dd
+timeCreated: 1519005438
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: croc_eat01SheetBright750_0
+    21300002: croc_eat01SheetBright750_1
+    21300004: croc_eat01SheetBright750_2
+    21300006: croc_eat01SheetBright750_3
+    21300008: croc_eat01SheetBright750_4
+    21300010: croc_eat01SheetBright750_5
+    21300012: croc_eat01SheetBright750_6
+    21300014: croc_eat01SheetBright750_7
+    21300016: croc_eat01SheetBright750_8
+    21300018: croc_eat01SheetBright750_9
+    21300020: croc_eat01SheetBright750_10
+    21300022: croc_eat01SheetBright750_11
+    21300024: croc_eat01SheetBright750_12
+    21300026: croc_eat01SheetBright750_13
+    21300028: croc_eat01SheetBright750_14
+    21300030: croc_eat01SheetBright750_15
+    21300032: croc_eat01SheetBright750_16
+    21300034: croc_eat01SheetBright750_17
+    21300036: croc_eat01SheetBright750_18
+    21300038: croc_eat01SheetBright750_19
+    21300040: croc_eat01SheetBright750_20
+    21300042: croc_eat01SheetBright750_21
+    21300044: croc_eat01SheetBright750_22
+    21300046: croc_eat01SheetBright750_23
+    21300048: croc_eat01SheetBright750_24
+    21300050: croc_eat01SheetBright750_25
+    21300052: croc_eat01SheetBright750_26
+    21300054: croc_eat01SheetBright750_27
+    21300056: croc_eat01SheetBright750_28
+    21300058: croc_eat01SheetBright750_29
+    21300060: croc_eat01SheetBright750_30
+    21300062: croc_eat01SheetBright750_31
+    21300064: croc_eat01SheetBright750_32
+    21300066: croc_eat01SheetBright750_33
+    21300068: croc_eat01SheetBright750_34
+    21300070: croc_eat01SheetBright750_35
+    21300072: croc_eat01SheetBright750_36
+    21300074: croc_eat01SheetBright750_37
+    21300076: croc_eat01SheetBright750_38
+    21300078: croc_eat01SheetBright750_39
+    21300080: croc_eat01SheetBright750_40
+    21300082: croc_eat01SheetBright750_41
+    21300084: croc_eat01SheetBright750_42
+    21300086: croc_eat01SheetBright750_43
+    21300088: croc_eat01SheetBright750_44
+    21300090: croc_eat01SheetBright750_45
+    21300092: croc_eat01SheetBright750_46
+    21300094: croc_eat01SheetBright750_47
+    21300096: croc_eat01SheetBright750_48
+    21300098: croc_eat01SheetBright750_49
+    21300100: croc_eat01SheetBright750_50
+    21300102: croc_eat01SheetBright750_51
+    21300104: croc_eat01SheetBright750_52
+    21300106: croc_eat01SheetBright750_53
+    21300108: croc_eat01SheetBright750_54
+    21300110: croc_eat01SheetBright750_55
+    21300112: croc_eat01SheetBright750_56
+    21300114: croc_eat01SheetBright750_57
+    21300116: croc_eat01SheetBright750_58
+    21300118: croc_eat01SheetBright750_59
+    21300120: croc_eat01SheetBright750_60
+    21300122: croc_eat01SheetBright750_61
+    21300124: croc_eat01SheetBright750_62
+    21300126: croc_eat01SheetBright750_63
+    21300128: croc_eat01SheetBright750_64
+    21300130: croc_eat01SheetBright750_65
+    21300132: croc_eat01SheetBright750_66
+    21300134: croc_eat01SheetBright750_67
+    21300136: croc_eat01SheetBright750_68
+    21300138: croc_eat01SheetBright750_69
+    21300140: croc_eat01SheetBright750_70
+    21300142: croc_eat01SheetBright750_71
+    21300144: croc_eat01SheetBright750_72
+    21300146: croc_eat01SheetBright750_73
+    21300148: croc_eat01SheetBright750_74
+    21300150: croc_eat01SheetBright750_75
+    21300152: croc_eat01SheetBright750_76
+    21300154: croc_eat01SheetBright750_77
+    21300156: croc_eat01SheetBright750_78
+    21300158: croc_eat01SheetBright750_79
+    21300160: croc_eat01SheetBright750_80
+    21300162: croc_eat01SheetBright750_81
+    21300164: croc_eat01SheetBright750_82
+    21300166: croc_eat01SheetBright750_83
+    21300168: croc_eat01SheetBright750_84
+    21300170: croc_eat01SheetBright750_85
+    21300172: croc_eat01SheetBright750_86
+    21300174: croc_eat01SheetBright750_87
+    21300176: croc_eat01SheetBright750_88
+    21300178: croc_eat01SheetBright750_89
+    21300180: croc_eat01SheetBright750_90
+    21300182: croc_eat01SheetBright750_91
+    21300184: croc_eat01SheetBright750_92
+    21300186: croc_eat01SheetBright750_93
+    21300188: croc_eat01SheetBright750_94
+    21300190: croc_eat01SheetBright750_95
+    21300192: croc_eat01SheetBright750_96
+    21300194: croc_eat01SheetBright750_97
+    21300196: croc_eat01SheetBright750_98
+    21300198: croc_eat01SheetBright750_99
+    21300200: croc_eat01SheetBright750_100
+    21300202: croc_eat01SheetBright750_101
+    21300204: croc_eat01SheetBright750_102
+    21300206: croc_eat01SheetBright750_103
+    21300208: croc_eat01SheetBright750_104
+    21300210: croc_eat01SheetBright750_105
+    21300212: croc_eat01SheetBright750_106
+    21300214: croc_eat01SheetBright750_107
+    21300216: croc_eat01SheetBright750_108
+    21300218: croc_eat01SheetBright750_109
+    21300220: croc_eat01SheetBright750_110
+    21300222: croc_eat01SheetBright750_111
+    21300224: croc_eat01SheetBright750_112
+    21300226: croc_eat01SheetBright750_113
+    21300228: croc_eat01SheetBright750_114
+    21300230: croc_eat01SheetBright750_115
+    21300232: croc_eat01SheetBright750_116
+    21300234: croc_eat01SheetBright750_117
+    21300236: croc_eat01SheetBright750_118
+    21300238: croc_eat01SheetBright750_119
+    21300240: croc_eat01SheetBright750_120
+    21300242: croc_eat01SheetBright750_121
+    21300244: croc_eat01SheetBright750_122
+    21300246: croc_eat01SheetBright750_123
+    21300248: croc_eat01SheetBright750_124
+    21300250: croc_eat01SheetBright750_125
+    21300252: croc_eat01SheetBright750_126
+    21300254: croc_eat01SheetBright750_127
+    21300256: croc_eat01SheetBright750_128
+    21300258: croc_eat01SheetBright750_129
+    21300260: croc_eat01SheetBright750_130
+    21300262: croc_eat01SheetBright750_131
+    21300264: croc_eat01SheetBright750_132
+    21300266: croc_eat01SheetBright750_133
+    21300268: croc_eat01SheetBright750_134
+    21300270: croc_eat01SheetBright750_135
+    21300272: croc_eat01SheetBright750_136
+    21300274: croc_eat01SheetBright750_137
+    21300276: croc_eat01SheetBright750_138
+    21300278: croc_eat01SheetBright750_139
+    21300280: croc_eat01SheetBright750_140
+    21300282: croc_eat01SheetBright750_141
+    21300284: croc_eat01SheetBright750_142
+    21300286: croc_eat01SheetBright750_143
+    21300288: croc_eat01SheetBright750_144
+    21300290: croc_eat01SheetBright750_145
+    21300292: croc_eat01SheetBright750_146
+    21300294: croc_eat01SheetBright750_147
+    21300296: croc_eat01SheetBright750_148
+    21300298: croc_eat01SheetBright750_149
+    21300300: croc_eat01SheetBright750_150
+    21300302: croc_eat01SheetBright750_151
+    21300304: croc_eat01SheetBright750_152
+    21300306: croc_eat01SheetBright750_153
+    21300308: croc_eat01SheetBright750_154
+    21300310: croc_eat01SheetBright750_155
+    21300312: croc_eat01SheetBright750_156
+    21300314: croc_eat01SheetBright750_157
+    21300316: croc_eat01SheetBright750_158
+    21300318: croc_eat01SheetBright750_159
+    21300320: croc_eat01SheetBright750_160
+    21300322: croc_eat01SheetBright750_161
+    21300324: croc_eat01SheetBright750_162
+    21300326: croc_eat01SheetBright750_163
+    21300328: croc_eat01SheetBright750_164
+    21300330: croc_eat01SheetBright750_165
+    21300332: croc_eat01SheetBright750_166
+    21300334: croc_eat01SheetBright750_167
+    21300336: croc_eat01SheetBright750_168
+    21300338: croc_eat01SheetBright750_169
+    21300340: croc_eat01SheetBright750_170
+    21300342: croc_eat01SheetBright750_171
+    21300344: croc_eat01SheetBright750_172
+    21300346: croc_eat01SheetBright750_173
+    21300348: croc_eat01SheetBright750_174
+    21300350: croc_eat01SheetBright750_175
+    21300352: croc_eat01SheetBright750_176
+    21300354: croc_eat01SheetBright750_177
+    21300356: croc_eat01SheetBright750_178
+    21300358: croc_eat01SheetBright750_179
+    21300360: croc_eat01SheetBright750_180
+    21300362: croc_eat01SheetBright750_181
+    21300364: croc_eat01SheetBright750_182
+    21300366: croc_eat01SheetBright750_183
+    21300368: croc_eat01SheetBright750_184
+    21300370: croc_eat01SheetBright750_185
+    21300372: croc_eat01SheetBright750_186
+    21300374: croc_eat01SheetBright750_187
+    21300376: croc_eat01SheetBright750_188
+    21300378: croc_eat01SheetBright750_189
+    21300380: croc_eat01SheetBright750_190
+    21300382: croc_eat01SheetBright750_191
+    21300384: croc_eat01SheetBright750_192
+    21300386: croc_eat01SheetBright750_193
+    21300388: croc_eat01SheetBright750_194
+    21300390: croc_eat01SheetBright750_195
+    21300392: croc_eat01SheetBright750_196
+    21300394: croc_eat01SheetBright750_197
+    21300396: croc_eat01SheetBright750_198
+    21300398: croc_eat01SheetBright750_199
+    21300400: croc_eat01SheetBright750_200
+    21300402: croc_eat01SheetBright750_201
+    21300404: croc_eat01SheetBright750_202
+    21300406: croc_eat01SheetBright750_203
+    21300408: croc_eat01SheetBright750_204
+    21300410: croc_eat01SheetBright750_205
+    21300412: croc_eat01SheetBright750_206
+    21300414: croc_eat01SheetBright750_207
+    21300416: croc_eat01SheetBright750_208
+    21300418: croc_eat01SheetBright750_209
+    21300420: croc_eat01SheetBright750_210
+    21300422: croc_eat01SheetBright750_211
+    21300424: croc_eat01SheetBright750_212
+    21300426: croc_eat01SheetBright750_213
+    21300428: croc_eat01SheetBright750_214
+    21300430: croc_eat01SheetBright750_215
+    21300432: croc_eat01SheetBright750_216
+    21300434: croc_eat01SheetBright750_217
+    21300436: croc_eat01SheetBright750_218
+    21300438: croc_eat01SheetBright750_219
+    21300440: croc_eat01SheetBright750_220
+    21300442: croc_eat01SheetBright750_221
+    21300444: croc_eat01SheetBright750_222
+    21300446: croc_eat01SheetBright750_223
+    21300448: croc_eat01SheetBright750_224
+    21300450: croc_eat01SheetBright750_225
+    21300452: croc_eat01SheetBright750_226
+    21300454: croc_eat01SheetBright750_227
+    21300456: croc_eat01SheetBright750_228
+    21300458: croc_eat01SheetBright750_229
+    21300460: croc_eat01SheetBright750_230
+    21300462: croc_eat01SheetBright750_231
+    21300464: croc_eat01SheetBright750_232
+    21300466: croc_eat01SheetBright750_233
+    21300468: croc_eat01SheetBright750_234
+    21300470: croc_eat01SheetBright750_235
+    21300472: croc_eat01SheetBright750_236
+    21300474: croc_eat01SheetBright750_237
+    21300476: croc_eat01SheetBright750_238
+    21300478: croc_eat01SheetBright750_239
+    21300480: croc_eat01SheetBright750_240
+    21300482: croc_eat01SheetBright750_241
+    21300484: croc_eat01SheetBright750_242
+    21300486: croc_eat01SheetBright750_243
+    21300488: croc_eat01SheetBright750_244
+    21300490: croc_eat01SheetBright750_245
+    21300492: croc_eat01SheetBright750_246
+    21300494: croc_eat01SheetBright750_247
+    21300496: croc_eat01SheetBright750_248
+    21300498: croc_eat01SheetBright750_249
+    21300500: croc_eat01SheetBright750_250
+    21300502: croc_eat01SheetBright750_251
+    21300504: croc_eat01SheetBright750_252
+    21300506: croc_eat01SheetBright750_254
+    21300508: croc_eat01SheetBright750_255
+    21300510: croc_eat01SheetBright750_257
+    21300512: croc_eat01SheetBright750_258
+    21300514: croc_eat01SheetBright750_259
+    21300516: croc_eat01SheetBright750_260
+    21300518: croc_eat01SheetBright750_261
+    21300520: croc_eat01SheetBright750_262
+    21300522: croc_eat01SheetBright750_263
+    21300524: croc_eat01SheetBright750_264
+    21300526: croc_eat01SheetBright750_265
+    21300528: croc_eat01SheetBright750_266
+    21300530: croc_eat01SheetBright750_267
+    21300532: croc_eat01SheetBright750_268
+    21300534: croc_eat01SheetBright750_269
+    21300536: croc_eat01SheetBright750_270
+    21300538: croc_eat01SheetBright750_271
+    21300540: croc_eat01SheetBright750_272
+    21300542: croc_eat01SheetBright750_273
+    21300544: croc_eat01SheetBright750_274
+    21300546: croc_eat01SheetBright750_275
+    21300548: croc_eat01SheetBright750_276
+    21300550: croc_eat01SheetBright750_277
+    21300552: croc_eat01SheetBright750_278
+    21300554: croc_eat01SheetBright750_279
+    21300556: croc_eat01SheetBright750_280
+    21300558: croc_eat01SheetBright750_281
+    21300560: croc_eat01SheetBright750_282
+    21300562: croc_eat01SheetBright750_283
+    21300564: croc_eat01SheetBright750_253
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_0
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 1487
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_1
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1490
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_2
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 1495
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_3
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 1496
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_4
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 1484
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_5
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1489
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_6
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 1489
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_7
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 1492
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_8
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 1489
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_9
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1485
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_10
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 1485
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_11
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1482
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_12
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1484
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_13
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 1484
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_14
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1481
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_15
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 1479
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_16
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 756
+        width: 670
+        height: 723
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_17
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 753
+        width: 641
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_18
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1476
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_19
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 1476
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_20
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 1473
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_21
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 1476
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_22
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 752
+        width: 613
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_23
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 1467
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_24
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 1455
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_25
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 1438
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_26
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 1438
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_27
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1425
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_28
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 1425
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_29
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 1425
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_30
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 752
+        width: 652
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_31
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1408
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_32
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1401
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_33
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1387
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_34
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 1387
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_35
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1381
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_36
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 1379
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_37
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 1379
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_38
+      rect:
+        serializedVersion: 2
+        x: 3088
+        y: 1379
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_39
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1376
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_40
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1376
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_41
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 1376
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_42
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1370
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_43
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1359
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_44
+      rect:
+        serializedVersion: 2
+        x: 2369
+        y: 1359
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_45
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 1367
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_46
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1333
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_47
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1334
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_48
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 1333
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_49
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1324
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_50
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 1330
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_51
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 1328
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_52
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 1297
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_53
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 1288
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_54
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 1273
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_55
+      rect:
+        serializedVersion: 2
+        x: 3045
+        y: 1270
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_56
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 1274
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_57
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 1274
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_58
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 1253
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_59
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 1263
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_60
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 1262
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_61
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1239
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_62
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 1263
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_63
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 1225
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_64
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 1250
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_65
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 1239
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_66
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 1225
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_67
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 1226
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_68
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 1222
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_69
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 1222
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_70
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 1213
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_71
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 1216
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_72
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 1205
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_73
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 1205
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_74
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1194
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_75
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 1193
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_76
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 1197
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_77
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 1197
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_78
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 1186
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_79
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 1186
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_80
+      rect:
+        serializedVersion: 2
+        x: 3103
+        y: 1190
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_81
+      rect:
+        serializedVersion: 2
+        x: 3053
+        y: 1182
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_82
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 1173
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_83
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 1176
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_84
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1163
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_85
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 1162
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_86
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 1162
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_87
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 1163
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_88
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 1162
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_89
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 1162
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_90
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1154
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_91
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 1154
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_92
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1148
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_93
+      rect:
+        serializedVersion: 2
+        x: 3068
+        y: 1146
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_94
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 1142
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_95
+      rect:
+        serializedVersion: 2
+        x: 3068
+        y: 1136
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_96
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 1131
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_97
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 1122
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_98
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 1119
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_99
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 1125
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_100
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1111
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_101
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 1111
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_102
+      rect:
+        serializedVersion: 2
+        x: 3105
+        y: 1114
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_103
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 1105
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_104
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 1106
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_105
+      rect:
+        serializedVersion: 2
+        x: 3107
+        y: 1106
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_106
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 1094
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_107
+      rect:
+        serializedVersion: 2
+        x: 3077
+        y: 1100
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_108
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 1091
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_109
+      rect:
+        serializedVersion: 2
+        x: 3099
+        y: 1098
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_110
+      rect:
+        serializedVersion: 2
+        x: 3107
+        y: 1094
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_111
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 1078
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_112
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 1086
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_113
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1080
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_114
+      rect:
+        serializedVersion: 2
+        x: 3103
+        y: 1074
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_115
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 1072
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_116
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 1049
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_117
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 1068
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_118
+      rect:
+        serializedVersion: 2
+        x: 3096
+        y: 1065
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_119
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1058
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_120
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 1055
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_121
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 1057
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_122
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1052
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_123
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1029
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_124
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1044
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_125
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 1028
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_126
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 1029
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_127
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 1044
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_128
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 1045
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_129
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1037
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_130
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1051
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_131
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 1048
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_132
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1028
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_133
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 1040
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_134
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 1037
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_135
+      rect:
+        serializedVersion: 2
+        x: 3111
+        y: 1035
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_136
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 1028
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_137
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 1021
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_138
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 1020
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_139
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1008
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_140
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 1006
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_141
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 1005
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_142
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 995
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_143
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 1000
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_144
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 997
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_145
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 997
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_146
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 997
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_147
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 994
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_148
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 994
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_149
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 994
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_150
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 986
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_151
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 988
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_152
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 978
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_153
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 977
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_154
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 977
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_155
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 951
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_156
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 961
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_157
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 952
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_158
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 957
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_159
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 957
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_160
+      rect:
+        serializedVersion: 2
+        x: 3045
+        y: 952
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_161
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 957
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_162
+      rect:
+        serializedVersion: 2
+        x: 3088
+        y: 957
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_163
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 934
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_164
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 940
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_165
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 940
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_166
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 940
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_167
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 940
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_168
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 934
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_169
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 932
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_170
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 933
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_171
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 932
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_172
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 926
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_173
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 926
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_174
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 920
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_175
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 917
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_176
+      rect:
+        serializedVersion: 2
+        x: 3008
+        y: 920
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_177
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 912
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_178
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 912
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_179
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 909
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_180
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 904
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_181
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 906
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_182
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 907
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_183
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 903
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_184
+      rect:
+        serializedVersion: 2
+        x: 2294
+        y: 904
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_185
+      rect:
+        serializedVersion: 2
+        x: 3037
+        y: 906
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_186
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 907
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_187
+      rect:
+        serializedVersion: 2
+        x: 3077
+        y: 904
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_188
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 895
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_189
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 895
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_190
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 884
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_191
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 883
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_192
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 884
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_193
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 883
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_194
+      rect:
+        serializedVersion: 2
+        x: 2294
+        y: 878
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_195
+      rect:
+        serializedVersion: 2
+        x: 3083
+        y: 878
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_196
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 858
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_197
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 858
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_198
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 816
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_199
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 796
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_200
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 792
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_201
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 772
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_202
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 786
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_203
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 769
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_204
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 772
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_205
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 769
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_206
+      rect:
+        serializedVersion: 2
+        x: 2294
+        y: 764
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_207
+      rect:
+        serializedVersion: 2
+        x: 3083
+        y: 764
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_208
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 755
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_209
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 756
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_210
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 758
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_211
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 755
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_212
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 755
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_213
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 755
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_214
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 752
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_215
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 752
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_216
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 753
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_217
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 752
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_218
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 730
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_219
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 730
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_220
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 730
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_221
+      rect:
+        serializedVersion: 2
+        x: 2827
+        y: 735
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_222
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 729
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_223
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 685
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_224
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 684
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_225
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 685
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_226
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 8
+        width: 697
+        height: 707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_227
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 675
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_228
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 675
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_229
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 675
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_230
+      rect:
+        serializedVersion: 2
+        x: 3099
+        y: 675
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_231
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2
+        width: 609
+        height: 658
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_232
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 654
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_233
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 653
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_234
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 654
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_235
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 625
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_236
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 624
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_237
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 627
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_238
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 625
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_239
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 601
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_240
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 602
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_241
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 587
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_242
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 590
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_243
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 584
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_244
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 588
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_245
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 590
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_246
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 584
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_247
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 564
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_248
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 573
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_249
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 564
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_250
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 573
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_251
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 530
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_252
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 533
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_254
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 527
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_255
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 523
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_257
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 525
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_258
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 522
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_259
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 502
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_260
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 513
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_261
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 513
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_262
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 494
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_263
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 480
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_264
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 488
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_265
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 476
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_266
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 471
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_267
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 456
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_268
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 437
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_269
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 294
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_270
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 203
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_271
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 190
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_272
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 191
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_273
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 183
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_274
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 183
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_275
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 154
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_276
+      rect:
+        serializedVersion: 2
+        x: 3083
+        y: 154
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_277
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_278
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 1
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_279
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 2
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_280
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 1
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_281
+      rect:
+        serializedVersion: 2
+        x: 2787
+        y: 4
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_282
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 2
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_283
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 387
+        width: 365
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: croc_eat01SheetBright750_253
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 356
+        width: 437
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

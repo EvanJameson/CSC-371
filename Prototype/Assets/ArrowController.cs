@@ -15,11 +15,12 @@ public class ArrowController : MonoBehaviour {
 		y0 = transform.position.y;
 		x = transform.position.x;
 		y = transform.position.y;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position =new Vector3(x, y0 + amplitude * Mathf.Sin (speed * Time.time),y);
+		transform.position =new Vector3(x, y0 + amplitude * Mathf.Sin (speed * Time.time),0);
 	}
 
 }

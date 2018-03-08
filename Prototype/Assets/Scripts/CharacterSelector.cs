@@ -5,7 +5,6 @@ using UnityEngine;
 public class CharacterSelector : MonoBehaviour {
 
 	public Character[] characters;
-	public GameObject characterSelectPanel;
 	public GameObject abilityPanel;
 	private KeyCode[] charCodes = {
 		KeyCode.Alpha1,
@@ -13,13 +12,16 @@ public class CharacterSelector : MonoBehaviour {
 		KeyCode.Alpha3,
 	};
 
+	void Awake(){
+		DontDestroyOnLoad (gameObject);
+	}
+
 	void Start() {
 		OnCharacterSelect (0);
 	}
 		
 	public void OnCharacterSelect(int characterChoice)
 	{
-		characterSelectPanel.SetActive (false);
 		abilityPanel.SetActive (true);
 
 		Character selectedCharacter = characters [characterChoice];
