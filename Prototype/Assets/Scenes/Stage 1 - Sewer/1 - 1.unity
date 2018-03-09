@@ -17170,6 +17170,10 @@ Prefab:
       propertyPath: m_Name
       value: pipeEnder
       objectReference: {fileID: 0}
+    - target: {fileID: 1738416323372816, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
   m_IsPrefabParent: 0
@@ -22023,6 +22027,10 @@ Prefab:
     - target: {fileID: 4954583415814212, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514292779674066, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
@@ -29272,6 +29280,10 @@ Prefab:
       propertyPath: Pipe
       value: 
       objectReference: {fileID: 1194191166}
+    - target: {fileID: 1738416323372816, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
   m_IsPrefabParent: 0
@@ -29313,6 +29325,10 @@ Prefab:
     - target: {fileID: 4954583415814212, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514292779674066, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
@@ -29410,7 +29426,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1138842150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pipes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30602,6 +30618,10 @@ Prefab:
     - target: {fileID: 4954583415814212, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514292779674066, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2cc431b7ae9064114afbc60922d53d17, type: 2}
@@ -34827,6 +34847,10 @@ Prefab:
     - target: {fileID: 1738416323372816, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
       propertyPath: m_Name
       value: pipeReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738416323372816, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51a87d558f17b4836b14b8e9b10e6aa0, type: 2}
