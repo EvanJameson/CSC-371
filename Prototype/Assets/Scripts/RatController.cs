@@ -211,19 +211,35 @@ public class RatController : MonoBehaviour
         }	
 	}
 
+	//make rat run faster, dash for cat is here
 	public void Sprint()
 	{
 		
-		//Sprinting
-		if(Input.GetButtonDown("Fire3"))
+		//Sprinting for rat
+		if(this.name == "RatPlayer(Clone)")
 		{
-			speed = 6f;
+			if(Input.GetButtonDown("Fire3"))
+			{
+				speed = 6f;
 
+			}
+			else if(Input.GetButtonUp("Fire3"))
+			{
+				speed = 4f;
+
+			}
 		}
-		else if(Input.GetButtonUp("Fire3"))
+		if(this.name == "CatPlayer(Clone)")
 		{
-			speed = 4f;
-
+			//check what direction the player is facing
+			if (sp.flipX == false) //facing right
+			{
+				rb.AddForce (transform.forward * 10);
+			} 
+			else if (sp.flipX) //facing left
+			{
+				rb.AddForce (transform.forward * 10);
+			}
 		}
 	}
 }
