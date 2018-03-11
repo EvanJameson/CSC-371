@@ -9,6 +9,10 @@ public class PaperController : MonoBehaviour {
 	private bool animateIn = false;
 	private Canvas canvas;
 
+	//access script in the trigger to decrement page value
+	public GameObject levelCompletedTrigger;
+	private CompleteLevel cl;
+
 	// Use this for initialization
 	void Start () {
 		canvas = Object.FindObjectOfType<Canvas> ();
@@ -35,6 +39,10 @@ public class PaperController : MonoBehaviour {
 			offset = transform.position - CharacterControl.instance.player.transform.position;
 			followCamera = true;
 			animateIn = true;
+
+			//decrement pages left
+			cl = levelCompletedTrigger.GetComponent<CompleteLevel> ();
+			cl.pagesGot++;
 		}
 	}
 

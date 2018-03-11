@@ -11,6 +11,9 @@ public class RatController : MonoBehaviour
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
 	public bool immortal;
+	private int lives;
+
+	private LivesController lc;
 
 	public bool gt1 = false, gt2 = false;
 	//private bool moving = false; //for moving platforms
@@ -18,12 +21,18 @@ public class RatController : MonoBehaviour
     public GameObject leftPuff;
     public GameObject rightPuff;
 
+	private SpriteRenderer mySpriteRenderer;
+	public GameObject PlayerSwoosh; // players' bite swoosh 
+	public GameObject SwooshPosition01;
+	public GameObject SwooshPosition02;
+
     // Use this for initialization
     void Start () 
 	{
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
+		lives = PlayerPrefs.GetInt("lives");
 	}
 
 	void LateUpdate()
@@ -73,12 +82,56 @@ public class RatController : MonoBehaviour
 		}
 	}
 
+	void Awake(){
+		mySpriteRenderer = GetComponent<SpriteRenderer> ();
+	}
+
+	void Update(){
+		if(Input.GetKeyDown(KeyCode.X)){
+			//instantiate swoosh
+			StartCoroutine(HandleSwoosh());
+
+		}
+	}
+
+
+
+	private IEnumerator HandleSwoosh(){
+		GameObject swoosh = (GameObject)Instantiate(PlayerSwoosh);
+		if(mySpriteRenderer != null){
+			if(mySpriteRenderer.flipX == true){
+				swoosh.transform.position = SwooshPosition02.transform.position;
+				swoosh.GetComponent<SpriteRenderer> ().flipX = true;
+			}
+			else{
+				swoosh.transform.position = SwooshPosition01.transform.position;
+			}
+		}
+
+		swoosh.GetComponent<Rigidbody2D> ().velocity = gameObject.GetComponent<Rigidbody2D> ().velocity; 
+		yield return new WaitForSeconds (0.2f);
+		GameObject.Destroy (swoosh);
+
+	}
+
+	//CHECK FOR DEATH HERE
+	//bug, touching toxic triggers this twice
 	public void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.CompareTag("Toxic") && !immortal)
 		{
 			//died, add a menu, sound or something
-			gameObject.SetActive (false);
+			lives--;
+			PlayerPrefs.SetInt ("lives", lives);
+			lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
+			lc.removeLife ();
+
+			if(lives == 0)
+			{
+				//add menu that asks to retry or exit to main menu
+				gameObject.SetActive (false);
+			}
+
 		}
 	}
 
@@ -92,6 +145,10 @@ public class RatController : MonoBehaviour
 		if(other.gameObject.CompareTag("Rope"))
 		{
 			Chew (other);
+		}
+
+		if (other.gameObject.CompareTag ("Enemy") &&
+			Input.GetButtonDown("Fire1")) {
 		}
 
 		if(other.gameObject.CompareTag("Box"))
