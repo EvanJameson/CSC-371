@@ -14,8 +14,7 @@ public class EnemyController : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
-		if (other.CompareTag ("Player") && Input.GetButtonDown("Fire1") &&
-			CharacterControl.instance.isCat()) {
+		if (other.CompareTag ("Player") && Input.GetButtonDown("Fire1")) {
 			isdead = true;
 		}
 	}
