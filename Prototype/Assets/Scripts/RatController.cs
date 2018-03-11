@@ -12,6 +12,7 @@ public class RatController : MonoBehaviour
 	public LayerMask player_mask;
 	public bool immortal;
 	private int lives;
+	private bool canMove = true;
 
 	private LivesController lc;
 
@@ -44,41 +45,43 @@ public class RatController : MonoBehaviour
 	void FixedUpdate () 
 	{
         // These booleans used for ground puffs 
-        bool oldgt1 = gt1;
-        bool oldgt2 = gt2;
+        if (canMove) {
+	        bool oldgt1 = gt1;
+	        bool oldgt2 = gt2;
 
-        Move_H (Input.GetAxisRaw("Horizontal"));
-		gt1 = Physics2D.Linecast(tf.position, ground_tf1.position, player_mask);
-		gt2 = Physics2D.Linecast(tf.position, ground_tf2.position, player_mask);
+	        Move_H (Input.GetAxisRaw("Horizontal"));
+			gt1 = Physics2D.Linecast(tf.position, ground_tf1.position, player_mask);
+			gt2 = Physics2D.Linecast(tf.position, ground_tf2.position, player_mask);
 
-        bool hasLanded = false;
+	        bool hasLanded = false;
 
-        if (oldgt2 == false && gt2 == true && oldgt1 == false)
-        {
-            //left puff
-            GameObject tempL = Instantiate(leftPuff, tf.transform.position, transform.rotation);
-            Destroy(tempL, 0.5f);
+	        if (oldgt2 == false && gt2 == true && oldgt1 == false)
+	        {
+	            //left puff
+	            GameObject tempL = Instantiate(leftPuff, tf.transform.position, transform.rotation);
+	            Destroy(tempL, 0.5f);
 
-            FindObjectOfType<AudioManager>().Play("LandingSound");
-            hasLanded = true;
-        }
-        if (oldgt1 == false && gt1 == true && oldgt2 == false)
-        {
-            //right puff
-            GameObject tempR = Instantiate(rightPuff, tf.transform.position, transform.rotation);
-            Destroy(tempR, 0.5f);
-            if(!hasLanded)
-            {
-                FindObjectOfType<AudioManager>().Play("LandingSound");
-            }
-        }
+	            FindObjectOfType<AudioManager>().Play("LandingSound");
+	            hasLanded = true;
+	        }
+	        if (oldgt1 == false && gt1 == true && oldgt2 == false)
+	        {
+	            //right puff
+	            GameObject tempR = Instantiate(rightPuff, tf.transform.position, transform.rotation);
+	            Destroy(tempR, 0.5f);
+	            if(!hasLanded)
+	            {
+	                FindObjectOfType<AudioManager>().Play("LandingSound");
+	            }
+	        }
 
 
-		Sprint ();
+			Sprint ();
 
-		if (Input.GetKey("space"))
-		{
-			Jump ();
+			if (Input.GetKey("space"))
+			{
+				Jump ();
+			}
 		}
 	}
 
@@ -225,5 +228,13 @@ public class RatController : MonoBehaviour
 			speed = 4f;
 
 		}
+	}
+
+	public void FreezeMovement() {
+		canMove = false;
+		rb.velocity = Vector2.zero;
+	}
+	public void ResumeMovement() {
+		canMove = true;
 	}
 }
