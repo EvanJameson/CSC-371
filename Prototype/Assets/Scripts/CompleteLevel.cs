@@ -55,6 +55,12 @@ public class CompleteLevel : MonoBehaviour {
 
 	public void Update()
 	{
+		if (currentLevel.Equals ("2 - 1")) {
+			PlayerPrefs.SetInt ("hasCat", 1);
+		}
+		if (currentLevel.Equals ("3 - 1")) {
+			PlayerPrefs.SetInt ("hasMonkey", 1);
+		}
 		currentTime += Time.deltaTime;
 		//runs once
 		//this is super placeholder and not fleshed out at all

@@ -6913,6 +6913,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1715805245}
     m_Modifications:
+    - target: {fileID: 114351018302260548, guid: f746d77eef7bf49f89565b8ceece2c5e,
+        type: 2}
+      propertyPath: iconContainers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalPosition.x
       value: -600.0614
@@ -6948,6 +6953,16 @@ Prefab:
     - target: {fileID: 114351018302260548, guid: f746d77eef7bf49f89565b8ceece2c5e,
         type: 2}
       propertyPath: iconContainers.Array.data[0]
+      value: 
+      objectReference: {fileID: 199437741}
+    - target: {fileID: 114351018302260548, guid: f746d77eef7bf49f89565b8ceece2c5e,
+        type: 2}
+      propertyPath: iconContainers.Array.data[1]
+      value: 
+      objectReference: {fileID: 199437741}
+    - target: {fileID: 114351018302260548, guid: f746d77eef7bf49f89565b8ceece2c5e,
+        type: 2}
+      propertyPath: iconContainers.Array.data[2]
       value: 
       objectReference: {fileID: 199437741}
     m_RemovedComponents: []
@@ -9500,6 +9515,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 11400000, guid: 5ba3e30b8e9dc42c2b2ed0201c8783fd, type: 2}
+  - {fileID: 11400000, guid: 95a43266651354c25a0f694daf36faf1, type: 2}
+  - {fileID: 11400000, guid: 511c9e3368bd042a9862397ba4fc774c, type: 2}
   abilityPanel: {fileID: 1495861489}
 --- !u!114 &972523711
 MonoBehaviour:
@@ -9513,7 +9530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paper: {fileID: 1124815283}
-  xbutton: {fileID: 289466721}
+  expandedBackground: {fileID: 0}
 --- !u!1 &1016237041
 GameObject:
   m_ObjectHideFlags: 0
@@ -10309,6 +10326,7 @@ GameObject:
   - component: {fileID: 1213655252}
   - component: {fileID: 1213655250}
   - component: {fileID: 1213655251}
+  - component: {fileID: 1213655249}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10316,6 +10334,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!81 &1213655249
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1213655248}
+  m_Enabled: 1
 --- !u!124 &1213655250
 Behaviour:
   m_ObjectHideFlags: 0
