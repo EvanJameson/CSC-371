@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512a719917b841f458d82d48080a08d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 6
   jump_velocity: 5
   ground_tf1: {fileID: 4620216053977946}
   ground_tf2: {fileID: 4181107624010470}

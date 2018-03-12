@@ -8736,6 +8736,10 @@ Prefab:
       propertyPath: levelCompletedTrigger
       value: 
       objectReference: {fileID: 326719215}
+    - target: {fileID: 1966944108683182, guid: 8d26307dd97249042bb4896d011cb67e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d26307dd97249042bb4896d011cb67e, type: 2}
   m_IsPrefabParent: 0
@@ -9499,7 +9503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - {fileID: 11400000, guid: 5ba3e30b8e9dc42c2b2ed0201c8783fd, type: 2}
+  - {fileID: 11400000, guid: 95a43266651354c25a0f694daf36faf1, type: 2}
   abilityPanel: {fileID: 1495861489}
 --- !u!114 &972523711
 MonoBehaviour:
@@ -10309,6 +10313,7 @@ GameObject:
   - component: {fileID: 1213655252}
   - component: {fileID: 1213655250}
   - component: {fileID: 1213655251}
+  - component: {fileID: 1213655249}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10316,6 +10321,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!81 &1213655249
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1213655248}
+  m_Enabled: 1
 --- !u!124 &1213655250
 Behaviour:
   m_ObjectHideFlags: 0

@@ -229,17 +229,22 @@ public class RatController : MonoBehaviour
 
 			}
 		}
-		if(this.name == "CatPlayer(Clone)")
+		/*if(this.name == "CatPlayer(Clone)")
 		{
-			//check what direction the player is facing
-			if (sp.flipX == false) //facing right
+			if(Input.GetKey(KeyCode.LeftShift))
 			{
-				rb.AddForce (transform.forward * 10);
-			} 
-			else if (sp.flipX) //facing left
-			{
-				rb.AddForce (transform.forward * 10);
+				//check what direction the player is facing
+				if (sp.flipX == false) //facing right
+				{
+					print ("no reason");
+					tf.Translate (new Vector3(100f, 0f) * Time.deltaTime);
+				} 
+				else if (sp.flipX) //facing left
+				{
+					print ("no reason2");
+					tf.Translate (new Vector3(-100f, 0f) * Time.deltaTime);
+				}
 			}
-		}
+		}*/
 	}
 }
