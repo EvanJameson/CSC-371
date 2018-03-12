@@ -250,18 +250,20 @@ public class RatController : MonoBehaviour
 		}
 		/*if(this.name == "CatPlayer(Clone)")
 		{
+			//float timer = 0;
 			if(Input.GetKey(KeyCode.LeftShift))
 			{
+
 				//check what direction the player is facing
 				if (sp.flipX == false) //facing right
 				{
-					print ("no reason");
-					tf.Translate (new Vector3(100f, 0f) * Time.deltaTime);
+					//print ("no reason");
+					tf.Translate (new Vector3(50f, 0f) * Time.deltaTime);
 				} 
 				else if (sp.flipX) //facing left
 				{
-					print ("no reason2");
-					tf.Translate (new Vector3(-100f, 0f) * Time.deltaTime);
+					//print ("no reason2");
+					tf.Translate (new Vector3(-50f, 0f) * Time.deltaTime);
 				}
 			}
 		}*/
