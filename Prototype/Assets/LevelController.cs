@@ -20,6 +20,13 @@ public class LevelController : MonoBehaviour {
 	public Text l1, l2, l3, l4;
 
 	// Use this for initialization
+	void Awake()
+	{
+		PlayerPrefs.SetInt ("hasRat", 1);
+		PlayerPrefs.SetInt ("hasCat", 0);
+		PlayerPrefs.SetInt ("hasMonkey", 0);
+	}
+
 	void Start () {
 		currentLevel = PlayerPrefs.GetString ("LevelAccess");
 		updateGrades ();
@@ -48,6 +55,7 @@ public class LevelController : MonoBehaviour {
 			//--sewer zone//
 		
 		case "2 - 1":
+			PlayerPrefs.SetInt ("hasCat", 1);
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
@@ -86,6 +94,7 @@ public class LevelController : MonoBehaviour {
 
 			//--city zone//
 		case "3 - 1":
+			PlayerPrefs.SetInt ("hasMonkey", 1);
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);

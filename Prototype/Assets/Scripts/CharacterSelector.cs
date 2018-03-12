@@ -59,8 +59,19 @@ public class CharacterSelector : MonoBehaviour {
 		for (int i = 0; i < charCodes.Length; i++) {
 			if (Input.GetKeyDown (charCodes [i])) {
 				int numberPressed = i;
-				OnCharacterSelect (numberPressed);
+				if (numberPressed == 0) {
+					OnCharacterSelect (numberPressed);
+				} else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 1) {
+					OnCharacterSelect (1);
+				} else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 0) {
+					Debug.Log ("cat not available");
+				} else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 1) {
+					OnCharacterSelect (2);
+				} else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 0) {
+					Debug.Log ("Monkey not available");
+				}
 			}
+
 		}
 	}
 
