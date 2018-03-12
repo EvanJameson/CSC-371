@@ -11,6 +11,7 @@ public class RatController : MonoBehaviour
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
 	public bool immortal;
+	private int lives;
 
 	public bool gt1 = false, gt2 = false;
 	//private bool moving = false; //for moving platforms
@@ -24,6 +25,7 @@ public class RatController : MonoBehaviour
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
+		lives = PlayerPrefs.GetInt("lives");
 	}
 
 	void LateUpdate()
@@ -73,12 +75,21 @@ public class RatController : MonoBehaviour
 		}
 	}
 
+
+	//CHECK FOR DEATH HERE
 	public void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.CompareTag("Toxic") && !immortal)
 		{
 			//died, add a menu, sound or something
-			gameObject.SetActive (false);
+			lives--;
+			PlayerPrefs.SetInt ("lives", lives);
+			if(lives == 0)
+			{
+				//add menu that asks to retry or exit to main menu
+				gameObject.SetActive (false);
+			}
+
 		}
 	}
 
@@ -92,6 +103,10 @@ public class RatController : MonoBehaviour
 		if(other.gameObject.CompareTag("Rope"))
 		{
 			Chew (other);
+		}
+
+		if (other.gameObject.CompareTag ("Enemy") &&
+			Input.GetButtonDown("Fire1")) {
 		}
 
 		if(other.gameObject.CompareTag("Box"))
