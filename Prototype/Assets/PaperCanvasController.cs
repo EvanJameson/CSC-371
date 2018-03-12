@@ -5,13 +5,15 @@ using UnityEngine;
 public class PaperCanvasController : MonoBehaviour {
 
 	private RectTransform rt;
+	private Canvas canvas;
 
 	private bool active = true, expanded = false;
 
 	private Vector3 centerScreen = new Vector3 (341, 211, 0);
-	private Vector3 bottomRight = new Vector3 (660, 60, 0);
-	private Vector2 expandedSize = new Vector2 (600, 600);
-	private Vector2 miniSize = new Vector2 (100, 100);
+	private Vector3 bottomRight = new Vector3 (1472, 100, 0);
+	private Vector2 expandedSize = new Vector2 (1000, 1000);
+	private Vector2 miniSize = new Vector2 (200, 200);
+	private float buffer = 10;
 
 	private Vector3 startingPoint;
 	private Vector2 startingSize;
@@ -23,6 +25,13 @@ public class PaperCanvasController : MonoBehaviour {
 
 	void Start () {
 		rt = GetComponent<RectTransform> ();
+		canvas = Object.FindObjectOfType<Canvas> ();
+		bottomRight.x = canvas.pixelRect.width - 150;
+		centerScreen.x = canvas.pixelRect.width / 2.0f;
+		centerScreen.y = canvas.pixelRect.height / 2.0f;
+		canvas.SendMessage("ActivatePauseBackground");
+
+		Animate(centerScreen, expandedSize);
 	}
 	
 	void Update () {
@@ -47,14 +56,17 @@ public class PaperCanvasController : MonoBehaviour {
 			 * Move back to original place on expanded UI */
 			Animate (startingPoint, miniSize);
 			active = false;
+			canvas.SendMessage("RestoreOtherPages");
 		} else if (active) {
 			/* Must have just been picked up - move to bottom corner */
 			Animate (bottomRight, miniSize);
 			active = false;
+			canvas.SendMessage("RemovePauseBackground");
 		} else if (expanded) {
 			/* On the expanded UI, enlarge page for user to read */
 			Animate (centerScreen, expandedSize);
 			active = true;
+			canvas.SendMessage("RemoveOtherPages", gameObject);
 		} else {
 			/* Clicked on bottom right corner requesting expanded UI */
 			expanded = true;

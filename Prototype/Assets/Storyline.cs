@@ -6,20 +6,15 @@ using UnityEngine.UI;
 public class Storyline : MonoBehaviour {
 
 	public GameObject paper;
-	public GameObject xbutton;
+	public GameObject expandedBackground;
 
 	private GameObject activePaper;
 	private List<GameObject> papersCollected = new List<GameObject>();
 	private Canvas canvas;
-	private Vector3 firstPosition = new Vector3(80, 400, 0);
 
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+		canvas = Object.FindObjectOfType<Canvas> ();
 	}
 
 	void RenderPaper(GameObject paperO) {
@@ -31,12 +26,12 @@ public class Storyline : MonoBehaviour {
 	}
 
 	void ExpandJournalUI() {
-		Vector3 current = firstPosition;
+		Vector3 current = new Vector3(200, canvas.pixelRect.height - 200, 0);
 		for (int i = 0; i < papersCollected.Count; i++) {
 			papersCollected [i].SendMessage ("MoveTo", current);
-			current.x += 80;
+			current.x += 150;
 		}
-		ActivateXButton ();
+		ActivatePauseBackground ();
 	}
 
 	void AnimateOut() {
@@ -44,17 +39,33 @@ public class Storyline : MonoBehaviour {
 	}
 
 	void Exit() {
-		RemoveXButton ();
+		RemovePauseBackground ();
 		for (int i = 0; i < papersCollected.Count; i++) {
 			papersCollected [i].SendMessage ("ReturnInactive");
 		}
 	}
 
-	void RemoveXButton() {
-		xbutton.SetActive (false);
+	void RemovePauseBackground() {
+		Time.timeScale = 1;
+		expandedBackground.SetActive (false);
 	}
 
-	void ActivateXButton() {
-		xbutton.SetActive (true);
+	void ActivatePauseBackground() {
+		Time.timeScale = 0;
+		expandedBackground.SetActive (true);
+	}
+
+	void RestoreOtherPages() {
+		for (int i = 0; i < papersCollected.Count; i++) {
+			papersCollected [i].SetActive(true);
+		}
+	}
+
+	void RemoveOtherPages(GameObject p) {
+		for (int i = 0; i < papersCollected.Count; i++) {
+			if (papersCollected[i] != p) {
+				papersCollected [i].SetActive(false);
+			}
+		}
 	}
 }
