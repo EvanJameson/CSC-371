@@ -29,6 +29,7 @@ public class MonkeyController : MonoBehaviour
 
     private bool ignore = false;
     private int iCount = 0;
+    private bool prevCling = false;
 
     // Use this for initialization
     void Start () 
@@ -120,13 +121,14 @@ public class MonkeyController : MonoBehaviour
         {
             isClingingRight = false;
             isClingingLeft = false;
+         //   prevCling = false;
         }
 
-        if(isClingingRight)
+        if(isClingingRight && transform.localScale.x > 0 )
         {
             flip();
         }
-        if(isClingingLeft)
+        if(isClingingLeft && transform.localScale.x < 0)
         {
             flip();
         }
