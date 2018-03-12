@@ -11,7 +11,6 @@ public class RatController : MonoBehaviour
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
 	public bool immortal;
-	private int lives;
 	private bool canMove = true;
 
 	private LivesController lc;
@@ -33,7 +32,7 @@ public class RatController : MonoBehaviour
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
-		lives = PlayerPrefs.GetInt("lives");
+		lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
 	}
 
 	void LateUpdate()
@@ -124,14 +123,12 @@ public class RatController : MonoBehaviour
 		if(other.gameObject.CompareTag("Toxic") && !immortal)
 		{
 			//died, add a menu, sound or something
-			lives--;
-			PlayerPrefs.SetInt ("lives", lives);
 			lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
 			lc.removeLife ();
 
 			StartCoroutine(BlinkRed ());
 
-			if(lives == 0)
+			if(PlayerPrefs.GetInt("lives") == 0)
 			{
 				//add menu that asks to retry or exit to main menu
 				gameObject.SetActive (false);
@@ -142,15 +139,15 @@ public class RatController : MonoBehaviour
 
 	public IEnumerator BlinkRed() {
 		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.25f);
+		yield return new WaitForSeconds(0.2f);
 		sp.color = new Color(255, 255, 255);
-		yield return new WaitForSeconds(0.25f);
+		yield return new WaitForSeconds(0.2f);
 		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.25f);
+		yield return new WaitForSeconds(0.2f);
 		sp.color = new Color(255, 255, 255);
-		yield return new WaitForSeconds(0.25f);
+		yield return new WaitForSeconds(0.2f);
 		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.25f);
+		yield return new WaitForSeconds(0.2f);
 		sp.color = new Color(255, 255, 255);
 	}
 
