@@ -72,6 +72,14 @@ public class Cat : MonoBehaviour {
             collision.gameObject.SetActive(false);
             StartCoroutine(BlinkRed ());
         }
+        if (collision.gameObject.CompareTag("Player")) {
+        	// Respawn player to one side of cat to fix bug of it going below the ground
+        	if (CharacterControl.instance.player.transform.position.x < transform.position.x) {
+        		CharacterControl.instance.player.transform.position = new Vector3(3, -9, 0);
+        	} else {
+        		CharacterControl.instance.player.transform.position = new Vector3(14, -9, 0);
+        	}
+        }
     }
 
     /*
