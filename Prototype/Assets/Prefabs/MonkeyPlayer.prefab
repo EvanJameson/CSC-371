@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 61674401110855250}
   - component: {fileID: 50227827497698212}
   - component: {fileID: 114853835954071602}
+  - component: {fileID: 114150922662361552}
   m_Layer: 8
   m_Name: MonkeyPlayer
   m_TagString: Player
@@ -307,6 +308,35 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617183327040272}
   m_Enabled: 1
+--- !u!114 &114150922662361552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501262334681740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94d46976474d09409646b53a295db14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  jump_velocity: 100
+  ground_tf1: {fileID: 4070843463408178}
+  ground_tf2: {fileID: 4456000575195232}
+  player_mask:
+    serializedVersion: 2
+    m_Bits: 4294967039
+  immortal: 0
+  isClingingRight: 0
+  isClingingLeft: 0
+  vel: 0
+  velY: 0
+  input: 0
+  gravity: 1
+  gt1: 0
+  gt2: 0
+  leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}
+  rightPuff: {fileID: 1204221191556324, guid: 8c647aaea68520a4dbee2f0c257d11d9, type: 2}
 --- !u!114 &114353365886567738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,7 +367,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1501262334681740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512a719917b841f458d82d48080a08d5, type: 3}
   m_Name: 
@@ -349,6 +379,7 @@ MonoBehaviour:
   player_mask:
     serializedVersion: 2
     m_Bits: 4294967039
+  immortal: 0
   gt1: 0
   gt2: 0
   leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}
