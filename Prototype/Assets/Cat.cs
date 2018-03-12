@@ -53,11 +53,15 @@ public class Cat : MonoBehaviour {
 
 	IEnumerator BlinkRed() {
 		sprite.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.25f);
 		sprite.color = new Color(255, 255, 255);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.25f);
 		sprite.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.25f);
+		sprite.color = new Color(255, 255, 255);
+		yield return new WaitForSeconds(0.25f);
+		sprite.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.25f);
 		sprite.color = new Color(255, 255, 255);
 	}
 
