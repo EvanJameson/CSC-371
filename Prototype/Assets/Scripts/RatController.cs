@@ -129,6 +129,8 @@ public class RatController : MonoBehaviour
 			lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
 			lc.removeLife ();
 
+			StartCoroutine(BlinkRed ());
+
 			if(lives == 0)
 			{
 				//add menu that asks to retry or exit to main menu
@@ -136,6 +138,20 @@ public class RatController : MonoBehaviour
 			}
 
 		}
+	}
+
+	public IEnumerator BlinkRed() {
+		sp.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.25f);
+		sp.color = new Color(255, 255, 255);
+		yield return new WaitForSeconds(0.25f);
+		sp.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.25f);
+		sp.color = new Color(255, 255, 255);
+		yield return new WaitForSeconds(0.25f);
+		sp.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.25f);
+		sp.color = new Color(255, 255, 255);
 	}
 
 	public void OnTriggerStay2D(Collider2D other)
