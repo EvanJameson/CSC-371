@@ -209,7 +209,7 @@ public class RatController : MonoBehaviour
 		if(gt1 || gt2)
 		{
 			//vector2.up is a vector of (0,1)
-			rb.velocity += CharacterControl.instance.jump_velocity * Vector2.up;// * high;
+			rb.velocity = new Vector2(rb.velocity.x, CharacterControl.instance.jump_velocity);
             FindObjectOfType<AudioManager>().Play("Jump");
         }	
 	}
