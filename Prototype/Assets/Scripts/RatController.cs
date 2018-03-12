@@ -81,6 +81,9 @@ public class RatController : MonoBehaviour
 			{
 				Jump ();
 			}
+
+			//for cat dash check
+
 		}
 	}
 
