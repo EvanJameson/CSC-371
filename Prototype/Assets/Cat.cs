@@ -7,6 +7,7 @@ public class Cat : MonoBehaviour {
 	public float forceY = 150f;
 	public float forceX = 75f;
 	private Rigidbody2D myRigidbody;
+	private SpriteRenderer sprite;
 	bool isgrounded = false;
 	bool hasWaved= false;
 
@@ -19,6 +20,7 @@ public class Cat : MonoBehaviour {
 
 	void Awake(){
 		myRigidbody = GetComponent<Rigidbody2D> ();
+		sprite = GetComponent<SpriteRenderer> ();
 	}
 	// Use this for initialization
 	void Start () {
@@ -49,11 +51,34 @@ public class Cat : MonoBehaviour {
 		StartCoroutine (Jump ());
 	}
 
+	IEnumerator BlinkRed() {
+		sprite.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.25f);
+		sprite.color = new Color(255, 255, 255);
+		yield return new WaitForSeconds(0.25f);
+		sprite.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.25f);
+		sprite.color = new Color(255, 255, 255);
+		yield return new WaitForSeconds(0.25f);
+		sprite.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.25f);
+		sprite.color = new Color(255, 255, 255);
+	}
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Box"))
         {
             collision.gameObject.SetActive(false);
+            StartCoroutine(BlinkRed ());
+        }
+        if (collision.gameObject.CompareTag("Player")) {
+        	// Respawn player to one side of cat to fix bug of it going below the ground
+        	if (CharacterControl.instance.player.transform.position.x < transform.position.x) {
+        		CharacterControl.instance.player.transform.position = new Vector3(3, -9, 0);
+        	} else {
+        		CharacterControl.instance.player.transform.position = new Vector3(14, -9, 0);
+        	}
         }
     }
 

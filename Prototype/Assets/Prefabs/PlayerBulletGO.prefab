@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114222084199967356}
   m_Layer: 0
   m_Name: PlayerBulletGO
-  m_TagString: Untagged
+  m_TagString: Toxic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

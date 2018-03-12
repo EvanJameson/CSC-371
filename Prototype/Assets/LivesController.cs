@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class LivesController : MonoBehaviour {
 
+	private const float IMMUNITY_TIME = 1.0f;
+
 	private int index; //#lives - 1
+	private float timeSinceLastLostLife = 0;
 
 	public GameObject[] lives = new GameObject[5];
 
@@ -22,8 +25,12 @@ public class LivesController : MonoBehaviour {
 
 	public void removeLife()
 	{
-		lives [index].SetActive (false);
-		index--;
+		if (Time.time - timeSinceLastLostLife > IMMUNITY_TIME) {
+			lives [index].SetActive (false);
+			index--;
+			timeSinceLastLostLife = Time.time;
+			PlayerPrefs.SetInt ("lives", index + 1);
+		}
 	}
 	
 	// Update is called once per frame
