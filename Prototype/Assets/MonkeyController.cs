@@ -27,6 +27,9 @@ public class MonkeyController : MonoBehaviour
     public GameObject leftPuff;
     public GameObject rightPuff;
 
+    private bool ignore = false;
+    private int iCount = 0;
+
     // Use this for initialization
     void Start () 
 	{
@@ -52,19 +55,64 @@ public class MonkeyController : MonoBehaviour
         bool oldgt1 = gt1;
         bool oldgt2 = gt2;
 
-        Move_H (Input.GetAxisRaw("Horizontal"));
-		gt1 = Physics2D.Linecast(tf.position, ground_tf1.position, player_mask);
-		gt2 = Physics2D.Linecast(tf.position, ground_tf2.position, player_mask);
+        if(iCount >= 15)
+        {
+            ignore = false;
+            iCount = 0;
+        }
+
+        if (ignore)
+        {
+            iCount++;
+        }
+        else
+        {
+            Move_H(Input.GetAxisRaw("Horizontal"));
+            gt1 = Physics2D.Linecast(tf.position, ground_tf1.position, player_mask);
+            gt2 = Physics2D.Linecast(tf.position, ground_tf2.position, player_mask);
+
+            if (isClingingLeft && Input.GetKey("space"))
+            {
+                //left->right cling jump
+                isClingingLeft = false;
+                rb.gravityScale = gravity;
+                rb.velocity = CharacterControl.instance.jump_velocity * Vector2.one;// * high;
+                FindObjectOfType<AudioManager>().Play("Jump");
+                ignore = true;
+                
+                isClingingLeft = false;
+                isClingingRight = false;
+            }
+            else if (isClingingRight && Input.GetKey("space"))
+            {
+                //right->left cling jump
+                isClingingRight = false;
+                rb.velocity = CharacterControl.instance.jump_velocity * new Vector2(-1, 1);// * high;
+                FindObjectOfType<AudioManager>().Play("Jump");
+                ignore = true;
+                rb.gravityScale = gravity;
+                isClingingRight = false;
+                isClingingLeft = false;
+            }
+            else if (Input.GetKey("space"))
+            {
+                Jump();
+            }
+
+        }
 
         bool hasLanded = false;
 
+
+
         //stuff for wallcling
 
-        if (input == 1 && vel == 0)
+        //Physics2D.Linecast(tf.position, new Vector2(tf.position.x - 0.5f, tf.position.y), player_mask) &&
+        if (input == 1 && vel == 0 && Physics2D.Linecast(tf.position, new Vector2(tf.position.x + 0.5f, tf.position.y), player_mask))
         {
             isClingingRight = true;
         }
-        else if(input == -1 && vel == 0)
+        else if(input == -1 && vel == 0 && Physics2D.Linecast(tf.position, new Vector2(tf.position.x - 0.5f, tf.position.y), player_mask))
         {
             isClingingLeft = true;
         }
@@ -74,7 +122,16 @@ public class MonkeyController : MonoBehaviour
             isClingingLeft = false;
         }
 
-        if(isClingingRight || isClingingLeft)
+        if(isClingingRight)
+        {
+            flip();
+        }
+        if(isClingingLeft)
+        {
+            flip();
+        }
+
+        if((isClingingRight || isClingingLeft) && !Input.GetKey("space"))
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.gravityScale = 0;
@@ -113,10 +170,7 @@ public class MonkeyController : MonoBehaviour
 
 		Sprint ();
 
-		if (Input.GetKey("space"))
-		{
-			Jump ();
-		}
+        
 	}
 
 
@@ -174,6 +228,13 @@ public class MonkeyController : MonoBehaviour
 			other.gameObject.SetActive (false);
 		}
 	}
+
+    public void flip()
+    {
+        Vector3 flipScale = transform.localScale;
+        flipScale.x = flipScale.x * -1;
+        transform.localScale = flipScale;
+    }
 
 	public void Move_H(float horizontal_input)
 	{
