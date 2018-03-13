@@ -181,4 +181,8 @@ public class CompleteLevel : MonoBehaviour {
 		lifeIcon.SetActive (active);
 		gradeIcon.SetActive (active);
 	}
+
+	void FinishLevel() {
+		complete = true;
+	}
 }

@@ -5766,7 +5766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &564364676
 Transform:
   m_ObjectHideFlags: 0
@@ -5779,6 +5779,7 @@ Transform:
   m_Children:
   - {fileID: 948799756}
   - {fileID: 824835589}
+  - {fileID: 1206420428}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12546,11 +12547,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1206420427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.25, y: 44.99, z: 0.17163242}
+  m_LocalPosition: {x: -9.27, y: 13.45, z: 3.8747575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1245376279}
-  m_RootOrder: 4
+  m_Father: {fileID: 564364676}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1206420429
 MonoBehaviour:
@@ -12563,7 +12564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5396894dc644e9592c33b735dcb06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 1 - 2
+  nextLevel: 2 - 1
   goalPages: 1
   pagesGot: 0
   goalTime: 10
@@ -13456,7 +13457,6 @@ Transform:
   - {fileID: 1210050731}
   - {fileID: 1369641451}
   - {fileID: 1826894138}
-  - {fileID: 1206420428}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14649,7 +14649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paper: {fileID: 1825250222}
-  xbutton: {fileID: 571469646}
+  expandedBackground: {fileID: 0}
 --- !u!114 &1369641453
 MonoBehaviour:
   m_ObjectHideFlags: 0
