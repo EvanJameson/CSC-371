@@ -7,9 +7,17 @@ public class DashAbility2 : MonoBehaviour {
      public DashState dashState;
      public float dashTimer;
      public float maxDash = 20f;
+
+	public Rigidbody2D rb;
  
      public Vector2 savedVelocity;
      
+	void Start ()
+	{
+		rb = GameObject.Find("CatPlayer(Clone)").GetComponent<Rigidbody2D> ();
+	
+	}
+
      void Update () 
      {
          switch (dashState) 
@@ -18,8 +26,8 @@ public class DashAbility2 : MonoBehaviour {
              var isDashKeyDown = Input.GetKeyDown (KeyCode.LeftShift);
              if(isDashKeyDown)
              {
-                 savedVelocity = rigidbody.velocity;
-                 Rigidbody2D.velocity =  new Vector2(Rigidbody2D.velocity.x * 3f, Rigidbody2D.velocity.y);
+                 savedVelocity = rb.velocity;
+                 rb.velocity =  new Vector2(rb.velocity.x * 3f, rb.velocity.y);
                  dashState = DashState.Dashing;
              }
              break;
@@ -28,7 +36,7 @@ public class DashAbility2 : MonoBehaviour {
              if(dashTimer >= maxDash)
              {
                  dashTimer = maxDash;
-                 Rigidbody2D.velocity = savedVelocity;
+                 rb.velocity = savedVelocity;
                  dashState = DashState.Cooldown;
              }
              break;
