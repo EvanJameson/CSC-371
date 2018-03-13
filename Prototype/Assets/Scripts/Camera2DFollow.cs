@@ -63,7 +63,7 @@ using UnityEngine;
 
 				m_LastTargetPosition = target.position;
 			} else if (deltaTime < 1 + bias) {
-				Debug.Log("in other branch of update");
+				//Debug.Log("in other branch of update");
 				cam.orthographicSize = startSize + deltaSize * deltaTime;
 				cam.transform.position = startPosition + deltaPosition * deltaTime;
 			} else {
@@ -89,7 +89,7 @@ using UnityEngine;
 		}
 
 		public void SpanScene(Vector3 goal) {
-			Debug.Log("in span scene");
+			//Debug.Log("in span scene");
 			spanscene = true;
 			deltaTime = 0;
 			startSize = cam.orthographicSize;

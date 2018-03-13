@@ -16,7 +16,7 @@ public class CameraSpanScene : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
-		Debug.Log("in on trigger");
+		//Debug.Log("in on trigger");
 		cam.SendMessage("SpanScene", new Vector3(6.9f, -3.7f, 9.3f));
 		Destroy(gameObject);
 	}

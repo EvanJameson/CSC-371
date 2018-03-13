@@ -179,7 +179,7 @@ public class RatController : MonoBehaviour
 			rb.velocity = move_velocity;*/
 			Transform otf = GetComponent<Transform> ();
 			transform.position = otf.position;
-			print ("yeah");
+			//print ("yeah");
 		}
 	}
 
