@@ -32,9 +32,7 @@ public class CharacterSelector : MonoBehaviour {
 			Transform t = CharacterControl.instance.player.transform;
 			Destroy (CharacterControl.instance.player);
 			CharacterControl.instance.player = Instantiate (selectedCharacter.prefab, t.transform.position, t.transform.rotation);
-			print ("if");
 		} else {
-			print ("else");
 			CharacterControl.instance.player = Instantiate (selectedCharacter.prefab);
 		}
 
