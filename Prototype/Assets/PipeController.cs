@@ -5,20 +5,29 @@ using UnityEngine.SceneManagement;
 public class PipeController : MonoBehaviour {
 
 	public GameObject Arrow;
+	public GameObject Pipe;
+	public GameObject Player;
+
 	private Transform tf;
+	private Transform ptf;
 	string progress;
-	public string nextLevel;
+	//public string nextLevel;
+
 
 	int progressIndex;
 	int nextIndex;
 	// Use this for initialization
 	void Start () {
-		
+		tf = Pipe.GetComponent<Transform> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(Player == null)
+		{
+			Player = GameObject.Find ("RatPlayer(Clone)");
+			ptf = Player.GetComponent<Transform>();
+		}
 	}
 
 	void OnTriggerStay2D (Collider2D other)
@@ -28,24 +37,11 @@ public class PipeController : MonoBehaviour {
 		}
 		if(Input.GetButtonDown("Jump"))
 		{
-
             FindObjectOfType<AudioManager>().Play("PipeWarp");
-			progress = PlayerPrefs.GetString ("LevelAccess");
-			progressIndex = SceneManager.GetSceneByName (progress).buildIndex;
-			nextIndex = SceneManager.GetSceneByName (nextLevel).buildIndex;
 
-			//so if you have progressed further and go backwards it doesnt reset progress
-			//pipes tho
-			print("progress index: " + progressIndex + " nextIndex: " + nextIndex);
-			if(progressIndex <= nextIndex)
-			{
-				PlayerPrefs.SetString ("LevelAccess", nextLevel);
-			}
-			SceneManager.LoadScene (nextLevel);
-
-           // tf = other.gameObject.GetComponent<Transform> ();
-			//tf.position += new Vector3 (2.5f,0,0); 
-
+			//sends player to the specified pipe
+			ptf.position = tf.position;
+			//print ("sopolo");
 		}
 
 	}

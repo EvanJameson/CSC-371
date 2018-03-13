@@ -11,7 +11,9 @@ public class RatController : MonoBehaviour
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
 	public bool immortal;
-	private int lives;
+	private bool canMove = true;
+
+	private LivesController lc;
 
 	public bool gt1 = false, gt2 = false;
 	//private bool moving = false; //for moving platforms
@@ -19,13 +21,18 @@ public class RatController : MonoBehaviour
     public GameObject leftPuff;
     public GameObject rightPuff;
 
+	private SpriteRenderer mySpriteRenderer;
+	public GameObject PlayerSwoosh; // players' bite swoosh 
+	public GameObject SwooshPosition01;
+	public GameObject SwooshPosition02;
+
     // Use this for initialization
     void Start () 
 	{
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
-		lives = PlayerPrefs.GetInt("lives");
+		lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
 	}
 
 	void LateUpdate()
@@ -37,60 +44,114 @@ public class RatController : MonoBehaviour
 	void FixedUpdate () 
 	{
         // These booleans used for ground puffs 
-        bool oldgt1 = gt1;
-        bool oldgt2 = gt2;
+        if (canMove) {
+	        bool oldgt1 = gt1;
+	        bool oldgt2 = gt2;
 
-        Move_H (Input.GetAxisRaw("Horizontal"));
-		gt1 = Physics2D.Linecast(tf.position, ground_tf1.position, player_mask);
-		gt2 = Physics2D.Linecast(tf.position, ground_tf2.position, player_mask);
+	        Move_H (Input.GetAxisRaw("Horizontal"));
+			gt1 = Physics2D.Linecast(tf.position, ground_tf1.position, player_mask);
+			gt2 = Physics2D.Linecast(tf.position, ground_tf2.position, player_mask);
 
-        bool hasLanded = false;
+	        bool hasLanded = false;
 
-        if (oldgt2 == false && gt2 == true && oldgt1 == false)
-        {
-            //left puff
-            GameObject tempL = Instantiate(leftPuff, tf.transform.position, transform.rotation);
-            Destroy(tempL, 0.5f);
+	        if (oldgt2 == false && gt2 == true && oldgt1 == false)
+	        {
+	            //left puff
+	            GameObject tempL = Instantiate(leftPuff, tf.transform.position, transform.rotation);
+	            Destroy(tempL, 0.5f);
 
-            FindObjectOfType<AudioManager>().Play("LandingSound");
-            hasLanded = true;
-        }
-        if (oldgt1 == false && gt1 == true && oldgt2 == false)
-        {
-            //right puff
-            GameObject tempR = Instantiate(rightPuff, tf.transform.position, transform.rotation);
-            Destroy(tempR, 0.5f);
-            if(!hasLanded)
-            {
-                FindObjectOfType<AudioManager>().Play("LandingSound");
-            }
-        }
+	            FindObjectOfType<AudioManager>().Play("LandingSound");
+	            hasLanded = true;
+	        }
+	        if (oldgt1 == false && gt1 == true && oldgt2 == false)
+	        {
+	            //right puff
+	            GameObject tempR = Instantiate(rightPuff, tf.transform.position, transform.rotation);
+	            Destroy(tempR, 0.5f);
+	            if(!hasLanded)
+	            {
+	                FindObjectOfType<AudioManager>().Play("LandingSound");
+	            }
+	        }
 
 
-		Sprint ();
+			Sprint ();
 
-		if (Input.GetKey("space"))
-		{
-			Jump ();
+			if (Input.GetKey("space"))
+			{
+				Jump ();
+			}
+
+			//for cat dash check
+
+		}
+	}
+
+	void Awake(){
+		mySpriteRenderer = GetComponent<SpriteRenderer> ();
+	}
+
+	void Update(){
+		if(Input.GetKeyDown(KeyCode.X)){
+			//instantiate swoosh
+			StartCoroutine(HandleSwoosh());
+
 		}
 	}
 
 
+
+	private IEnumerator HandleSwoosh(){
+		GameObject swoosh = (GameObject)Instantiate(PlayerSwoosh);
+		if(mySpriteRenderer != null){
+			if(mySpriteRenderer.flipX == true){
+				swoosh.transform.position = SwooshPosition02.transform.position;
+				swoosh.GetComponent<SpriteRenderer> ().flipX = true;
+			}
+			else{
+				swoosh.transform.position = SwooshPosition01.transform.position;
+			}
+		}
+
+		swoosh.GetComponent<Rigidbody2D> ().velocity = gameObject.GetComponent<Rigidbody2D> ().velocity; 
+		yield return new WaitForSeconds (0.2f);
+		GameObject.Destroy (swoosh);
+
+	}
+
 	//CHECK FOR DEATH HERE
+	//bug, touching toxic triggers this twice
 	public void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.CompareTag("Toxic") && !immortal)
 		{
 			//died, add a menu, sound or something
-			lives--;
-			PlayerPrefs.SetInt ("lives", lives);
-			if(lives == 0)
+			lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
+			lc.removeLife ();
+
+			StartCoroutine(BlinkRed ());
+
+			if(PlayerPrefs.GetInt("lives") == 0)
 			{
 				//add menu that asks to retry or exit to main menu
 				gameObject.SetActive (false);
 			}
 
 		}
+	}
+
+	public IEnumerator BlinkRed() {
+		sp.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.2f);
+		sp.color = new Color(255, 255, 255);
+		yield return new WaitForSeconds(0.2f);
+		sp.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.2f);
+		sp.color = new Color(255, 255, 255);
+		yield return new WaitForSeconds(0.2f);
+		sp.color = new Color(255, 0, 0);
+		yield return new WaitForSeconds(0.2f);
+		sp.color = new Color(255, 255, 255);
 	}
 
 	public void OnTriggerStay2D(Collider2D other)
@@ -118,7 +179,7 @@ public class RatController : MonoBehaviour
 			rb.velocity = move_velocity;*/
 			Transform otf = GetComponent<Transform> ();
 			transform.position = otf.position;
-			print ("yeah");
+			//print ("yeah");
 		}
 	}
 
@@ -164,24 +225,55 @@ public class RatController : MonoBehaviour
 		if(gt1 || gt2)
 		{
 			//vector2.up is a vector of (0,1)
-			rb.velocity += CharacterControl.instance.jump_velocity * Vector2.up;// * high;
+			rb.velocity = new Vector2(rb.velocity.x, CharacterControl.instance.jump_velocity);
             FindObjectOfType<AudioManager>().Play("Jump");
         }	
 	}
 
+	//make rat run faster, dash for cat is here
 	public void Sprint()
 	{
 		
-		//Sprinting
-		if(Input.GetButtonDown("Fire3"))
+		//Sprinting for rat
+		if(this.name == "RatPlayer(Clone)")
 		{
-			speed = 6f;
+			if(Input.GetButtonDown("Fire3"))
+			{
+				speed = 6f;
 
+			}
+			else if(Input.GetButtonUp("Fire3"))
+			{
+				speed = 4f;
+
+			}
 		}
-		else if(Input.GetButtonUp("Fire3"))
+		if(this.name == "CatPlayer(Clone)")
 		{
-			speed = 4f;
+			//float timer = 0;
+			if(Input.GetKey(KeyCode.LeftShift))
+			{
 
+				//check what direction the player is facing
+				if (sp.flipX == false) //facing right
+				{
+					//print ("no reason");
+					tf.Translate (new Vector3(50f, 0f) * Time.deltaTime);
+				} 
+				else if (sp.flipX) //facing left
+				{
+					//print ("no reason2");
+					tf.Translate (new Vector3(-50f, 0f) * Time.deltaTime);
+				}
+			}
 		}
+	}
+
+	public void FreezeMovement() {
+		canMove = false;
+		rb.velocity = Vector2.zero;
+	}
+	public void ResumeMovement() {
+		canMove = true;
 	}
 }

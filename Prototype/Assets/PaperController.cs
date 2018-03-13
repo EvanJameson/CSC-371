@@ -4,48 +4,28 @@ using UnityEngine;
 
 public class PaperController : MonoBehaviour {
 
-	public GameObject xbutton;
-
-	private Vector3 offset = Vector3.zero;
-	private bool followCamera = false;
-	private bool animateIn = false;
 	private Canvas canvas;
+	private bool firsttime = true;
 
 	//access script in the trigger to decrement page value
-	public GameObject levelCompletedTrigger;
+	private GameObject levelCompletedTrigger;
 	private CompleteLevel cl;
 
 	// Use this for initialization
 	void Start () {
 		canvas = Object.FindObjectOfType<Canvas> ();
-	}
-	
-	void Update () {
-		if (followCamera) {
-			transform.position = CharacterControl.instance.player.transform.position + offset;
-		}
-		if (animateIn) {
-			if (transform.localScale.x < 0.7f) {
-				transform.RotateAround (transform.position, new Vector3 (0, 0, 1), -24.0f);
-				transform.localScale += new Vector3 (0.05f, 0.05f, 0.05f);
-			} else {
-				canvas.SendMessage ("RenderPaper");
-				animateIn = false;
-				Destroy (gameObject);
-			}
-		}
+		levelCompletedTrigger = GameObject.Find("LevelCompletedTrigger");
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if (!followCamera && other.CompareTag ("Player")) {
-			offset = transform.position - CharacterControl.instance.player.transform.position;
-			followCamera = true;
-			animateIn = true;
-			xbutton.SetActive (true);
+		if (other.CompareTag ("Player") && firsttime) {
+			firsttime = false;
 
 			//decrement pages left
 			cl = levelCompletedTrigger.GetComponent<CompleteLevel> ();
 			cl.pagesGot++;
+			canvas.SendMessage("RenderPaper", gameObject);
+			Destroy(gameObject);
 		}
 	}
 

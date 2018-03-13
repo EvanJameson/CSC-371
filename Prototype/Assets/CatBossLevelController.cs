@@ -14,6 +14,7 @@ public class CatBossLevelController : MonoBehaviour {
     public GameObject box4;
     public GameObject boss;
     public GameObject pipe;
+	public GameObject trigger; //levelcomplete trigger
 
 	// Use this for initialization
 	void Start () {
@@ -48,6 +49,8 @@ public class CatBossLevelController : MonoBehaviour {
             if (!box4.activeInHierarchy)
             {
                 pipe.SetActive(true);
+				trigger.SetActive (true);
+				//trigger.GetComponent<Transform> ().position = pipe.GetComponent<Transform>().position;
                 boss.SetActive(false);
             }
         }
