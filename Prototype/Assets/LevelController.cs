@@ -23,8 +23,8 @@ public class LevelController : MonoBehaviour {
 	void Awake()
 	{
 		PlayerPrefs.SetInt ("hasRat", 1);
-		PlayerPrefs.SetInt ("hasCat", 0);
-		PlayerPrefs.SetInt ("hasMonkey", 0);
+		//PlayerPrefs.SetInt ("hasCat", 0);
+		//PlayerPrefs.SetInt ("hasMonkey", 0);
 	}
 
 	void Start () {

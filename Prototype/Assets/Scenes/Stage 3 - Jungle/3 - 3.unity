@@ -9527,6 +9527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 11400000, guid: 5ba3e30b8e9dc42c2b2ed0201c8783fd, type: 2}
+  - {fileID: 11400000, guid: 95a43266651354c25a0f694daf36faf1, type: 2}
+  - {fileID: 11400000, guid: 511c9e3368bd042a9862397ba4fc774c, type: 2}
   abilityPanel: {fileID: 1495861489}
 --- !u!114 &972523711
 MonoBehaviour:

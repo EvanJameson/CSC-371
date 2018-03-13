@@ -2466,7 +2466,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326719215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -605.4814, y: -196.32112, z: 2.2528694}
+  m_LocalPosition: {x: -447.4, y: -213.5, z: 2.2528694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2126969923}
@@ -9479,6 +9479,7 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 5ba3e30b8e9dc42c2b2ed0201c8783fd, type: 2}
   - {fileID: 11400000, guid: 95a43266651354c25a0f694daf36faf1, type: 2}
+  - {fileID: 11400000, guid: 511c9e3368bd042a9862397ba4fc774c, type: 2}
   abilityPanel: {fileID: 1495861489}
 --- !u!114 &972523711
 MonoBehaviour:
