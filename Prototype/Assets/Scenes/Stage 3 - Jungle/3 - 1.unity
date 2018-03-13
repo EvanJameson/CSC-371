@@ -2469,7 +2469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &326719216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2502,7 +2502,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326719215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -605.4814, y: -196.32112, z: 2.2528694}
+  m_LocalPosition: {x: -686.5, y: -261.8, z: 2.2528694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1715805245}
@@ -6911,7 +6911,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1715805245}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 114351018302260548, guid: f746d77eef7bf49f89565b8ceece2c5e,
         type: 2}
@@ -6920,15 +6920,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -600.0614
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -197.90112
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.0812368
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6948,7 +6948,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114351018302260548, guid: f746d77eef7bf49f89565b8ceece2c5e,
         type: 2}
@@ -6968,11 +6968,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &541969431 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e,
-    type: 2}
-  m_PrefabInternal: {fileID: 541969430}
 --- !u!1 &572068882
 GameObject:
   m_ObjectHideFlags: 0
@@ -13424,14 +13419,6 @@ CompositeCollider2D:
         Y: 0
       - X: -90000000
         Y: 0
-    - - X: 400000000
-        Y: -62800004
-      - X: 320000000
-        Y: -62800004
-      - X: 320000000
-        Y: -70000000
-      - X: 400000000
-        Y: -70000000
     - - X: 240000000
         Y: -62800004
       - X: 150000000
@@ -13439,6 +13426,14 @@ CompositeCollider2D:
       - X: 150000000
         Y: -70000000
       - X: 240000000
+        Y: -70000000
+    - - X: 400000000
+        Y: -62800004
+      - X: 320000000
+        Y: -62800004
+      - X: 320000000
+        Y: -70000000
+      - X: 400000000
         Y: -70000000
     - - X: -200000000
         Y: -942800000
@@ -13462,14 +13457,14 @@ CompositeCollider2D:
       - {x: -10, y: 0.72}
       - {x: -10, y: 0}
       - {x: -9, y: 0}
-    - - {x: 40, y: -6.2800007}
-      - {x: 32, y: -6.2800007}
-      - {x: 32, y: -7}
-      - {x: 40, y: -7}
     - - {x: 24, y: -6.2800007}
       - {x: 15, y: -6.2800007}
       - {x: 15, y: -7}
       - {x: 24, y: -7}
+    - - {x: 40, y: -6.2800007}
+      - {x: 32, y: -6.2800007}
+      - {x: 32, y: -7}
+      - {x: 40, y: -7}
     - - {x: -20, y: -94.28}
       - {x: -21, y: -94.28}
       - {x: -21, y: -90.28}
@@ -17260,9 +17255,8 @@ Transform:
   - {fileID: 200309303}
   - {fileID: 326719217}
   - {fileID: 972523707}
-  - {fileID: 541969431}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1737886778
 Prefab:
@@ -96349,7 +96343,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: c588f1ad19328a94cbe55fa165f7bf40, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &2119333140
 GameObject:

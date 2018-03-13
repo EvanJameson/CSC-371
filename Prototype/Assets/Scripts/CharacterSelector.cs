@@ -13,11 +13,12 @@ public class CharacterSelector : MonoBehaviour {
 	};
 
 	void Awake(){
-		DontDestroyOnLoad (gameObject);
+		DontDestroyOnLoad (transform.gameObject);
 	}
 
 	void Start() {
 		OnCharacterSelect (0);
+		DontDestroyOnLoad (transform.gameObject);
 	}
 		
 	public void OnCharacterSelect(int characterChoice)
@@ -31,7 +32,9 @@ public class CharacterSelector : MonoBehaviour {
 			Transform t = CharacterControl.instance.player.transform;
 			Destroy (CharacterControl.instance.player);
 			CharacterControl.instance.player = Instantiate (selectedCharacter.prefab, t.transform.position, t.transform.rotation);
+			print ("if");
 		} else {
+			print ("else");
 			CharacterControl.instance.player = Instantiate (selectedCharacter.prefab);
 		}
 
@@ -56,7 +59,7 @@ public class CharacterSelector : MonoBehaviour {
     }
 	public void Update()
 	{
-		PlayerPrefs.SetInt ("hasCat", 1);
+		
 		for (int i = 0; i < charCodes.Length; i++) {
 			if (Input.GetKeyDown (charCodes [i])) {
 				int numberPressed = i;

@@ -248,7 +248,7 @@ public class RatController : MonoBehaviour
 
 			}
 		}
-		/*if(this.name == "CatPlayer(Clone)")
+		if(this.name == "CatPlayer(Clone)")
 		{
 			//float timer = 0;
 			if(Input.GetKey(KeyCode.LeftShift))
@@ -266,7 +266,7 @@ public class RatController : MonoBehaviour
 					tf.Translate (new Vector3(-50f, 0f) * Time.deltaTime);
 				}
 			}
-		}*/
+		}
 	}
 
 	public void FreezeMovement() {
