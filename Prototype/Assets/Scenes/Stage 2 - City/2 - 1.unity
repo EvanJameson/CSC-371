@@ -1090,43 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6ee49fc8bc98545a38fce096d80554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - name: LandingSound
-    clip: {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
-    volume: 0.101
-    pitch: 3
-    loop: 0
-    source: {fileID: 0}
-  - name: Jump
-    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
-    volume: 0.23
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Sewer1
-    clip: {fileID: 8300000, guid: 0533d0c3103937643b4171e42165f76d, type: 3}
-    volume: 0.45
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: Transform
-    clip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-    volume: 0.45
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: blockFall
-    clip: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-    volume: 0.45
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: PipeWarp
-    clip: {fileID: 8300000, guid: 7bd6b897eb5ca4b7d88a205c4a51640c, type: 3}
-    volume: 0.45
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
+  sounds: []
 --- !u!4 &200309303
 Transform:
   m_ObjectHideFlags: 0
@@ -2519,21 +2483,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5396894dc644e9592c33b735dcb06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 3 - 1
-  goalPages: 1
+  nextLevel: 
+  goalPages: 0
   pagesGot: 0
-  goalTime: 10
-  levelComplete: {fileID: 6418386}
-  nextLevelButton: {fileID: 2022866515}
-  pageIcon: {fileID: 400889684}
-  pages: {fileID: 941877039}
-  timerIcon: {fileID: 1613546456}
-  timed: {fileID: 273038297}
-  lifeIcon: {fileID: 1434289654}
-  lives: {fileID: 229771838}
-  gradeIcon: {fileID: 575843553}
-  grade: {fileID: 1016237044}
-  currentLevel: 2 - 1
+  goalTime: 0
+  levelComplete: {fileID: 0}
+  nextLevelButton: {fileID: 0}
+  pageIcon: {fileID: 0}
+  pages: {fileID: 0}
+  timerIcon: {fileID: 0}
+  timed: {fileID: 0}
+  lifeIcon: {fileID: 0}
+  lives: {fileID: 0}
+  gradeIcon: {fileID: 0}
+  grade: {fileID: 0}
+  currentLevel: 
 --- !u!1 &376555466
 GameObject:
   m_ObjectHideFlags: 0
@@ -9505,7 +9469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 232888017}
-  levelComplete: {fileID: 0}
+  levelComplete: {fileID: 6418386}
 --- !u!114 &972523709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9520,7 +9484,6 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 5ba3e30b8e9dc42c2b2ed0201c8783fd, type: 2}
   - {fileID: 11400000, guid: 95a43266651354c25a0f694daf36faf1, type: 2}
-  - {fileID: 11400000, guid: 511c9e3368bd042a9862397ba4fc774c, type: 2}
   abilityPanel: {fileID: 1495861489}
 --- !u!114 &972523711
 MonoBehaviour:
@@ -9533,7 +9496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb259136095d4cfb9482967c9a53a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paper: {fileID: 1124815283}
+  paper: {fileID: 0}
   expandedBackground: {fileID: 0}
 --- !u!1 &1016237041
 GameObject:
@@ -10364,7 +10327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  damping: 0.3
+  damping: 1
   lookAheadFactor: 3
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
@@ -14633,11 +14596,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives:
-  - {fileID: 68636186}
-  - {fileID: 709555951}
-  - {fileID: 307709785}
-  - {fileID: 2072214533}
-  - {fileID: 209997538}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1691016614
 GameObject:
   m_ObjectHideFlags: 0
@@ -15276,8 +15239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilityButtonAxisName: Fire1
-  darkMask: {fileID: 1945728294}
-  coolDownTextDisplay: {fileID: 646258697}
+  darkMask: {fileID: 0}
+  coolDownTextDisplay: {fileID: 0}
 --- !u!114 &1774013290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15782,8 +15745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6a110f29c64878829c3f38fe14fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgrounds:
-  - {fileID: 1878162540}
+  backgrounds: []
   smoothing: 1
 --- !u!1001 &1879724297
 Prefab:

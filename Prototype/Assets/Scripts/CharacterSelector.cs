@@ -56,6 +56,7 @@ public class CharacterSelector : MonoBehaviour {
     }
 	public void Update()
 	{
+		PlayerPrefs.SetInt ("hasCat", 1);
 		for (int i = 0; i < charCodes.Length; i++) {
 			if (Input.GetKeyDown (charCodes [i])) {
 				int numberPressed = i;
