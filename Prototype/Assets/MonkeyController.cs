@@ -10,8 +10,9 @@ public class MonkeyController : MonoBehaviour
 	private Rigidbody2D rb;
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
-	public bool immortal;
 	private int lives;
+    private LivesController lc;
+
 
     public bool isClingingRight = false;
     public bool isClingingLeft = false;
@@ -38,6 +39,8 @@ public class MonkeyController : MonoBehaviour
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
 		lives = PlayerPrefs.GetInt("lives");
+        lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
+
 	}
 
 	void LateUpdate()
@@ -179,17 +182,9 @@ public class MonkeyController : MonoBehaviour
 	//CHECK FOR DEATH HERE
 	public void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.gameObject.CompareTag("Toxic") && !immortal)
+		if(other.gameObject.CompareTag("Toxic"))
 		{
-			//died, add a menu, sound or something
-			lives--;
-			PlayerPrefs.SetInt ("lives", lives);
-			if(lives == 0)
-			{
-				//add menu that asks to retry or exit to main menu
-				gameObject.SetActive (false);
-			}
-
+            lc.removeLife ();
 		}
 	}
 

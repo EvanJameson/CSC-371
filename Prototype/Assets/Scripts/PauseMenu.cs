@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
 
@@ -65,4 +66,13 @@ public class PauseMenu : MonoBehaviour {
 		Destroy (GameObject.Find("CatPlayer(Clone)"));
 		Destroy (GameObject.Find("MonkeyPlayer(Clone)"));
 	}
+
+    public void toggleHaungsMode() {
+        CharacterControl.instance.SuperHaungs();
+        if (CharacterControl.instance.immortal) {
+            GameObject.Find("SuperHaungsText").GetComponent<Text>().text = "Turn Off Super Haungs";
+        } else {
+            GameObject.Find("SuperHaungsText").GetComponent<Text>().text = "Turn On Super Haungs";
+        }
+    }
 }
