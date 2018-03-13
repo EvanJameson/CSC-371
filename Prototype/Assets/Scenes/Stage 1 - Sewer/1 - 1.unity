@@ -702,6 +702,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 92780818}
+  - component: {fileID: 92780819}
   m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
@@ -724,6 +725,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &92780819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 92780817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a6a110f29c64878829c3f38fe14fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgrounds:
+  - {fileID: 92780818}
+  smoothing: 1
 --- !u!1001 &141242551
 Prefab:
   m_ObjectHideFlags: 0
@@ -21466,7 +21481,6 @@ GameObject:
   m_Component:
   - component: {fileID: 502512933}
   - component: {fileID: 502512935}
-  - component: {fileID: 502512934}
   m_Layer: 9
   m_Name: middle (1)
   m_TagString: Background
@@ -21487,20 +21501,6 @@ Transform:
   m_Father: {fileID: 92780818}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &502512934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 502512932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a6a110f29c64878829c3f38fe14fda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgrounds:
-  - {fileID: 502512933}
-  smoothing: 1
 --- !u!212 &502512935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30230,7 +30230,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.345327
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -34893,7 +34893,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1878162540}
   - component: {fileID: 1878162539}
-  - component: {fileID: 1878162541}
   m_Layer: 9
   m_Name: middle
   m_TagString: Background
@@ -34958,20 +34957,6 @@ Transform:
   m_Father: {fileID: 92780818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1878162541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1878162538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a6a110f29c64878829c3f38fe14fda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgrounds:
-  - {fileID: 1878162540}
-  smoothing: 1
 --- !u!1001 &1879724297
 Prefab:
   m_ObjectHideFlags: 0
