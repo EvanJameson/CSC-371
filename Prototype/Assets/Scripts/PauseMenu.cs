@@ -47,6 +47,7 @@ public class PauseMenu : MonoBehaviour {
 		pauseMenu.SetActive (false);
         Time.timeScale = 1;
 		Destroy (GameObject.Find("Canvas"));
+		//killPlayer ();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -56,5 +57,12 @@ public class PauseMenu : MonoBehaviour {
 		pauseMenu.SetActive(false);
 		Destroy (GameObject.Find("Canvas"));
 		SceneManager.LoadScene("MainMenu");
+	}
+
+	void killPlayer()
+	{
+		Destroy (GameObject.Find("RatPlayer(Clone)"));
+		Destroy (GameObject.Find("CatPlayer(Clone)"));
+		Destroy (GameObject.Find("MonkeyPlayer(Clone)"));
 	}
 }

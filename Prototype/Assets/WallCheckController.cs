@@ -16,12 +16,13 @@ public class WallCheckController : MonoBehaviour {
 		
 	}
 
-	public void OnCollisionStay2D (Collider2D other)
+	public void OnTriggerStay2D (Collider2D other)
 	{
+		
 		touching = true;
 	}
 
-	public void OnCollisionExit2D (Collider2D other)
+	public void OnTriggerExit2D (Collider2D other)
 	{
 		touching = false;
 	}
