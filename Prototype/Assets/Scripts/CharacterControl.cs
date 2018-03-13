@@ -12,7 +12,6 @@ public class CharacterControl : MonoBehaviour {
 	public static CharacterControl instance;
 
 	public GameObject player;
-	public Image[] iconContainers;
 	public float jump_velocity;
 	public int characterNumber;
 
