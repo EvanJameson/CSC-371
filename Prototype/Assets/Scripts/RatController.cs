@@ -100,6 +100,10 @@ public class RatController : MonoBehaviour
 			StartCoroutine(HandleSwoosh());
 
 		}
+		if (Input.GetButtonDown ("Fire1")) {
+			anim.Play ("Rat-Bite_Bite");
+		}
+
 	}
 
 
@@ -187,14 +191,7 @@ public class RatController : MonoBehaviour
 	{
 		//move left and right
 		Vector2 move_velocity = rb.velocity;
-		if (horizontal_input != 0) {
-			if (this.name == "RatPlayer(Clone)") {
-				anim.Play ("Rat-Run_Run");
-			} else if (this.name == "CatPlayer(Clone)") {
-				anim.Play ("Cat-Run_Run");
-			}
-				
-		}
+		anim.SetFloat ("inputH", horizontal_input);
 		move_velocity.x = horizontal_input * speed;
 		if (horizontal_input < 0) {
 			sp.flipX = true;
