@@ -89,6 +89,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Today
+    clip: {fileID: 8300000, guid: cfb8db0c0c96ec642ace3edce7153ae5, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Tomorrow
+    clip: {fileID: 8300000, guid: 23cfabfe4455b2a408e765beeef033b0, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Times
+    clip: {fileID: 8300000, guid: ef2128c5a9c661d48a80c33b93ddf055, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!114 &114351018302260548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -101,7 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  iconContainers:
-  - {fileID: 0}
   jump_velocity: 5
   characterNumber: 0
+  immortal: 0
