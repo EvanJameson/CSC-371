@@ -13,6 +13,8 @@ public class SavePrefs : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		PlayerPrefs.SetInt ("lives",5);
+		print (PlayerPrefs.GetInt("lives"));
 		//only sets on first run
 		//PlayerPrefs.DeleteAll();
 		abilityPanel = GameObject.Find("AbilityPanel");
@@ -28,7 +30,7 @@ public class SavePrefs : MonoBehaviour {
 		}
 
 		//everytime you enter main menu lives resets
-		PlayerPrefs.SetInt ("lives",5);
+
 	}
 	
 	// Update is called once per frame

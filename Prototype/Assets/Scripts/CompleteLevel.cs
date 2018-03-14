@@ -49,8 +49,8 @@ public class CompleteLevel : MonoBehaviour {
 
 	public void Start()
 	{
-		PlayerPrefs.SetInt ("lives", 5);
-		goalLives = 5;//PlayerPrefs.GetInt ("lives");
+		//PlayerPrefs.SetInt ("lives", 5);
+		goalLives = PlayerPrefs.GetInt("lives");//PlayerPrefs.GetInt ("lives");
 
 		if(currentLevel == "2 - 1")
 		{
