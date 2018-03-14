@@ -384,6 +384,9 @@ MonoBehaviour:
   gt2: 0
   leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}
   rightPuff: {fileID: 1204221191556324, guid: 8c647aaea68520a4dbee2f0c257d11d9, type: 2}
+  PlayerSwoosh: {fileID: 0}
+  SwooshPosition01: {fileID: 0}
+  SwooshPosition02: {fileID: 0}
 --- !u!124 &124848969121426702
 Behaviour:
   m_ObjectHideFlags: 1
