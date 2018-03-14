@@ -77,24 +77,49 @@ public class CharacterSelector : MonoBehaviour {
     }
 	public void Update()
 	{
-		
-		for (int i = 0; i < charCodes.Length; i++) {
-			if (Input.GetKeyDown (charCodes [i])) {
-				int numberPressed = i;
-				if (numberPressed == 0 && curChar != 0) {
-					OnCharacterSelect (numberPressed);
-				} else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 1 && curChar != 1) {
-					OnCharacterSelect (1);
-				} else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 0) {
-					Debug.Log ("cat not available");
-				} else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 1 && curChar != 2) {
-					OnCharacterSelect (2);
-				} else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 0) {
-					Debug.Log ("Monkey not available");
-				}
-			}
 
-		}
-	}
+        bool mouseNext = Input.GetKeyDown("1") || Input.GetKeyDown("z") || Input.GetKeyDown("j");
+        bool catNext = Input.GetKeyDown("2") || Input.GetKeyDown("x") || Input.GetKeyDown("k");
+        bool monkeyNext = Input.GetKeyDown("3") || Input.GetKeyDown("c") || Input.GetKeyDown("l");
+
+        if(mouseNext && curChar != 0)
+        {
+            OnCharacterSelect(0);
+        }
+        else if(catNext && curChar != 1 && PlayerPrefs.GetInt("hasCat") == 1)
+        {
+            OnCharacterSelect(1);
+        }
+        else if(catNext && curChar != 1 && PlayerPrefs.GetInt("hasCat") == 0)
+        {
+            Debug.Log("cat not available");
+        }
+        if(monkeyNext && curChar != 2 && PlayerPrefs.GetInt("hasMonkey") == 1)
+        {
+            OnCharacterSelect(2);
+        }
+        else if (catNext && curChar != 2 && PlayerPrefs.GetInt("hasMonkey") == 0)
+        {
+            Debug.Log("monkey not available");
+        }
+
+        /*		for (int i = 0; i < charCodes.Length; i++) {     old code, doensn't really work for the remapping
+                    if (Input.GetKeyDown (charCodes [i])) {
+                        int numberPressed = i;
+                        if (numberPressed == 0 && curChar != 0) {
+                            OnCharacterSelect (numberPressed);
+                        } else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 1 && curChar != 1) {
+                            OnCharacterSelect (1);
+                        } else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 0) {
+                            Debug.Log ("cat not available");
+                        } else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 1 && curChar != 2) {
+                            OnCharacterSelect (2);
+                        } else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 0) {
+                            Debug.Log ("Monkey not available");
+                        }
+                    }
+
+                }*/
+    }
 
 }
