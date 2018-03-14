@@ -3393,6 +3393,7 @@ MonoBehaviour:
   boss: {fileID: 1681979031}
   pipe: {fileID: 564364675}
   trigger: {fileID: 1206420427}
+  extralife: {fileID: 1116595704}
 --- !u!1 &349236219
 GameObject:
   m_ObjectHideFlags: 0
@@ -5767,7 +5768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &564364676
 Transform:
   m_ObjectHideFlags: 0
@@ -12526,12 +12527,12 @@ GameObject:
   - component: {fileID: 1116595705}
   - component: {fileID: 1116595708}
   m_Layer: 0
-  m_Name: life
+  m_Name: ExtraLife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1116595705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17947,7 +17948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1681979032
 BoxCollider2D:
   m_ObjectHideFlags: 0
