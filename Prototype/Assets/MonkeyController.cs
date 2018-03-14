@@ -12,7 +12,7 @@ public class MonkeyController : MonoBehaviour
 	public LayerMask player_mask;
 	private int lives;
     private LivesController lc;
-
+	public Animator anim;
 
     public bool isClingingRight = false;
     public bool isClingingLeft = false;
@@ -35,6 +35,7 @@ public class MonkeyController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
+		anim = GetComponent<Animator> ();
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
@@ -176,6 +177,16 @@ public class MonkeyController : MonoBehaviour
 		Sprint ();
 
         
+	}
+	public void Update()
+	{
+		input = Input.GetAxis("Horizontal");
+		if (input != 0) {
+			anim.Play ("monkey_walk_walk");
+		}
+		if (isClingingLeft) {
+			anim.Play ("monkey_wall_Wall");
+		}
 	}
 
 

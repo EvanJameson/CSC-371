@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RatController : MonoBehaviour 
 {
+	public Animator anim;
 	public float speed = 4, jump_velocity = 100;
 	public Transform ground_tf1, ground_tf2;
 	private Transform tf;
@@ -28,6 +29,7 @@ public class RatController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
+		anim = GetComponent<Animator> ();
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
@@ -162,6 +164,7 @@ public class RatController : MonoBehaviour
 	{
 		if(Input.GetButtonDown("Fire1"))
 		{
+			anim.Play ("Rat-Bite_Bite");
 			
 			other.gameObject.SetActive (false);
 		}
@@ -171,6 +174,14 @@ public class RatController : MonoBehaviour
 	{
 		//move left and right
 		Vector2 move_velocity = rb.velocity;
+		if (horizontal_input != 0) {
+			if (this.name == "RatPlayer(Clone)") {
+				anim.Play ("Rat-Run_Run");
+			} else if (this.name == "CatPlayer(Clone)") {
+				anim.Play ("Cat-Run_Run");
+			}
+				
+		}
 		move_velocity.x = horizontal_input * speed;
 		if (horizontal_input < 0) {
 			sp.flipX = true;
@@ -228,7 +239,7 @@ public class RatController : MonoBehaviour
 			//float timer = 0;
 			if(Input.GetKey(KeyCode.LeftShift))
 			{
-
+				anim.Play ("Cat-Swipe_Swipe");
 				//check what direction the player is facing
 				if (sp.flipX == false) //facing right
 				{
