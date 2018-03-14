@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 114283814131291762}
   - component: {fileID: 114371097815216262}
   - component: {fileID: 212021907151668616}
+  - component: {fileID: 95124043094738988}
   m_Layer: 8
   m_Name: MonkeyPlayer
   m_TagString: Player
@@ -198,8 +199,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.28, y: 2.38}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -223,8 +224,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.28, y: 2.38}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -233,6 +234,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33, y: 0.65}
   m_EdgeRadius: 0
+--- !u!95 &95124043094738988
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796427850132564}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ff0819d37ca9d4a0eba9e95a17acb13a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114191166449392804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,6 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512a719917b841f458d82d48080a08d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   speed: 2
   jump_velocity: 5
   ground_tf1: {fileID: 4686392794091450}
@@ -287,6 +306,7 @@ MonoBehaviour:
   player_mask:
     serializedVersion: 2
     m_Bits: 4294967039
+  anim: {fileID: 0}
   isClingingRight: 0
   isClingingLeft: 0
   vel: 0
@@ -319,6 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512a719917b841f458d82d48080a08d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   speed: 2
   jump_velocity: 5
   ground_tf1: {fileID: 0}
@@ -380,7 +401,7 @@ SpriteRenderer:
   m_SortingLayerID: -324455057
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2d99bcc679d03457d92faaffa65b6f25, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8768e2cf2a4bb4caea803a3c308829cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
