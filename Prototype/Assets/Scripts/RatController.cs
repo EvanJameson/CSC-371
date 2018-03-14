@@ -12,6 +12,7 @@ public class RatController : MonoBehaviour
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
 	private bool canMove = true;
+	public int dashVelocity;
 
 	private LivesController lc;
 
@@ -129,6 +130,18 @@ public class RatController : MonoBehaviour
 		{
             lc.removeLife ();
 		}
+		if(other.gameObject.CompareTag("Tile"))
+		{
+			//wall = true;
+		}
+	}
+
+	public void OnTriggerExit2D(Collider2D other)
+	{
+		if(other.gameObject.CompareTag("Tile"))
+		{
+			//wall = false;
+		}
 	}
 
 	public void OnTriggerStay2D(Collider2D other)
@@ -237,21 +250,35 @@ public class RatController : MonoBehaviour
 		if(this.name == "CatPlayer(Clone)")
 		{
 			//float timer = 0;
-			if(Input.GetKey(KeyCode.LeftShift))
+			if(Input.GetKeyDown(KeyCode.LeftShift))
 			{
 				anim.Play ("Cat-Swipe_Swipe");
 				//check what direction the player is facing
 				if (sp.flipX == false) //facing right
 				{
 					//print ("no reason");
-					tf.Translate (new Vector3(50f, 0f) * Time.deltaTime);
+					//tf.Translate (new Vector3(50f, 0f) * Time.deltaTime);
+					Dash(1);
 				} 
 				else if (sp.flipX) //facing left
 				{
 					//print ("no reason2");
-					tf.Translate (new Vector3(-50f, 0f) * Time.deltaTime);
+					//tf.Translate (new Vector3(-50f, 0f) * Time.deltaTime);
+					Dash(-1);
 				}
 			}
+		}
+	}
+
+	void Dash(int flip)
+	{
+		if(flip == 1)
+		{
+			rb.velocity = new Vector2 (dashVelocity * 100, 0);
+		}
+		else
+		{
+			rb.velocity = new Vector2 (dashVelocity * -100, 0);
 		}
 	}
 

@@ -20,11 +20,11 @@ public class DashAbility : Ability {
 
 		if((CharacterControl.instance.player.GetComponent<SpriteRenderer> ()).flipX == false )//&& !(wr.GetComponent<WallCheckController>()).touching) //facing right
 		{
-			(CharacterControl.instance.player.GetComponent<Transform> ()).Translate (new Vector3(120f, 0f) * Time.deltaTime);
+			(CharacterControl.instance.player.GetComponent<Rigidbody2D> ()).velocity = new Vector2 (400, 0);
 		}
 		else if ((CharacterControl.instance.player.GetComponent<SpriteRenderer> ()).flipX == true )//&& !(wl.GetComponent<WallCheckController>()).touching) //facing left
 		{
-			(CharacterControl.instance.player.GetComponent<Transform> ()).Translate (new Vector3(120f, 0f)* Time.deltaTime);
+			(CharacterControl.instance.player.GetComponent<Rigidbody2D> ()).velocity = new Vector2 (-400, 0);
 		}
 
 	}
