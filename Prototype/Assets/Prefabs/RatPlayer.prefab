@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 61522276470659024}
   - component: {fileID: 50276912876044734}
   - component: {fileID: 114499008636082108}
+  - component: {fileID: 95254144834120712}
   m_Layer: 8
   m_Name: RatPlayer
   m_TagString: Player
@@ -290,6 +291,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9563545, y: 1.24034}
   m_EdgeRadius: 0
+--- !u!95 &95254144834120712
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1754266798606930}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 948f86484eaa842289b6473b12650c6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114186694489991202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512a719917b841f458d82d48080a08d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   speed: 4
   jump_velocity: 999999
   ground_tf1: {fileID: 4487229389846550}

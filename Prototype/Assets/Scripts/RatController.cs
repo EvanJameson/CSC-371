@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RatController : MonoBehaviour 
 {
+	public Animator anim;
 	public float speed = 4, jump_velocity = 100;
 	public Transform ground_tf1, ground_tf2;
 	private Transform tf;
@@ -29,6 +30,7 @@ public class RatController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
+		anim = GetComponent<Animator> ();
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
@@ -198,8 +200,10 @@ public class RatController : MonoBehaviour
 		Vector2 move_velocity = rb.velocity;
 		move_velocity.x = horizontal_input * speed;
 		if (horizontal_input < 0) {
+			anim.Play ("Rat-Run_Rat-Run");
 			sp.flipX = true;
 		} else if (horizontal_input > 0){
+			anim.Play ("Rat-Run_Rat-Run");
 			sp.flipX = false;
 		}
 		rb.velocity = move_velocity;
