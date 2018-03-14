@@ -26,12 +26,17 @@ public class PaperCanvasController : MonoBehaviour {
 	void Start () {
 		rt = GetComponent<RectTransform> ();
 		canvas = Object.FindObjectOfType<Canvas> ();
-		bottomRight.x = canvas.pixelRect.width - 150;
+		canvas.SendMessage("ActivatePauseBackground");
+		SetScreenDimensions();
+		Animate(centerScreen, expandedSize);
+	}
+
+	void SetScreenDimensions() {
+		bottomRight.x = canvas.pixelRect.width - 100;
+		bottomRight.y = canvas.pixelRect.height - 100;
 		centerScreen.x = canvas.pixelRect.width / 2.0f;
 		centerScreen.y = canvas.pixelRect.height / 2.0f;
-		canvas.SendMessage("ActivatePauseBackground");
-
-		Animate(centerScreen, expandedSize);
+		expandedSize = new Vector2(canvas.pixelRect.height, canvas.pixelRect.height);
 	}
 	
 	void Update () {
@@ -54,21 +59,25 @@ public class PaperCanvasController : MonoBehaviour {
 		if (active && expanded) {
 			/* Page is enlarged and expanded UI is in the background -
 			 * Move back to original place on expanded UI */
+			SetScreenDimensions();
 			Animate (startingPoint, miniSize);
 			active = false;
 			canvas.SendMessage("RestoreOtherPages");
 		} else if (active) {
 			/* Must have just been picked up - move to bottom corner */
+			SetScreenDimensions();
 			Animate (bottomRight, miniSize);
 			active = false;
 			canvas.SendMessage("RemovePauseBackground");
 		} else if (expanded) {
 			/* On the expanded UI, enlarge page for user to read */
+			SetScreenDimensions();
 			Animate (centerScreen, expandedSize);
 			active = true;
 			canvas.SendMessage("RemoveOtherPages", gameObject);
 		} else {
 			/* Clicked on bottom right corner requesting expanded UI */
+			SetScreenDimensions();
 			expanded = true;
 			SendMessageUpwards ("ExpandJournalUI");
 		}
@@ -76,12 +85,14 @@ public class PaperCanvasController : MonoBehaviour {
 
 	/* Called from Storyline when all pieces should return to bottom right corner */
 	void ReturnInactive() {
+		SetScreenDimensions();
 		Animate (bottomRight, miniSize);
 		expanded = false;
 	}
 
 	/* Called from Storyline when necessary to move into place of expanded UI */
 	void MoveTo(Vector3 destination) {
+		SetScreenDimensions();
 		Animate (destination, miniSize);
 	}
 }
