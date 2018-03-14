@@ -64,12 +64,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4526130279191346}
-  - component: {fileID: 212317705595100940}
   - component: {fileID: 61744280841446974}
   - component: {fileID: 61870153671646364}
   - component: {fileID: 50781820517196464}
   - component: {fileID: 114283814131291762}
   - component: {fileID: 114371097815216262}
+  - component: {fileID: 212021907151668616}
   m_Layer: 8
   m_Name: MonkeyPlayer
   m_TagString: Player
@@ -262,7 +262,6 @@ MonoBehaviour:
   player_mask:
     serializedVersion: 2
     m_Bits: 4294967039
-  immortal: 0
   gt1: 0
   gt2: 0
   leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}
@@ -288,7 +287,6 @@ MonoBehaviour:
   player_mask:
     serializedVersion: 2
     m_Bits: 4294967039
-  immortal: 0
   isClingingRight: 0
   isClingingLeft: 0
   vel: 0
@@ -299,6 +297,42 @@ MonoBehaviour:
   gt2: 0
   leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}
   rightPuff: {fileID: 1204221191556324, guid: 8c647aaea68520a4dbee2f0c257d11d9, type: 2}
+--- !u!114 &114422967292741322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a6c877c521f4f66ac90e008e720659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114853835954071602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a719917b841f458d82d48080a08d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  jump_velocity: 5
+  ground_tf1: {fileID: 0}
+  ground_tf2: {fileID: 0}
+  player_mask:
+    serializedVersion: 2
+    m_Bits: 4294967039
+  gt1: 0
+  gt2: 0
+  leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}
+  rightPuff: {fileID: 1204221191556324, guid: 8c647aaea68520a4dbee2f0c257d11d9, type: 2}
+  PlayerSwoosh: {fileID: 0}
+  SwooshPosition01: {fileID: 0}
+  SwooshPosition02: {fileID: 0}
 --- !u!114 &114985886659479520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,53 +346,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
   projectileForce: 500
---- !u!114 &114422967292741322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1501812726314568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a6c877c521f4f66ac90e008e720659, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114853835954071602
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1501262334681740}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512a719917b841f458d82d48080a08d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  jump_velocity: 5
-  ground_tf1: {fileID: 4070843463408178}
-  ground_tf2: {fileID: 4456000575195232}
-  player_mask:
-    serializedVersion: 2
-    m_Bits: 4294967039
-  immortal: 0
-  gt1: 0
-  gt2: 0
-  leftPuff: {fileID: 1650496274676762, guid: db750e6711ad1a9438c15cff55b05e87, type: 2}
-  rightPuff: {fileID: 1204221191556324, guid: 8c647aaea68520a4dbee2f0c257d11d9, type: 2}
-  PlayerSwoosh: {fileID: 0}
-  SwooshPosition01: {fileID: 0}
-  SwooshPosition02: {fileID: 0}
---- !u!124 &124848969121426702
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1617183327040272}
-  m_Enabled: 1
 --- !u!212 &212021907151668616
 SpriteRenderer:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796427850132564}

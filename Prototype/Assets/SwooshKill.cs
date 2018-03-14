@@ -23,7 +23,7 @@ public class SwooshKill : MonoBehaviour {
 			other.gameObject.SetActive (false);
 		}
 
-		if (other.gameObject.CompareTag ("Enemy") || other.gameObject.CompareTag("Toxic")) {
+		if (other.gameObject.CompareTag ("Enemy")) {
 			other.gameObject.SetActive (false);
 		}
 
