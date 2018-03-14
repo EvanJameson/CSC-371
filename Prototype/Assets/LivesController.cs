@@ -15,20 +15,21 @@ public class LivesController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (PlayerPrefs.GetInt ("lives") == 5) 
-		{
-			index = PlayerPrefs.GetInt ("lives") - 1;
-		}
+		
+		index = PlayerPrefs.GetInt ("lives") - 1;
+		 
 
+		//print ("start lives = " + PlayerPrefs.GetInt("lives"));
 		for(int i = 0; i < 5; i++)
 		{
-			if (i > index) 
+			//print (i + " " + index);
+			if (i > index)// && index != 4) 
 			{
-				lives [index].SetActive (false);
+				lives [i].SetActive (false);
 			} 
 			else 
 			{
-				lives [index].SetActive (true);
+				lives [i].SetActive (true);
 			}
 		}
 	}
