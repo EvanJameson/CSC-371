@@ -181,11 +181,13 @@ public class MonkeyController : MonoBehaviour
 	public void Update()
 	{
 		input = Input.GetAxis("Horizontal");
-		if (input != 0) {
-			anim.Play ("monkey_walk_walk");
-		}
+		anim.SetFloat ("inputH", input);
+
 		if (isClingingLeft) {
-			anim.Play ("monkey_wall_Wall");
+			anim.Play ("monkey_wallL_WallL");
+		}
+		if (isClingingRight) {
+			anim.Play ("monkey_wallL_WallL");
 		}
 	}
 

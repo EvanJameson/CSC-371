@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: cd507379f6450449e83c1671caa2af15
-timeCreated: 1520994734
+guid: ef23ca657a6864062bf2cf940e562521
+timeCreated: 1521006161
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: monkey_wall 0
+    21300000: monkey_wallL 0
+    21300002: monkey_wallL 1
+    21300004: monkey_wallL 2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -47,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 140
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -58,7 +60,17 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -71,13 +83,41 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monkey_wall 0
+      name: monkey_wallL 0
       rect:
         serializedVersion: 2
         x: 0
-        y: 54
-        width: 174
-        height: 202
+        y: 694
+        width: 366
+        height: 330
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: monkey_wallL 1
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 694
+        width: 366
+        height: 330
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: monkey_wallL 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 366
+        height: 330
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
