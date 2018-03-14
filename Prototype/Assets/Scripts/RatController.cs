@@ -91,8 +91,9 @@ public class RatController : MonoBehaviour
 	}
 
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.X)){
-			//instantiate swoosh
+		if(Input.GetKeyDown(KeyCode.LeftControl)){
+			//instantiate swooshX
+			//KeyCode.X
 			StartCoroutine(HandleSwoosh());
 
 		}
