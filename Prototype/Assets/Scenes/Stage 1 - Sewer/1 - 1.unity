@@ -33091,7 +33091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -3.46, y: 15.8}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1334606590
@@ -33193,7 +33193,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4c499b4fb21b74f169f74113da898b34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2d3ca99b903a4439ad635033ee673e6, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -35676,7 +35676,7 @@ GameObject:
   - component: {fileID: 1595727145}
   - component: {fileID: 1595727144}
   m_Layer: 5
-  m_Name: RatIcon
+  m_Name: MonkeyIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35697,7 +35697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 4.5}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1595727144
@@ -35799,7 +35799,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4c499b4fb21b74f169f74113da898b34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8768e2cf2a4bb4caea803a3c308829cb, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -37065,7 +37065,7 @@ GameObject:
   - component: {fileID: 1784959347}
   - component: {fileID: 1784959346}
   m_Layer: 5
-  m_Name: RatIcon
+  m_Name: CatIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37087,7 +37087,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 58.6, y: 37.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1784959346
 AudioSource:
@@ -37188,7 +37188,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4c499b4fb21b74f169f74113da898b34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05393682e36f8443a8fa6c05069bf972, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -63088,13 +63088,13 @@ CompositeCollider2D:
         Y: 20000000
       - X: 180000000
         Y: 20000000
-    - - X: -80000000
+    - - X: 130000000
         Y: 140000000
-      - X: -90000000
+      - X: 30000000
         Y: 140000000
-      - X: -90000000
+      - X: 30000000
         Y: 130000000
-      - X: -80000000
+      - X: 130000000
         Y: 130000000
     - - X: -50000000
         Y: 140000000
@@ -63104,13 +63104,13 @@ CompositeCollider2D:
         Y: 130000000
       - X: -50000000
         Y: 130000000
-    - - X: 130000000
+    - - X: -80000000
         Y: 140000000
-      - X: 30000000
+      - X: -90000000
         Y: 140000000
-      - X: 30000000
+      - X: -90000000
         Y: 130000000
-      - X: 130000000
+      - X: -80000000
         Y: 130000000
     - - X: -70000000
         Y: 130000000
@@ -63152,14 +63152,6 @@ CompositeCollider2D:
         Y: 90000000
       - X: -50000000
         Y: 90000000
-    - - X: -120000000
-        Y: 90000000
-      - X: -170000000
-        Y: 90000000
-      - X: -170000000
-        Y: 80000000
-      - X: -120000000
-        Y: 80000000
     - - X: -80000000
         Y: 90000000
       - X: -90000000
@@ -63167,6 +63159,14 @@ CompositeCollider2D:
       - X: -90000000
         Y: 80000000
       - X: -80000000
+        Y: 80000000
+    - - X: -120000000
+        Y: 90000000
+      - X: -170000000
+        Y: 90000000
+      - X: -170000000
+        Y: 80000000
+      - X: -120000000
         Y: 80000000
     - - X: -100000000
         Y: 80000000
@@ -63184,14 +63184,6 @@ CompositeCollider2D:
         Y: 60000000
       - X: 210000000
         Y: 60000000
-    - - X: 230000000
-        Y: 70000000
-      - X: 220000000
-        Y: 70000000
-      - X: 220000000
-        Y: 60000000
-      - X: 230000000
-        Y: 60000000
     - - X: -80000000
         Y: 70000000
       - X: -100000000
@@ -63208,6 +63200,14 @@ CompositeCollider2D:
         Y: 60000000
       - X: 250000000
         Y: 60000000
+    - - X: 230000000
+        Y: 70000000
+      - X: 220000000
+        Y: 70000000
+      - X: 220000000
+        Y: 60000000
+      - X: 230000000
+        Y: 60000000
     - - X: 10000000
         Y: 60000000
       - X: -10000000
@@ -63216,14 +63216,6 @@ CompositeCollider2D:
         Y: 50000000
       - X: 10000000
         Y: 50000000
-    - - X: -30000000
-        Y: 60000000
-      - X: -50000000
-        Y: 60000000
-      - X: -50000000
-        Y: 50000000
-      - X: -30000000
-        Y: 50000000
     - - X: -70000000
         Y: 60000000
       - X: -80000000
@@ -63231,6 +63223,14 @@ CompositeCollider2D:
       - X: -80000000
         Y: 50000000
       - X: -70000000
+        Y: 50000000
+    - - X: -30000000
+        Y: 60000000
+      - X: -50000000
+        Y: 60000000
+      - X: -50000000
+        Y: 50000000
+      - X: -30000000
         Y: 50000000
     - - X: 30000000
         Y: 50000000
@@ -63376,10 +63376,6 @@ CompositeCollider2D:
       - {x: 15, y: 22}
       - {x: 15, y: 2}
       - {x: 18, y: 2}
-    - - {x: 13, y: 14}
-      - {x: 3, y: 14}
-      - {x: 3, y: 13}
-      - {x: 13, y: 13}
     - - {x: -8, y: 14}
       - {x: -9, y: 14}
       - {x: -9, y: 13}
@@ -63388,6 +63384,10 @@ CompositeCollider2D:
       - {x: -6, y: 14}
       - {x: -6, y: 13}
       - {x: -5, y: 13}
+    - - {x: 13, y: 14}
+      - {x: 3, y: 14}
+      - {x: 3, y: 13}
+      - {x: 13, y: 13}
     - - {x: -7, y: 13}
       - {x: -8, y: 13}
       - {x: -8, y: 12}
@@ -63400,54 +63400,54 @@ CompositeCollider2D:
       - {x: -5, y: 11}
       - {x: -5, y: 10}
       - {x: -3, y: 10}
-    - - {x: 21, y: 10}
-      - {x: 20, y: 10}
-      - {x: 20, y: 9}
-      - {x: 21, y: 9}
     - - {x: -5, y: 10}
       - {x: -7, y: 10}
       - {x: -7, y: 9}
       - {x: -5, y: 9}
-    - - {x: -12, y: 9}
-      - {x: -17, y: 9}
-      - {x: -17, y: 8}
-      - {x: -12, y: 8}
+    - - {x: 21, y: 10}
+      - {x: 20, y: 10}
+      - {x: 20, y: 9}
+      - {x: 21, y: 9}
     - - {x: -8, y: 9}
       - {x: -9, y: 9}
       - {x: -9, y: 8}
       - {x: -8, y: 8}
+    - - {x: -12, y: 9}
+      - {x: -17, y: 9}
+      - {x: -17, y: 8}
+      - {x: -12, y: 8}
     - - {x: -10, y: 8}
       - {x: -12, y: 8}
       - {x: -12, y: 7}
       - {x: -10, y: 7}
-    - - {x: 21, y: 7}
-      - {x: 20, y: 7}
-      - {x: 20, y: 6}
-      - {x: 21, y: 6}
     - - {x: 23, y: 7}
       - {x: 22, y: 7}
       - {x: 22, y: 6}
       - {x: 23, y: 6}
-    - - {x: -8, y: 7}
-      - {x: -10, y: 7}
-      - {x: -10, y: 6}
-      - {x: -8, y: 6}
     - - {x: 25, y: 7}
       - {x: 24, y: 7}
       - {x: 24, y: 6}
       - {x: 25, y: 6}
+    - - {x: -8, y: 7}
+      - {x: -10, y: 7}
+      - {x: -10, y: 6}
+      - {x: -8, y: 6}
+    - - {x: 21, y: 7}
+      - {x: 20, y: 7}
+      - {x: 20, y: 6}
+      - {x: 21, y: 6}
     - - {x: 1, y: 6}
       - {x: -1, y: 6}
       - {x: -1, y: 5}
       - {x: 1, y: 5}
-    - - {x: -3, y: 6}
-      - {x: -5, y: 6}
-      - {x: -5, y: 5}
-      - {x: -3, y: 5}
     - - {x: -7, y: 6}
       - {x: -8, y: 6}
       - {x: -8, y: 5}
       - {x: -7, y: 5}
+    - - {x: -3, y: 6}
+      - {x: -5, y: 6}
+      - {x: -5, y: 5}
+      - {x: -3, y: 5}
     - - {x: 3, y: 5}
       - {x: 2, y: 5}
       - {x: 2, y: 4}
