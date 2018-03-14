@@ -52,7 +52,7 @@ public class CatBossLevelController : MonoBehaviour {
             if (!box4.activeInHierarchy)
             {
                 pipe.SetActive(true);
-				trigger.SetActive (true);
+				trigger.GetComponent<Transform> ().transform.position = new Vector2(8.8f,-9);
 				//trigger.GetComponent<Transform> ().position = pipe.GetComponent<Transform>().position;
                 boss.SetActive(false);
                 if (startinglives - PlayerPrefs.GetInt("lives") >= 3) {
