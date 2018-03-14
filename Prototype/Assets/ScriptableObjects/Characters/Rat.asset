@@ -15,5 +15,5 @@ MonoBehaviour:
   startingHP: 100
   characterAbilities:
   - {fileID: 11400000, guid: ff320f76f44d4448ba69eec8f1464997, type: 2}
-  prefab: {fileID: 1754266798606930, guid: 87e913ed218e04db6bc4103e6d6b4c61, type: 2}
+  prefab: {fileID: 1616751153202070, guid: 87e913ed218e04db6bc4103e6d6b4c61, type: 2}
   jump_velocity: 5
