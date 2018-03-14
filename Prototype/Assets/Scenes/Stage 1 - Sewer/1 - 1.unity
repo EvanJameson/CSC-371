@@ -1271,7 +1271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &200309302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1319,6 +1319,24 @@ MonoBehaviour:
     volume: 0.45
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: Today
+    clip: {fileID: 8300000, guid: cfb8db0c0c96ec642ace3edce7153ae5, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Tomorrow
+    clip: {fileID: 8300000, guid: 23cfabfe4455b2a408e765beeef033b0, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Times
+    clip: {fileID: 8300000, guid: ef2128c5a9c661d48a80c33b93ddf055, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &200309303
 Transform:

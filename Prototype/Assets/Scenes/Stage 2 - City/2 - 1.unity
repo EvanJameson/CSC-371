@@ -1527,7 +1527,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6ee49fc8bc98545a38fce096d80554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: LandingSound
+    clip: {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
+    volume: 0.101
+    pitch: 3
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+    volume: 0.23
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sewer1
+    clip: {fileID: 8300000, guid: 0533d0c3103937643b4171e42165f76d, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Transform
+    clip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: blockFall
+    clip: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PipeWarp
+    clip: {fileID: 8300000, guid: 7bd6b897eb5ca4b7d88a205c4a51640c, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Today
+    clip: {fileID: 8300000, guid: cfb8db0c0c96ec642ace3edce7153ae5, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Tomorrow
+    clip: {fileID: 8300000, guid: 23cfabfe4455b2a408e765beeef033b0, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Times
+    clip: {fileID: 8300000, guid: ef2128c5a9c661d48a80c33b93ddf055, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &200309303
 Transform:
   m_ObjectHideFlags: 0

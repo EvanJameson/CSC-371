@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Level3Audio : MonoBehaviour {
 
+    public AudioManager audioSource;
+
 	// Use this for initialization
 	void Start () {
-        FindObjectOfType<AudioManager>().Pause("Today");
-        FindObjectOfType<AudioManager>().Pause("Times");
-        FindObjectOfType<AudioManager>().Play("Tomorrow");
+        audioSource = AudioManager.GetInstance();
+        audioSource.Pause("Today");
+        audioSource.Pause("Times");
+        audioSource.Play("Tomorrow");
     }
 	
 	// Update is called once per frame

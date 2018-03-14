@@ -26,6 +26,11 @@ public class AudioManager : MonoBehaviour {
 
 	}
 
+    public static AudioManager GetInstance()
+    {
+        return instance;
+    }
+
 	private void Start()
 	{
 		//Play ("Today");

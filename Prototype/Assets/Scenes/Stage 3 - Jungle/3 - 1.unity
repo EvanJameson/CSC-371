@@ -1317,6 +1317,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Today
+    clip: {fileID: 8300000, guid: cfb8db0c0c96ec642ace3edce7153ae5, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Tomorrow
+    clip: {fileID: 8300000, guid: 23cfabfe4455b2a408e765beeef033b0, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Times
+    clip: {fileID: 8300000, guid: ef2128c5a9c661d48a80c33b93ddf055, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &200309303
 Transform:
   m_ObjectHideFlags: 0
@@ -7226,6 +7244,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &541969431 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114013709975871232, guid: f746d77eef7bf49f89565b8ceece2c5e,
+    type: 2}
+  m_PrefabInternal: {fileID: 541969430}
+  m_Script: {fileID: 11500000, guid: fb6ee49fc8bc98545a38fce096d80554, type: 3}
 --- !u!1 &544205289
 GameObject:
   m_ObjectHideFlags: 0
@@ -97984,6 +98008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21214b2b4831fc4192894311c9ed418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 541969431}
 --- !u!4 &2127949417
 Transform:
   m_ObjectHideFlags: 0
