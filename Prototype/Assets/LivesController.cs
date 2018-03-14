@@ -11,6 +11,7 @@ public class LivesController : MonoBehaviour {
 	private float timeSinceLastLostLife = 0;
 
 	public GameObject[] lives = new GameObject[5];
+	public GameObject gameOver;
 
 	// Use this for initialization
 	void Start () {
@@ -52,8 +53,15 @@ public class LivesController : MonoBehaviour {
 
 		if (index >= 0) {
 			StartCoroutine(BlinkRed());
-		} else {
+		}
+
+		//death handling
+		else if(index < 0){
+			
+
 			CharacterControl.instance.player.SetActive (false);
+			gameOver.SetActive (true);
+
 		}
 	}
 

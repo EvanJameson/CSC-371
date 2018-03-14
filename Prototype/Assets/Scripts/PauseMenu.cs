@@ -43,12 +43,16 @@ public class PauseMenu : MonoBehaviour {
         FindObjectOfType<AudioManager>().Pause("Sewer1");
     }
 
-    public void restart()
+	public void restart(bool death)
     {
 		pauseMenu.SetActive (false);
         Time.timeScale = 1;
 		Destroy (GameObject.Find("Canvas"));
 		//killPlayer ();
+		if(death)
+		{
+			PlayerPrefs.SetInt("lives", 5);
+		}
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
