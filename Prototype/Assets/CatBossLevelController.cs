@@ -15,10 +15,13 @@ public class CatBossLevelController : MonoBehaviour {
     public GameObject boss;
     public GameObject pipe;
 	public GameObject trigger; //levelcomplete trigger
+    public GameObject extralife;
+
+    private int startinglives;
 
 	// Use this for initialization
 	void Start () {
-		
+		startinglives = PlayerPrefs.GetInt("lives");
 	}
 	
 	// Update is called once per frame
@@ -52,6 +55,9 @@ public class CatBossLevelController : MonoBehaviour {
 				trigger.SetActive (true);
 				//trigger.GetComponent<Transform> ().position = pipe.GetComponent<Transform>().position;
                 boss.SetActive(false);
+                if (startinglives - PlayerPrefs.GetInt("lives") >= 3) {
+                    extralife.SetActive(true);
+                }
             }
         }
     }
