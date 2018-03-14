@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114724851358955480}
   m_Layer: 0
   m_Name: snakes_38
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1646156079477352}
   m_LocalRotation: {x: -0, y: -0.99999696, z: 0, w: -0.002469684}
-  m_LocalPosition: {x: 2.07, y: 1.27, z: 0}
+  m_LocalPosition: {x: -3.85, y: 6.3, z: 0}
   m_LocalScale: {x: 5.701041, y: 5.514188, z: 1}
   m_Children:
   - {fileID: 4281642464298826}
@@ -183,6 +183,7 @@ MonoBehaviour:
     m_Bits: 3072
   weakness: {fileID: 0}
   colliding: 0
+  lives: {fileID: 0}
 --- !u!212 &212139419281356422
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -15,6 +15,8 @@ public class SnakeEnemy : MonoBehaviour {
 
 	public bool colliding;
 
+	public GameObject lives;
+
 	//Animator anim;
 
 
@@ -53,16 +55,7 @@ public class SnakeEnemy : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "Player") {
 
-			float height= col.contacts[0].point.y - weakness.position.y;
-
-			if(height>0)
-			{
-				Dies();
-				col.rigidbody.AddForce(new Vector2(0,300));
-
-
-			}
-
+			lives.GetComponent<LivesController>().removeLife();
 
 		}
 
