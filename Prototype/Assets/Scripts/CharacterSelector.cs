@@ -39,14 +39,14 @@ public class CharacterSelector : MonoBehaviour {
             if (characterChoice == 1)
             {
                 Transform tmp = t;
-                tmp.transform.position = new Vector2(tmp.transform.position.x, tmp.transform.position.y + 0.25f);
+                tmp.transform.position = new Vector2(tmp.transform.position.x, tmp.transform.position.y);
                 curChar = 1;
                 CharacterControl.instance.player = Instantiate(selectedCharacter.prefab, tmp.transform.position, t.transform.rotation);
             }
             else if(characterChoice == 0 && curChar == 1)
             {
                 Transform tmp = t;
-                tmp.transform.position = new Vector2(tmp.transform.position.x, tmp.transform.position.y - 0.25f);
+                tmp.transform.position = new Vector2(tmp.transform.position.x, tmp.transform.position.y);
                 curChar = 0;
                 CharacterControl.instance.player = Instantiate(selectedCharacter.prefab, tmp.transform.position, t.transform.rotation);
             }
