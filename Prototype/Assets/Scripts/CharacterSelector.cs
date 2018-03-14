@@ -12,6 +12,8 @@ public class CharacterSelector : MonoBehaviour {
 		KeyCode.Alpha3,
 	};
 
+    private int curChar = 0;
+
 	void Awake(){
 		DontDestroyOnLoad (gameObject);
 	}
@@ -26,11 +28,30 @@ public class CharacterSelector : MonoBehaviour {
 
 		Character selectedCharacter = characters [characterChoice];
 
-		/* Destroy current character and instantiate new character */
-		if (CharacterControl.instance != null && CharacterControl.instance.player != null) {
-			Transform t = CharacterControl.instance.player.transform;
-			Destroy (CharacterControl.instance.player);
-			CharacterControl.instance.player = Instantiate (selectedCharacter.prefab, t.transform.position, t.transform.rotation);
+        /* Destroy current character and instantiate new character */
+        if (CharacterControl.instance != null && CharacterControl.instance.player != null) {
+            Transform t = CharacterControl.instance.player.transform;
+            Destroy(CharacterControl.instance.player);
+
+            if (characterChoice == 1)
+            {
+                Transform tmp = t;
+                tmp.transform.position = new Vector2(tmp.transform.position.x, tmp.transform.position.y + 0.25f);
+                curChar = 1;
+                CharacterControl.instance.player = Instantiate(selectedCharacter.prefab, tmp.transform.position, t.transform.rotation);
+            }
+            else if(characterChoice == 0 && curChar == 1)
+            {
+                Transform tmp = t;
+                tmp.transform.position = new Vector2(tmp.transform.position.x, tmp.transform.position.y - 0.25f);
+                curChar = 0;
+                CharacterControl.instance.player = Instantiate(selectedCharacter.prefab, tmp.transform.position, t.transform.rotation);
+            }
+            else
+            { 
+                CharacterControl.instance.player = Instantiate(selectedCharacter.prefab, t.transform.position, t.transform.rotation);
+                curChar = characterChoice;
+            }
 		} else {
 			CharacterControl.instance.player = Instantiate (selectedCharacter.prefab);
 		}
@@ -60,13 +81,13 @@ public class CharacterSelector : MonoBehaviour {
 		for (int i = 0; i < charCodes.Length; i++) {
 			if (Input.GetKeyDown (charCodes [i])) {
 				int numberPressed = i;
-				if (numberPressed == 0) {
+				if (numberPressed == 0 && curChar != 0) {
 					OnCharacterSelect (numberPressed);
-				} else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 1) {
+				} else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 1 && curChar != 1) {
 					OnCharacterSelect (1);
 				} else if (numberPressed == 1 && PlayerPrefs.GetInt ("hasCat") == 0) {
 					Debug.Log ("cat not available");
-				} else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 1) {
+				} else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 1 && curChar != 2) {
 					OnCharacterSelect (2);
 				} else if (numberPressed == 2 && PlayerPrefs.GetInt ("hasMonkey") == 0) {
 					Debug.Log ("Monkey not available");
