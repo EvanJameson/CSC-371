@@ -6,6 +6,8 @@ public class CharacterSelector : MonoBehaviour {
 
 	public Character[] characters;
 	public GameObject abilityPanel;
+	public GameObject characterPanel;
+
 	private KeyCode[] charCodes = {
 		KeyCode.Alpha1,
 		KeyCode.Alpha2,
@@ -15,11 +17,12 @@ public class CharacterSelector : MonoBehaviour {
     private int curChar = 0;
 
 	void Awake(){
-		DontDestroyOnLoad (gameObject);
+		DontDestroyOnLoad (transform.gameObject);
 	}
 
 	void Start() {
 		OnCharacterSelect (0);
+		DontDestroyOnLoad (transform.gameObject);
 	}
 		
 	public void OnCharacterSelect(int characterChoice)
@@ -57,27 +60,24 @@ public class CharacterSelector : MonoBehaviour {
 		}
 
 		CharacterControl.instance.jump_velocity = selectedCharacter.jump_velocity;
-
-		if (CharacterControl.instance.characterNumber >= 0) {
-			CharacterControl.instance.iconContainers [CharacterControl.instance.characterNumber].color += new Color (0, 0, 0, 180);
-		}
-		CharacterControl.instance.iconContainers [characterChoice].color -= new Color (0, 0, 0, 180);
 		CharacterControl.instance.characterNumber = characterChoice;
+
+		FindObjectOfType<AudioManager>().Play("Transform");
+        if (characterPanel != null) {
+        	characterPanel.SendMessage("SwapCharacter", characterChoice);
+        }
 
 		WeaponMarker weaponMarker = CharacterControl.instance.player.GetComponentInChildren<WeaponMarker> ();
 		AbilityCoolDown[] coolDownButtons = GetComponentsInChildren<AbilityCoolDown> ();
-
 
 		for (int i = 0; i < coolDownButtons.Length; i++) {
 			coolDownButtons [i].Initialize (selectedCharacter.characterAbilities [i], weaponMarker.gameObject);
 		}
 
-        FindObjectOfType<AudioManager>().Play("Transform");
-
     }
 	public void Update()
 	{
-		PlayerPrefs.SetInt ("hasCat", 1);
+		
 		for (int i = 0; i < charCodes.Length; i++) {
 			if (Input.GetKeyDown (charCodes [i])) {
 				int numberPressed = i;

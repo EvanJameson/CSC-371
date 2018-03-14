@@ -17,25 +17,18 @@ public class DashAbility : Ability {
 
 		//GameObject wr = GameObject.Find ("WallCheckRight");
 		//GameObject wl = GameObject.Find ("WallCheckLeft");
-		Dash();
-	}
 
-	void Dash()
-	{
-		float timer = 0;
-
-		while(timer < .3)
+		if((CharacterControl.instance.player.GetComponent<SpriteRenderer> ()).flipX == false )//&& !(wr.GetComponent<WallCheckController>()).touching) //facing right
 		{
-			if((CharacterControl.instance.player.GetComponent<SpriteRenderer> ()).flipX == false )//&& !(wr.GetComponent<WallCheckController>()).touching) //facing right
-			{
-				(CharacterControl.instance.player.GetComponent<Transform> ()).Translate (new Vector3(.05f, 0f)); //* Time.deltaTime);
-			}
-			else if ((CharacterControl.instance.player.GetComponent<SpriteRenderer> ()).flipX == true )//&& !(wl.GetComponent<WallCheckController>()).touching) //facing left
-			{
-				(CharacterControl.instance.player.GetComponent<Transform> ()).Translate (new Vector3(-.05f, 0f)); //* Time.deltaTime);
-			}
-			timer += Time.deltaTime;
+			(CharacterControl.instance.player.GetComponent<Transform> ()).Translate (new Vector3(120f, 0f) * Time.deltaTime);
 		}
+		else if ((CharacterControl.instance.player.GetComponent<SpriteRenderer> ()).flipX == true )//&& !(wl.GetComponent<WallCheckController>()).touching) //facing left
+		{
+			(CharacterControl.instance.player.GetComponent<Transform> ()).Translate (new Vector3(120f, 0f)* Time.deltaTime);
+		}
+
 	}
+
+
 
 }

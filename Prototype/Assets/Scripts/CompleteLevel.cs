@@ -51,6 +51,16 @@ public class CompleteLevel : MonoBehaviour {
 	{
 		PlayerPrefs.SetInt ("lives", 5);
 		goalLives = 5;//PlayerPrefs.GetInt ("lives");
+
+		if(currentLevel == "2 - 1")
+		{
+			PlayerPrefs.SetInt ("hasCat", 1);
+		}
+		if(currentLevel == "3 - 1")
+		{
+			PlayerPrefs.SetInt ("hasCat", 1);
+			PlayerPrefs.SetInt ("hasMonkey", 1);
+		}
 	}
 
 	public void Update()
@@ -59,6 +69,7 @@ public class CompleteLevel : MonoBehaviour {
 			PlayerPrefs.SetInt ("hasCat", 1);
 		}
 		if (currentLevel.Equals ("3 - 1")) {
+			PlayerPrefs.SetInt ("hasCat", 1);
 			PlayerPrefs.SetInt ("hasMonkey", 1);
 		}
 		currentTime += Time.deltaTime;
@@ -119,6 +130,8 @@ public class CompleteLevel : MonoBehaviour {
 		//pipes tho
 
 		//print (checkGrade);
+
+		print (checkGrade);
 
 		if(checkGrade.Equals("none"))
 		{

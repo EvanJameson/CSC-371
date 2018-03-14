@@ -10,7 +10,6 @@ public class RatController : MonoBehaviour
 	private Rigidbody2D rb;
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
-	public bool immortal;
 	private bool canMove = true;
 
 	private LivesController lc;
@@ -92,8 +91,9 @@ public class RatController : MonoBehaviour
 	}
 
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.X)){
-			//instantiate swoosh
+		if(Input.GetKeyDown(KeyCode.LeftControl)){
+			//instantiate swooshX
+			//KeyCode.X
 			StartCoroutine(HandleSwoosh());
 
 		}
@@ -123,35 +123,10 @@ public class RatController : MonoBehaviour
 	//bug, touching toxic triggers this twice
 	public void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.gameObject.CompareTag("Toxic") && !immortal)
+		if(other.gameObject.CompareTag("Toxic"))
 		{
-			//died, add a menu, sound or something
-			lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
-			lc.removeLife ();
-
-			StartCoroutine(BlinkRed ());
-
-			if(PlayerPrefs.GetInt("lives") == 0)
-			{
-				//add menu that asks to retry or exit to main menu
-				gameObject.SetActive (false);
-			}
-
+            lc.removeLife ();
 		}
-	}
-
-	public IEnumerator BlinkRed() {
-		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 255, 255);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 255, 255);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 255, 255);
 	}
 
 	public void OnTriggerStay2D(Collider2D other)
@@ -179,7 +154,7 @@ public class RatController : MonoBehaviour
 			rb.velocity = move_velocity;*/
 			Transform otf = GetComponent<Transform> ();
 			transform.position = otf.position;
-			print ("yeah");
+			//print ("yeah");
 		}
 	}
 
@@ -248,7 +223,7 @@ public class RatController : MonoBehaviour
 
 			}
 		}
-		/*if(this.name == "CatPlayer(Clone)")
+		if(this.name == "CatPlayer(Clone)")
 		{
 			//float timer = 0;
 			if(Input.GetKey(KeyCode.LeftShift))
@@ -266,7 +241,7 @@ public class RatController : MonoBehaviour
 					tf.Translate (new Vector3(-50f, 0f) * Time.deltaTime);
 				}
 			}
-		}*/
+		}
 	}
 
 	public void FreezeMovement() {

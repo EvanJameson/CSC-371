@@ -6911,19 +6911,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1728798282}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -600.0614
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -197.90112
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.0812368
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6943,7 +6943,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114351018302260548, guid: f746d77eef7bf49f89565b8ceece2c5e,
         type: 2}
@@ -6953,11 +6953,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &541969431 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4542366118416554, guid: f746d77eef7bf49f89565b8ceece2c5e,
-    type: 2}
-  m_PrefabInternal: {fileID: 541969430}
 --- !u!1 &572068882
 GameObject:
   m_ObjectHideFlags: 0
@@ -9500,6 +9495,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 11400000, guid: 5ba3e30b8e9dc42c2b2ed0201c8783fd, type: 2}
+  - {fileID: 11400000, guid: 95a43266651354c25a0f694daf36faf1, type: 2}
+  - {fileID: 11400000, guid: 511c9e3368bd042a9862397ba4fc774c, type: 2}
   abilityPanel: {fileID: 1495861489}
 --- !u!114 &972523711
 MonoBehaviour:
@@ -9513,7 +9510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paper: {fileID: 1124815283}
-  xbutton: {fileID: 289466721}
+  expandedBackground: {fileID: 0}
 --- !u!1 &1016237041
 GameObject:
   m_ObjectHideFlags: 0
@@ -14349,9 +14346,8 @@ Transform:
   - {fileID: 200309303}
   - {fileID: 326719217}
   - {fileID: 972523707}
-  - {fileID: 541969431}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1737886778
 Prefab:

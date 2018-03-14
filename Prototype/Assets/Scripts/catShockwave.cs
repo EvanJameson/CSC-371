@@ -20,7 +20,7 @@ public class catShockwave : MonoBehaviour {
 		transform.position = position;
 
 		Vector2 max = Camera.main.ViewportToWorldPoint (new Vector2 (1, 1));
-		Debug.Log ("Max x: " + max.x, gameObject);
+		//Debug.Log ("Max x: " + max.x, gameObject);
 
 		if(transform.position.x > 18 ){
 			Destroy (gameObject);

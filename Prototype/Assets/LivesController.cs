@@ -25,13 +25,37 @@ public class LivesController : MonoBehaviour {
 
 	public void removeLife()
 	{
-		if (Time.time - timeSinceLastLostLife > IMMUNITY_TIME) {
-			lives [index].SetActive (false);
-			index--;
-			timeSinceLastLostLife = Time.time;
-			PlayerPrefs.SetInt ("lives", index + 1);
+		Debug.Log(CharacterControl.instance.immortal);
+		if (!CharacterControl.instance.immortal) {
+			if (index >= 0 && Time.time - timeSinceLastLostLife > IMMUNITY_TIME) {
+				lives [index].SetActive (false);
+				index--;
+				timeSinceLastLostLife = Time.time;
+				PlayerPrefs.SetInt ("lives", index + 1);
+			}
+		}
+
+		if (index >= 0) {
+			StartCoroutine(BlinkRed());
+		} else {
+			CharacterControl.instance.player.SetActive (false);
 		}
 	}
+
+	public IEnumerator BlinkRed() {
+		SpriteRenderer sp = CharacterControl.instance.player.GetComponent<SpriteRenderer>();
+        sp.color = new Color(255, 0, 0);
+        yield return new WaitForSeconds(0.2f);
+        sp.color = new Color(255, 255, 255);
+        yield return new WaitForSeconds(0.2f);
+        sp.color = new Color(255, 0, 0);
+        yield return new WaitForSeconds(0.2f);
+        sp.color = new Color(255, 255, 255);
+        yield return new WaitForSeconds(0.2f);
+        sp.color = new Color(255, 0, 0);
+        yield return new WaitForSeconds(0.2f);
+        sp.color = new Color(255, 255, 255);
+    }
 	
 	// Update is called once per frame
 	void Update () {
