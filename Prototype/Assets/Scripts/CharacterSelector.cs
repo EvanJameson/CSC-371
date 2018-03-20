@@ -34,6 +34,7 @@ public class CharacterSelector : MonoBehaviour {
         /* Destroy current character and instantiate new character */
         if (CharacterControl.instance != null && CharacterControl.instance.player != null) {
             Transform t = CharacterControl.instance.player.transform;
+            Vector2 velocity = CharacterControl.instance.player.GetComponent<Rigidbody2D>().velocity;
             Destroy(CharacterControl.instance.player);
 
             if (characterChoice == 1)
@@ -55,6 +56,7 @@ public class CharacterSelector : MonoBehaviour {
                 CharacterControl.instance.player = Instantiate(selectedCharacter.prefab, t.transform.position, t.transform.rotation);
                 curChar = characterChoice;
             }
+            CharacterControl.instance.player.GetComponent<Rigidbody2D>().velocity = velocity;
 		} else {
 			CharacterControl.instance.player = Instantiate (selectedCharacter.prefab);
 		}
