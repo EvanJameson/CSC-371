@@ -24,7 +24,7 @@ public class PaperController : MonoBehaviour {
 			//decrement pages left
 			cl = levelCompletedTrigger.GetComponent<CompleteLevel> ();
 			cl.pagesGot++;
-			canvas.SendMessage("RenderPaper", gameObject);
+			canvas.SendMessage("RenderPaper", gameObject.GetComponent<SpriteRenderer>().sprite);
 			Destroy(gameObject);
 		}
 	}

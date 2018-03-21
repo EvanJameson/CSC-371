@@ -17,11 +17,11 @@ public class Storyline : MonoBehaviour {
 		canvas = Object.FindObjectOfType<Canvas> ();
 	}
 
-	void RenderPaper(GameObject paperO) {
+	void RenderPaper(Sprite papersprite) {
 		activePaper = Instantiate (paper);
 		activePaper.transform.SetParent(gameObject.transform, false);
 
-		activePaper.GetComponent<Image> ().sprite = paperO.GetComponent<SpriteRenderer>().sprite;
+		activePaper.GetComponent<Image> ().sprite = papersprite;
 		papersCollected.Add(activePaper);
 	}
 
