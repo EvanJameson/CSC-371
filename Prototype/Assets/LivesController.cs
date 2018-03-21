@@ -43,8 +43,7 @@ public class LivesController : MonoBehaviour {
 
 	public void removeLife()
 	{
-		Debug.Log(CharacterControl.instance.immortal);
-		if (!CharacterControl.instance.immortal) {
+		if (PlayerPrefs.GetInt("SuperHaungsMode") == 0) {
 			if (index >= 0 && Time.time - timeSinceLastLostLife > IMMUNITY_TIME) {
 				lives [index].SetActive (false);
 				index--;
@@ -59,8 +58,6 @@ public class LivesController : MonoBehaviour {
 
 		//death handling
 		else if(index < 0){
-			
-
 			CharacterControl.instance.player.SetActive (false);
 			gameOver.SetActive (true);
 

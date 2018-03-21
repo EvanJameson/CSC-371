@@ -11,6 +11,9 @@ public class PauseMenu : MonoBehaviour {
     public GameObject pauseMenu;
 	public GameObject levelComplete;
 
+    void Start() {
+    }
+
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown ("escape"))
@@ -41,6 +44,9 @@ public class PauseMenu : MonoBehaviour {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         FindObjectOfType<AudioManager>().Pause("Sewer1");
+        if (PlayerPrefs.GetInt("SuperHaungsMode") == 1) {
+            GameObject.Find("SuperHaungsText").GetComponent<Text>().text = "Turn Off Super Haungs";
+        }
     }
 
 	public void restart(bool death)
@@ -72,10 +78,11 @@ public class PauseMenu : MonoBehaviour {
 	}
 
     public void toggleHaungsMode() {
-        CharacterControl.instance.SuperHaungs();
-        if (CharacterControl.instance.immortal) {
+        if (PlayerPrefs.GetInt("SuperHaungsMode") == 0) {
+            PlayerPrefs.SetInt("SuperHaungsMode", 1);
             GameObject.Find("SuperHaungsText").GetComponent<Text>().text = "Turn Off Super Haungs";
         } else {
+            PlayerPrefs.SetInt("SuperHaungsMode", 0);
             GameObject.Find("SuperHaungsText").GetComponent<Text>().text = "Turn On Super Haungs";
         }
     }
