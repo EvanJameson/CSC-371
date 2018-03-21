@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossGunnerControl : MonoBehaviour {
-	private GameObject boss;
 	private GameObject walls;
 	private GameObject player;
 	private GameObject cam;
@@ -14,7 +13,11 @@ public class BossGunnerControl : MonoBehaviour {
 	private bool hit = false;
 	private bool dirRight = true;
 	private bool initialized = false;
+	private float nextShot = 0.0f;
+	private float sumDelta = 0f;
+	public float fireRate = 10.0f;
 	public int phase = 0;
+	public Rigidbody2D toxicSyringe;
 
 	// Use this for initialization
 	void Awake()
@@ -30,7 +33,7 @@ public class BossGunnerControl : MonoBehaviour {
 		prb = player.GetComponent<Rigidbody2D> ();
 		//playerT = player.GetComponent<Transform>();
 	}
-
+		
 	void Update()
 	{
 		Vector3 bottom = new Vector2 (34f,4f);
@@ -40,17 +43,18 @@ public class BossGunnerControl : MonoBehaviour {
 			sp.flipY = true;
 		}	
 		if (phase == 1 && hit) {
-			speed += 2;
+			speed += 1;
 			target.y += 10f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
 		else if (phase == 2 && hit) {
-			speed += 2;
+
+			speed += 1;
 			target.y += 20f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
 		else if (phase == 3 && hit) {
-			speed += 2;
+			speed += 1;
 			target.y += 30f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
@@ -69,6 +73,15 @@ public class BossGunnerControl : MonoBehaviour {
 			if (transform.position.x <= 29f) {
 				dirRight = true;
 			}
+		}
+		sumDelta += Time.deltaTime; 
+		nextShot = Random.Range (1, 10);
+		if (initialized && sumDelta >= nextShot) {
+			Debug.Log ("in fire");
+			Rigidbody2D syringe = (Rigidbody2D)Instantiate (toxicSyringe, transform.position, transform.rotation); //as Rigidbody2D;
+			Physics2D.IgnoreCollision (toxicSyringe.GetComponent<Collider2D> (), GetComponent<Collider2D> ());
+			sumDelta = 0; 
+			nextShot = Random.Range (1, 10);
 		}
 	}
 
