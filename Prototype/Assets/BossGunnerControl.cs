@@ -76,7 +76,7 @@ public class BossGunnerControl : MonoBehaviour {
 		nextShot = Random.Range (1, 10) * 60;
 		if (initialized && sumCount >= nextShot) {
 			sumCount = 0; 
-			Debug.Log ("in fire");
+			FindObjectOfType<AudioManager> ().Play ("ShootSound");
 			GameObject syringe = (GameObject)Instantiate (toxicSyringe, transform.position, transform.rotation);
 			Physics2D.IgnoreCollision (toxicSyringe.GetComponent<Collider2D> (), GetComponent<Collider2D> ());
 			//nextShot = Random.Range (10, 100);
@@ -85,6 +85,9 @@ public class BossGunnerControl : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other) {
 		if (!entered) {
+			FindObjectOfType<AudioManager> ().Play ("MechDoor");
+			FindObjectOfType<AudioManager> ().Play ("ShipTakeoff");
+
 			walls.transform.Translate (new Vector2 (0, -2));
 			entered = true;
 		}
@@ -98,6 +101,7 @@ public class BossGunnerControl : MonoBehaviour {
 			speed += 1f;
 			spanCamera(new Vector3(transform.position.x, transform.position.y, 21));
 		} else {
+			FindObjectOfType<AudioManager> ().Play ("MechDoor");
 			//spanCamera(new Vector3(player.transform.position.x, player.transform.position.y, 21));
 			walls.transform.Translate (new Vector2 (0, 2));
 			Destroy (gameObject);

@@ -12,7 +12,7 @@ public class syringeScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void OnCollisionEnter2D (Collider2D other) {
+	void OnCollisionEnter2D (Collision2D other) {
 		Destroy (gameObject);
 	}
 }

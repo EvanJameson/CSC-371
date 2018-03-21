@@ -1356,6 +1356,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: MechDoor
+    clip: {fileID: 8300000, guid: 73b187124dfb0426a893474c237d17ba, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShipTakeoff
+    clip: {fileID: 8300000, guid: 59ed917ccc04249fe98f60d685adab7c, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShootSound
+    clip: {fileID: 8300000, guid: ce5f0680453194b4986020bf5c50195c, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &200309303
 Transform:
   m_ObjectHideFlags: 0

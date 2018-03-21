@@ -793,6 +793,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: MechDoor
+    clip: {fileID: 8300000, guid: 73b187124dfb0426a893474c237d17ba, type: 3}
+    volume: 0.93
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShipTakeoff
+    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShootSound
+    clip: {fileID: 8300000, guid: ce5f0680453194b4986020bf5c50195c, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &200309303
 Transform:
   m_ObjectHideFlags: 0
@@ -804,7 +822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1715805245}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &206743432
 GameObject:
@@ -1780,7 +1798,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1715805245}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &326719218
 MonoBehaviour:
@@ -5524,11 +5542,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114351018302260548, guid: f746d77eef7bf49f89565b8ceece2c5e,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f746d77eef7bf49f89565b8ceece2c5e, type: 2}
   m_IsPrefabParent: 0
@@ -6895,7 +6908,7 @@ RectTransform:
   - {fileID: 606323105}
   - {fileID: 851369851}
   m_Father: {fileID: 1715805245}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9395,9 +9408,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1263787306}
-  - {fileID: 200309303}
   - {fileID: 326719217}
   - {fileID: 972523707}
+  - {fileID: 200309303}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
