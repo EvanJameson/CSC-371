@@ -94,7 +94,7 @@ public class RatController : MonoBehaviour
 	}
 
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.LeftControl)){
+		if(Input.GetKeyDown(KeyCode.LeftControl) || Input.GetButtonDown("Fire1")){
 			//instantiate swooshX
 			//KeyCode.X
 			StartCoroutine(HandleSwoosh());
