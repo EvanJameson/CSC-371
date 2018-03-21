@@ -141,6 +141,15 @@ Tilemap:
   m_GameObject: {fileID: 1746939866621106}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -15, y: -19, z: 0}
+    second:
+      m_TileIndex: 28
+      m_TileSpriteIndex: 27
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -26, y: -18, z: 0}
     second:
       m_TileIndex: 26
@@ -451,6 +460,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: b4206701abbe045f694999e4ff585db4, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 733841125366648848df158ab9f8a510, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: bdf7fb5d7b84fe144a8c52193a9fa39b, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300024, guid: 5e9d4d04457fb29469b6aab790168777, type: 3}
@@ -506,8 +517,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300192, guid: 7f81bea81ec07014993c3184e60a76f3, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300010, guid: 9c72457333832a14a9564160ecfb8de1, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 20
+  - m_RefCount: 21
     m_Data:
       e00: 1
       e01: 0
@@ -598,16 +611,16 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 26
+  - m_RefCount: 27
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.79273975, g: 0.46244827, b: 0.55822223, a: 1}
+    m_Data: {r: 0.993565, g: 0.58579224, b: 0.6691939, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.79661, g: 0.4208305, b: 0.46635976, a: 1}
+    m_Data: {r: 0.92500585, g: 0.6470033, b: 0.674227, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -63, y: -18, z: 0}
-  m_Size: {x: 68, y: 23, z: 1}
+  m_Origin: {x: -63, y: -19, z: 0}
+  m_Size: {x: 68, y: 24, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -670,6 +683,8 @@ Tilemap:
     m_DirtyIndex: 0
   - serializedVersion: 1
     m_DirtyIndex: 1
+  - serializedVersion: 1
+    m_DirtyIndex: 0
   - serializedVersion: 1
     m_DirtyIndex: 0
   - serializedVersion: 1
