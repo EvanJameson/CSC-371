@@ -8,14 +8,13 @@ public class BossGunnerControl : MonoBehaviour {
 	private GameObject cam;
 	private Rigidbody2D prb;
 	private SpriteRenderer sp;
-	private float speed = 5;
+	private float speed = 5f;
 	private bool entered = false;
 	private bool hit = false;
 	private bool dirRight = true;
 	private bool initialized = false;
 	private float nextShot = 0.0f;
-	private float sumDelta = 0f;
-	public float fireRate = 10.0f;
+	private float sumCount = 0.0f;
 	public int phase = 0;
 	public Rigidbody2D toxicSyringe;
 
@@ -43,18 +42,18 @@ public class BossGunnerControl : MonoBehaviour {
 			sp.flipY = true;
 		}	
 		if (phase == 1 && hit) {
-			speed += 1;
+			speed += 1f;
 			target.y += 10f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
 		else if (phase == 2 && hit) {
 
-			speed += 1;
+			speed += 1f;
 			target.y += 20f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
 		else if (phase == 3 && hit) {
-			speed += 1;
+			speed += 1f;
 			target.y += 30f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
@@ -74,14 +73,16 @@ public class BossGunnerControl : MonoBehaviour {
 				dirRight = true;
 			}
 		}
-		sumDelta += Time.deltaTime; 
-		nextShot = Random.Range (1, 10);
-		if (initialized && sumDelta >= nextShot) {
+
+		/*Projectile firing*/
+		sumCount += 1; 
+		nextShot = Random.Range (1, 10) * 60;
+		if (initialized && sumCount >= nextShot) {
+			sumCount = 0; 
 			Debug.Log ("in fire");
 			Rigidbody2D syringe = (Rigidbody2D)Instantiate (toxicSyringe, transform.position, transform.rotation); //as Rigidbody2D;
 			Physics2D.IgnoreCollision (toxicSyringe.GetComponent<Collider2D> (), GetComponent<Collider2D> ());
-			sumDelta = 0; 
-			nextShot = Random.Range (1, 10);
+			//nextShot = Random.Range (10, 100);
 		}
 	}
 
@@ -100,6 +101,9 @@ public class BossGunnerControl : MonoBehaviour {
 			spanCamera(new Vector3(transform.position.x, transform.position.y, 21));
 		} else {
 			Destroy (gameObject);
+			spanCamera(new Vector3(transform.position.x, transform.position.y, 21));
+			walls.transform.Translate (new Vector2 (0, 2));
+
 		}
 			
 	}
@@ -107,11 +111,5 @@ public class BossGunnerControl : MonoBehaviour {
 	public void spanCamera(Vector3 span) //span = new Vector3(location.x, location.y, scale)
 	{
 		cam.SendMessage("SpanScene", span);
-	}
-
-	public void moveBoss(Vector3 target)
-	{
-		transform.position = Vector3.MoveTowards (transform.position, target, 10 * Time.deltaTime);
-			//Debug.Log ("phase is 1");
 	}
 }
