@@ -8,6 +8,7 @@ public class BossGunnerControl : MonoBehaviour {
 	private GameObject cam;
 	private Rigidbody2D prb;
 	private SpriteRenderer sp;
+	private Animator anim;
 	private float speed = 5f;
 	private bool entered = false;
 	private bool hit = false;
@@ -17,6 +18,8 @@ public class BossGunnerControl : MonoBehaviour {
 	private float sumCount = 0.0f;
 	public int phase = 0;
 	public GameObject toxicSyringe;
+	public AnimationClip explosionclip;        
+
 
 	// Use this for initialization
 	void Awake()
@@ -24,7 +27,7 @@ public class BossGunnerControl : MonoBehaviour {
 		sp = GetComponent<SpriteRenderer>();
 	}
 	void Start () {
-		//boss = GameObject.Find ("BossGunner");
+		anim = GetComponent<Animator> ();
 		walls = GameObject.Find ("Walls");
 		cam = GameObject.Find("Main Camera");
 		player = CharacterControl.instance.player;
@@ -99,12 +102,14 @@ public class BossGunnerControl : MonoBehaviour {
 			phase += 1;
 			hit = true;
 			speed += 1f;
-			spanCamera(new Vector3(transform.position.x, transform.position.y, 21));
+			spanCamera (new Vector3 (transform.position.x, transform.position.y, 21));
 		} else {
 			FindObjectOfType<AudioManager> ().Play ("MechDoor");
 			//spanCamera(new Vector3(player.transform.position.x, player.transform.position.y, 21));
 			walls.transform.Translate (new Vector2 (0, 2));
-			Destroy (gameObject);
+			anim.Play("ExplosionAnimation");
+			FindObjectOfType<AudioManager> ().Play ("SpaceExplosion");
+			Destroy (gameObject, explosionclip.length);
 		}
 			
 	}

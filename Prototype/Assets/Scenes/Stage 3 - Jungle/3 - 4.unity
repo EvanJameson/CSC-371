@@ -5283,6 +5283,7 @@ GameObject:
   - component: {fileID: 485323154}
   - component: {fileID: 485323153}
   - component: {fileID: 485323152}
+  - component: {fileID: 485323155}
   m_Layer: 0
   m_Name: BossGunner
   m_TagString: Untagged
@@ -5381,6 +5382,7 @@ MonoBehaviour:
   phase: 0
   toxicSyringe: {fileID: 1513299097161482, guid: 4286f9e5ba7fa45a697fdf7664c65e48,
     type: 2}
+  explosionclip: {fileID: 7400000, guid: 23d08500fcdb84f41829c5bb9a231c19, type: 2}
 --- !u!60 &485323154
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5414,6 +5416,23 @@ PolygonCollider2D:
       - {x: 0.14999999, y: -0.12}
       - {x: 0.14999999, y: -0.02}
       - {x: 0.099999994, y: 0.099999994}
+--- !u!95 &485323155
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485323149}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 94bd9c3529858d04c9f39dc7f0e426ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &491836656
 GameObject:
   m_ObjectHideFlags: 0
