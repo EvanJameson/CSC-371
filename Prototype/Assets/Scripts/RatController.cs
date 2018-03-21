@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class RatController : MonoBehaviour 
 {
+	public Animator anim;
 	public float speed = 4, jump_velocity = 100;
 	public Transform ground_tf1, ground_tf2;
 	private Transform tf;
 	private Rigidbody2D rb;
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
-	public bool immortal;
 	private bool canMove = true;
+	public int dashVelocity;
 
 	private LivesController lc;
 
@@ -29,6 +30,7 @@ public class RatController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
+		anim = GetComponent<Animator> ();
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
@@ -92,11 +94,16 @@ public class RatController : MonoBehaviour
 	}
 
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.X)){
-			//instantiate swoosh
+		if(Input.GetKeyDown(KeyCode.LeftControl) || Input.GetButtonDown("Fire1")){
+			//instantiate swooshX
+			//KeyCode.X
 			StartCoroutine(HandleSwoosh());
 
 		}
+		if (Input.GetButtonDown ("Fire1")) {
+			anim.Play ("Rat-Bite_Bite");
+		}
+
 	}
 
 
@@ -123,35 +130,22 @@ public class RatController : MonoBehaviour
 	//bug, touching toxic triggers this twice
 	public void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.gameObject.CompareTag("Toxic") && !immortal)
+		if(other.gameObject.CompareTag("Toxic"))
 		{
-			//died, add a menu, sound or something
-			lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
-			lc.removeLife ();
-
-			StartCoroutine(BlinkRed ());
-
-			if(PlayerPrefs.GetInt("lives") == 0)
-			{
-				//add menu that asks to retry or exit to main menu
-				gameObject.SetActive (false);
-			}
-
+            lc.removeLife ();
+		}
+		if(other.gameObject.CompareTag("Tile"))
+		{
+			//wall = true;
 		}
 	}
 
-	public IEnumerator BlinkRed() {
-		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 255, 255);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 255, 255);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 0, 0);
-		yield return new WaitForSeconds(0.2f);
-		sp.color = new Color(255, 255, 255);
+	public void OnTriggerExit2D(Collider2D other)
+	{
+		if(other.gameObject.CompareTag("Tile"))
+		{
+			//wall = false;
+		}
 	}
 
 	public void OnTriggerStay2D(Collider2D other)
@@ -187,6 +181,7 @@ public class RatController : MonoBehaviour
 	{
 		if(Input.GetButtonDown("Fire1"))
 		{
+			anim.Play ("Rat-Bite_Bite");
 			
 			other.gameObject.SetActive (false);
 		}
@@ -196,6 +191,7 @@ public class RatController : MonoBehaviour
 	{
 		//move left and right
 		Vector2 move_velocity = rb.velocity;
+		anim.SetFloat ("inputH", horizontal_input);
 		move_velocity.x = horizontal_input * speed;
 		if (horizontal_input < 0) {
 			sp.flipX = true;
@@ -251,21 +247,35 @@ public class RatController : MonoBehaviour
 		if(this.name == "CatPlayer(Clone)")
 		{
 			//float timer = 0;
-			if(Input.GetKey(KeyCode.LeftShift))
+			if(Input.GetKeyDown(KeyCode.LeftShift))
 			{
-
+				anim.Play ("Cat-Swipe_Swipe");
 				//check what direction the player is facing
 				if (sp.flipX == false) //facing right
 				{
 					//print ("no reason");
-					tf.Translate (new Vector3(50f, 0f) * Time.deltaTime);
+					//tf.Translate (new Vector3(50f, 0f) * Time.deltaTime);
+					Dash(1);
 				} 
 				else if (sp.flipX) //facing left
 				{
 					//print ("no reason2");
-					tf.Translate (new Vector3(-50f, 0f) * Time.deltaTime);
+					//tf.Translate (new Vector3(-50f, 0f) * Time.deltaTime);
+					Dash(-1);
 				}
 			}
+		}
+	}
+
+	void Dash(int flip)
+	{
+		if(flip == 1)
+		{
+			rb.velocity = new Vector2 (dashVelocity * 100, 0);
+		}
+		else
+		{
+			rb.velocity = new Vector2 (dashVelocity * -100, 0);
 		}
 	}
 

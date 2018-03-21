@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4542366118416554}
   - component: {fileID: 114351018302260548}
-  - component: {fileID: 114013709975871232}
+  - component: {fileID: 114288646696000958}
   m_Layer: 0
   m_Name: _GM
   m_TagString: Untagged
@@ -34,14 +34,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168720041541302}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114013709975871232
+--- !u!114 &114288646696000958
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -89,6 +89,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: MechDoor
+    clip: {fileID: 8300000, guid: 73b187124dfb0426a893474c237d17ba, type: 3}
+    volume: 0.93
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShipTakeoff
+    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShootSound
+    clip: {fileID: 8300000, guid: ce5f0680453194b4986020bf5c50195c, type: 3}
+    volume: 0.14
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!114 &114351018302260548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -101,7 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  iconContainers:
-  - {fileID: 0}
   jump_velocity: 5
   characterNumber: 0
+  immortal: 0

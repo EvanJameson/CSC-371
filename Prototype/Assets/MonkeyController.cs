@@ -10,8 +10,9 @@ public class MonkeyController : MonoBehaviour
 	private Rigidbody2D rb;
 	private SpriteRenderer sp;
 	public LayerMask player_mask;
-	public bool immortal;
 	private int lives;
+    private LivesController lc;
+	public Animator anim;
 
     public bool isClingingRight = false;
     public bool isClingingLeft = false;
@@ -34,10 +35,13 @@ public class MonkeyController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
+		anim = GetComponent<Animator> ();
 		sp = GetComponent<SpriteRenderer> ();
 		tf = this.transform;
 		rb = GetComponent<Rigidbody2D> ();
 		lives = PlayerPrefs.GetInt("lives");
+        lc = GameObject.Find ("Lives").GetComponent<LivesController> ();
+
 	}
 
 	void LateUpdate()
@@ -174,22 +178,26 @@ public class MonkeyController : MonoBehaviour
 
         
 	}
+	public void Update()
+	{
+		input = Input.GetAxis("Horizontal");
+		anim.SetFloat ("inputH", input);
+
+		if (isClingingLeft) {
+			anim.Play ("monkey_wallL_WallL");
+		}
+		if (isClingingRight) {
+			anim.Play ("monkey_wallL_WallL");
+		}
+	}
 
 
 	//CHECK FOR DEATH HERE
 	public void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.gameObject.CompareTag("Toxic") && !immortal)
+		if(other.gameObject.CompareTag("Toxic"))
 		{
-			//died, add a menu, sound or something
-			lives--;
-			PlayerPrefs.SetInt ("lives", lives);
-			if(lives == 0)
-			{
-				//add menu that asks to retry or exit to main menu
-				gameObject.SetActive (false);
-			}
-
+            lc.removeLife ();
 		}
 	}
 
@@ -282,7 +290,7 @@ public class MonkeyController : MonoBehaviour
 		if(gt1 || gt2)
 		{
 			//vector2.up is a vector of (0,1)
-			rb.velocity += CharacterControl.instance.jump_velocity * Vector2.up;// * high;
+			rb.velocity = CharacterControl.instance.jump_velocity * Vector2.up;// * high;
             FindObjectOfType<AudioManager>().Play("Jump");
         }	
 	}
