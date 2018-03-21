@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212763779451342248}
   - component: {fileID: 70794411143879782}
   - component: {fileID: 50690974938321882}
-  - component: {fileID: 114452820141325136}
   m_Layer: 0
   m_Name: toxic syringe
   m_TagString: Toxic
@@ -50,7 +49,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1513299097161482}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -78,17 +77,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.1}
   m_Size: {x: 0.3, y: 1.8}
   m_Direction: 0
---- !u!114 &114452820141325136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513299097161482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feed171b0c6fb456fb9fd4d09b1d93ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212763779451342248
 SpriteRenderer:
   m_ObjectHideFlags: 1
