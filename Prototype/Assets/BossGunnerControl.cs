@@ -16,7 +16,7 @@ public class BossGunnerControl : MonoBehaviour {
 	private float nextShot = 0.0f;
 	private float sumCount = 0.0f;
 	public int phase = 0;
-	public Rigidbody2D toxicSyringe;
+	public GameObject toxicSyringe;
 
 	// Use this for initialization
 	void Awake()
@@ -36,24 +36,21 @@ public class BossGunnerControl : MonoBehaviour {
 	void Update()
 	{
 		Vector3 bottom = new Vector2 (34f,4f);
-		Vector3 target = new Vector2 (34f, 20f);
+		Vector3 target = new Vector2 (32f, 20f);
 		if (phase == 0 && !initialized && entered) {
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 			sp.flipY = true;
 		}	
 		if (phase == 1 && hit) {
-			speed += 1f;
 			target.y += 10f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
 		else if (phase == 2 && hit) {
 
-			speed += 1f;
 			target.y += 20f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
 		else if (phase == 3 && hit) {
-			speed += 1f;
 			target.y += 30f;
 			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
@@ -80,7 +77,7 @@ public class BossGunnerControl : MonoBehaviour {
 		if (initialized && sumCount >= nextShot) {
 			sumCount = 0; 
 			Debug.Log ("in fire");
-			Rigidbody2D syringe = (Rigidbody2D)Instantiate (toxicSyringe, transform.position, transform.rotation); //as Rigidbody2D;
+			GameObject syringe = (GameObject)Instantiate (toxicSyringe, transform.position, transform.rotation);
 			Physics2D.IgnoreCollision (toxicSyringe.GetComponent<Collider2D> (), GetComponent<Collider2D> ());
 			//nextShot = Random.Range (10, 100);
 		}
@@ -98,12 +95,12 @@ public class BossGunnerControl : MonoBehaviour {
 			walls.GetComponent<SpreadWalls> ().moveWalls ();
 			phase += 1;
 			hit = true;
+			speed += 1f;
 			spanCamera(new Vector3(transform.position.x, transform.position.y, 21));
 		} else {
-			Destroy (gameObject);
-			spanCamera(new Vector3(transform.position.x, transform.position.y, 21));
+			//spanCamera(new Vector3(player.transform.position.x, player.transform.position.y, 21));
 			walls.transform.Translate (new Vector2 (0, 2));
-
+			Destroy (gameObject);
 		}
 			
 	}
