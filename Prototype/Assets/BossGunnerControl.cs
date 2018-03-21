@@ -8,54 +8,73 @@ public class BossGunnerControl : MonoBehaviour {
 	private GameObject player;
 	private GameObject cam;
 	private Rigidbody2D prb;
-	private float speed = 10;
+	private SpriteRenderer sp;
+	private float speed = 5;
 	private bool entered = false;
-	private bool rotated = false;
-
+	private bool hit = false;
+	private bool dirRight = true;
+	private bool initialized = false;
 	public int phase = 0;
 
 	// Use this for initialization
+	void Awake()
+	{
+		sp = GetComponent<SpriteRenderer>();
+	}
 	void Start () {
-		boss = GameObject.Find ("BossGunner");
+		//boss = GameObject.Find ("BossGunner");
 		walls = GameObject.Find ("Walls");
 		cam = GameObject.Find("Main Camera");
-		//player = CharacterControl.instance.player;
-		//prb = player.GetComponent<Rigidbody2D> ();
+		player = CharacterControl.instance.player;
+		Debug.Log (player.name);
+		prb = player.GetComponent<Rigidbody2D> ();
 		//playerT = player.GetComponent<Transform>();
 	}
 
 	void Update()
 	{
-		Vector3 bottom = new Vector3 (34,4, 0);
-		Vector3 top = new Vector3 (34, 20, 0);
-		if (entered) {
-			boss.transform.position = Vector3.MoveTowards (boss.transform.position, top, 10 * Time.deltaTime);
+		Vector3 bottom = new Vector2 (34f,4f);
+		Vector3 target = new Vector2 (34f, 20f);
+		if (phase == 0 && !initialized && entered) {
+			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
+			sp.flipY = true;
+		}	
+		if (phase == 1 && hit) {
+			speed += 2;
+			target.y += 10f;
+			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		}
-		if (boss.transform.position.y > 19 && !rotated) {
-			boss.transform.Rotate (0, 0, 180);
-			rotated = true;
+		else if (phase == 2 && hit) {
+			speed += 2;
+			target.y += 20f;
+			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
+		}
+		else if (phase == 3 && hit) {
+			speed += 2;
+			target.y += 30f;
+			transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
+		}
+		if (transform.position.y - target.y >= 0.0f) {
+			initialized = true;
+			hit = false;
+			if (dirRight)
+				transform.Translate (Vector2.right * speed * Time.deltaTime);
+			else
+				transform.Translate (-Vector2.right * speed * Time.deltaTime);
 
-		}
-		if (phase == 0) {
-			Debug.Log ("phase is 0");
-		}
-		if (phase == 1) {
-			top.y = 40;
-			boss.transform.position = Vector3.MoveTowards (boss.transform.position, top, 10 * Time.deltaTime);
-			Debug.Log ("phase is 1");
-		}
-		if (phase == 2) {
-			//player.transform.position = Vector3.MoveTowards(player.transform.position, bottom, 20 * Time.deltaTime);
-			top.y = 60;
-			boss.transform.position = Vector3.MoveTowards (boss.transform.position, top, 10 * Time.deltaTime);
-			Debug.Log ("phase is 2");
+			if (transform.position.x >= 37f) {
+				dirRight = false;
+			}
+			
+			if (transform.position.x <= 29f) {
+				dirRight = true;
+			}
 		}
 	}
 
-
 	void OnTriggerEnter2D (Collider2D other) {
 		if (!entered) {
-			walls.transform.Translate (new Vector3 (0, -2, 0));
+			walls.transform.Translate (new Vector2 (0, -2));
 			entered = true;
 		}
 	}
@@ -64,7 +83,8 @@ public class BossGunnerControl : MonoBehaviour {
 		if (phase < 3) {
 			walls.GetComponent<SpreadWalls> ().moveWalls ();
 			phase += 1;
-			//prb.AddForce(new Vector2(0f,100f));
+			hit = true;
+			spanCamera(new Vector3(transform.position.x, transform.position.y, 21));
 		} else {
 			Destroy (gameObject);
 		}
@@ -74,5 +94,11 @@ public class BossGunnerControl : MonoBehaviour {
 	public void spanCamera(Vector3 span) //span = new Vector3(location.x, location.y, scale)
 	{
 		cam.SendMessage("SpanScene", span);
+	}
+
+	public void moveBoss(Vector3 target)
+	{
+		transform.position = Vector3.MoveTowards (transform.position, target, 10 * Time.deltaTime);
+			//Debug.Log ("phase is 1");
 	}
 }

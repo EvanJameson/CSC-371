@@ -43,7 +43,6 @@ public class SwooshKill : MonoBehaviour {
 				other.GetComponent<BossGunnerControl> ().phase = 3;
 			}*/
 			other.GetComponent<BossGunnerControl> ().nextPhase ();
-				
 			Debug.Log (other.GetComponent<BossGunnerControl> ().phase);
 
 		}

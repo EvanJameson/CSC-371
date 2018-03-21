@@ -3073,7 +3073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5396894dc644e9592c33b735dcb06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 4 - 1
+  nextLevel: 3 - 2
   goalPages: 0
   pagesGot: 0
   goalTime: 120
@@ -3087,7 +3087,7 @@ MonoBehaviour:
   lives: {fileID: 229771838}
   gradeIcon: {fileID: 575843553}
   grade: {fileID: 1016237044}
-  currentLevel: 3 - 4
+  currentLevel: 3 - 1
 --- !u!1 &373417367
 GameObject:
   m_ObjectHideFlags: 0
