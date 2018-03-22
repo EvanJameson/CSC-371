@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// Authors: Tori
 public class CharacterControl : MonoBehaviour {
 
 	public const int RAT = 0;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Authors: Tori
 public class LivesController : MonoBehaviour {
 
 	private const float IMMUNITY_TIME = 1.0f;

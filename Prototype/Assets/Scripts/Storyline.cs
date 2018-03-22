@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Authors: Tori
 public class Storyline : MonoBehaviour {
 
 	public GameObject paper;

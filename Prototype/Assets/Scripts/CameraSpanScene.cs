@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Author: Tori
 public class CameraSpanScene : MonoBehaviour {
 	private GameObject cam;
 	public Vector2 location;
@@ -18,7 +19,6 @@ public class CameraSpanScene : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
-		//Debug.Log("in on trigger");
 		cam.SendMessage("SpanScene", new Vector3(location.x, location.y, scale));
 		Destroy(gameObject);
 	}
