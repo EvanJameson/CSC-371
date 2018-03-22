@@ -14273,7 +14273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevel: 2 - 1
   goalPages: 0
-  pagesGot: 0
+  pagesGot: 1
   goalTime: 60
   levelComplete: {fileID: 181662085}
   nextLevelButton: {fileID: 1880757052}
