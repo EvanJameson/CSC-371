@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage 1 - Sewer/1 - 4.unity
     guid: 117cc90cb85694d529a6afd8f32ed6db
   - enabled: 0
@@ -41,7 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage 2 - City/2 - 3.unity
     guid: 539ca3034368b4146bf9a3876c5621cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage 2 - City/2 - 4.unity
     guid: 6220c5257b87c27478e17d8317437ad7
   - enabled: 1
@@ -53,19 +53,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage 3 - Jungle/3 - 3.unity
     guid: d72287bec46bc6e4aadc14d2e15ad42c
-  - enabled: 1
-    path: Assets/Scenes/Stage 3 - Jungle/3 - 4.unity
-    guid: fdb003d443a338c429cb7c5710c6b6b6
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Stage 4 - Lab/4 - 1.unity
     guid: 66b7df5fe4fb0b14db632d0d10fedc01
   - enabled: 1
     path: Assets/Scenes/Stage 4 - Lab/4 - 2.unity
     guid: 80173737b852b3247921aac16304e585
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage 4 - Lab/4 - 3.unity
     guid: 5a5daa5a7e5131c40bdb8bf01ad3f654
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage 4 - Lab/4 - 4.unity
     guid: f2077e89ba815e54cba6c01ed0aa3d00
   - enabled: 0
