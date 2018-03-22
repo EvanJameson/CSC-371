@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//Authors: Nick Sciacqua
+//Authors: Nick Sciacqua, reworked by Braden Saito
 public class ProjectileShootTriggerable : MonoBehaviour {
 
 	[HideInInspector] public Rigidbody2D projectile;                          // Rigidbody variable to hold a reference to our projectile prefab

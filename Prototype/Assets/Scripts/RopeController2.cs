@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Author: Braden Saito, this one is specifically for the ropes in scene 1-4
+
 public class RopeController2 : MonoBehaviour
 {
     public GameObject parent;

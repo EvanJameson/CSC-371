@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Author: Pradeep Sangli
+//Author: Pradeep Sangli, Braden Saito
 public class catShockwave : MonoBehaviour {
 
 	float speed;

@@ -1,7 +1,7 @@
 ﻿using UnityEngine.Audio;
 using UnityEngine;
 
-
+//Authors: Braden Saito, referencing Brackey's tutorials
 [System.Serializable]
 public class Sound{
 

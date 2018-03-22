@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-// Authors: Tori, Nick Sciacqua
+// Authors: Tori, Nick Sciacqua, Braden Saito
 public class CharacterControl : MonoBehaviour {
 
 	public const int RAT = 0;

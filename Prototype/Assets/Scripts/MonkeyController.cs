@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Author: Braden Saito
+
 public class MonkeyController : MonoBehaviour 
     {
 	public float speed = 4, jump_velocity = 100;
