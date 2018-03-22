@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Authors: Tori
 public class BirdController : MonoBehaviour {
 
 	public GameObject bird;

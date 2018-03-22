@@ -8,6 +8,8 @@ using UnityEditor;
 
 using UnityEngine;
 
+// Imported from https://unity3d.com/learn/tutorials/topics/2d-game-creation/using-rule-tiles-tilemap
+
 namespace UnityEngine.Tilemaps
 {
 	[Serializable]

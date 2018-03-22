@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Authors: Tori
 public class PaperController : MonoBehaviour {
 
 	private Canvas canvas;
@@ -24,7 +25,7 @@ public class PaperController : MonoBehaviour {
 			//decrement pages left
 			cl = levelCompletedTrigger.GetComponent<CompleteLevel> ();
 			cl.pagesGot++;
-			canvas.SendMessage("RenderPaper", gameObject);
+			canvas.SendMessage("RenderPaper", gameObject.GetComponent<SpriteRenderer>().sprite);
 			Destroy(gameObject);
 		}
 	}

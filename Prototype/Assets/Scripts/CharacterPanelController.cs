@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Authors: Tori
 public class CharacterPanelController : MonoBehaviour {
 
 	private int rat = 0, cat = 1, monkey = 2;
