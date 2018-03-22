@@ -20,7 +20,7 @@ public class ConveyorController : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("in");
+            //Debug.Log("in");
             GameObject player = collision.gameObject;
             if(rightFace)
             {

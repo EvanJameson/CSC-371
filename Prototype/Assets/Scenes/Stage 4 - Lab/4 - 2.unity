@@ -7074,8 +7074,8 @@ Tilemap:
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 2
-      m_ColliderType: 1
+      m_TileFlags: 0
+      m_ColliderType: 0
   - first: {x: -28, y: -3, z: 0}
     second:
       m_TileIndex: 4
@@ -7101,8 +7101,8 @@ Tilemap:
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 2
-      m_ColliderType: 1
+      m_TileFlags: 0
+      m_ColliderType: 0
   - first: {x: -25, y: -3, z: 0}
     second:
       m_TileIndex: 4
@@ -7763,7 +7763,7 @@ Tilemap:
     m_Data: {fileID: 21300068, guid: 5e9d4d04457fb29469b6aab790168777, type: 3}
   - m_RefCount: 234
     m_Data: {fileID: 21300000, guid: 2a7ce037412604ff5a358326af515a62, type: 3}
-  - m_RefCount: 53
+  - m_RefCount: 51
     m_Data: {fileID: 21300000, guid: aa66532c0125a6e458b8a3e585dd088a, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 0
@@ -7786,31 +7786,31 @@ Tilemap:
       e33: 0
   - m_RefCount: 0
     m_Data:
-      e00: 8.792173e-39
-      e01: 0.009053916
-      e02: 2.0327e-41
-      e03: NaN
+      e00: 8.792621e-39
+      e01: -70873450
+      e02: 6.74225e-32
+      e03: 1
       e10: 0
-      e11: 0
+      e11: 6.9059e-41
       e12: 0
-      e13: NaN
-      e20: -119139330
-      e21: 27.07741
-      e22: 2.873306
-      e23: 4.1606775e+22
-      e30: 4.5908e-41
-      e31: 1e-45
+      e13: 0
+      e20: NaN
+      e21: 0
+      e22: 2.9839246
+      e23: 0
+      e30: NaN
+      e31: 0
       e32: 1e-45
       e33: 0
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: 0, g: 0, b: 21.71306, a: 1e-45}
-  - m_RefCount: 290
+  - m_RefCount: 288
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 0.14143598, g: 0.8014706, b: 0.16767682, a: 1}
-  m_Origin: {x: -33, y: -9, z: 0}
-  m_Size: {x: 85, y: 15, z: 1}
+  m_Origin: {x: -35, y: -16, z: 0}
+  m_Size: {x: 87, y: 22, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -15252,7 +15252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 232888017}
-  levelComplete: {fileID: 0}
+  levelComplete: {fileID: 6418386}
 --- !u!114 &972523709
 MonoBehaviour:
   m_ObjectHideFlags: 0

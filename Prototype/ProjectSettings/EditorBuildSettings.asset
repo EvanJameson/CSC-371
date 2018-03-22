@@ -92,6 +92,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/PageCollection.unity
     guid: 597e659ff6930894d94eb5877ca1c525
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menus/EndGame.unity
     guid: 4854f1e1c4dd98f458e191923cae1eda
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 40d0073171fd2374eb572640d0a66641
