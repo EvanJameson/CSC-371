@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Authors: Tori Pradeep 
+// Authors: Tori
 public class EnemyController : MonoBehaviour {
 
 	private bool isdead = false;

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Author: Pradeep Sangli 
+
 public class SnakeEnemy : MonoBehaviour {
 
 	public float velocity = -1f;

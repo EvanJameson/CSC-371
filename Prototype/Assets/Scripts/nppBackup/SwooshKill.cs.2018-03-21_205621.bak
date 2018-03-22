@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Authors: Pradeep Sangli, Nick Sciacqua
+//Authors: Nick Sciacqua
 public class SwooshKill : MonoBehaviour {
 	// Use this for initialization
 	private string currentLevel;

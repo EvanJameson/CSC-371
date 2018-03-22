@@ -4,8 +4,8 @@ using UnityEngine;
 using Pathfinding;
 
 // Author Pradeep Sangli
-// Source: https://arongranberg.com/astar/download for all A*  source code 
-// Source: Brackeys - tutorials http://brackeys.com/ for help with implenting above source code
+// Source: https://arongranberg.com/astar/download for all A* related files
+// Source: Brackeys - youtube tutorials 
 [RequireComponent (typeof(Rigidbody2D))]
 [RequireComponent (typeof(Seeker))]
 public class EnemyAI : MonoBehaviour {
