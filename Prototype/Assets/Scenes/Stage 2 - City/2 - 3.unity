@@ -4107,7 +4107,7 @@ MonoBehaviour:
   lives: {fileID: 0}
   gradeIcon: {fileID: 0}
   grade: {fileID: 0}
-  currentLevel: 2 - 4
+  currentLevel: 2 - 3
 --- !u!1 &334633097
 GameObject:
   m_ObjectHideFlags: 0
