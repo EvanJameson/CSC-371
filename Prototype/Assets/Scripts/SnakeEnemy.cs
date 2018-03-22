@@ -54,8 +54,8 @@ public class SnakeEnemy : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col)
 	{
 		if (col.gameObject.tag == "Player") {
-
-			lives.GetComponent<LivesController>().removeLife();
+			lives.GetComponent<LivesController> ().removeLife ();
+			//lives.GetComponent<LivesController>().removeLife();
 
 		}
 
