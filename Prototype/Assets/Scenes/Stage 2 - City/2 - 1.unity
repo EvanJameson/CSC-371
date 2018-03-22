@@ -10432,7 +10432,7 @@ Prefab:
         type: 2}
       propertyPath: lives
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1687452105}
     - target: {fileID: 4086466401462312, guid: 279638407d6478349831f8877fcc313c, type: 2}
       propertyPath: m_LocalScale.x
       value: 5.701043
@@ -16477,7 +16477,7 @@ Prefab:
         type: 2}
       propertyPath: lives
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1687452105}
     - target: {fileID: 4086466401462312, guid: 279638407d6478349831f8877fcc313c, type: 2}
       propertyPath: m_LocalScale.x
       value: 5.701043
