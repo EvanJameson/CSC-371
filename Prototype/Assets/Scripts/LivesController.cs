@@ -37,9 +37,11 @@ public class LivesController : MonoBehaviour {
 
 	public void addLife()
 	{
-		lives [index].SetActive (true);
-		index++;
-		PlayerPrefs.SetInt ("lives", index + 1);
+		if (index < 4) {
+			lives [index + 1].SetActive (true);
+			index++;
+			PlayerPrefs.SetInt ("lives", index + 1);
+		}
 	}
 
 	public void removeLife()
