@@ -2788,9 +2788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: 3 - 3
-  goalPages: 1
+  goalPages: 0
   pagesGot: 0
-  goalTime: 10
+  goalTime: 100
   levelComplete: {fileID: 6418386}
   nextLevelButton: {fileID: 2022866515}
   pageIcon: {fileID: 400889684}

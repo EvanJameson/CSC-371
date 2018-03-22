@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Author: Braden Saito
+
 public class ConveyorController : MonoBehaviour {
 
     public float conveyorSpeed;
@@ -20,7 +22,7 @@ public class ConveyorController : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("in");
+            //Debug.Log("in");
             GameObject player = collision.gameObject;
             if(rightFace)
             {
