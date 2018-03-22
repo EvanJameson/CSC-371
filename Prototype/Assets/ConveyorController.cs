@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Author: Braden Saito
+
 public class ConveyorController : MonoBehaviour {
 
     public float conveyorSpeed;
