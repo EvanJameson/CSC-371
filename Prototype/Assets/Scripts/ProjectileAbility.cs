@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Authors: Nick Sciacqua
 [CreateAssetMenu (menuName = "Abilities/ProjectileAbility")]
 public class ProjectileAbility : Ability {
 

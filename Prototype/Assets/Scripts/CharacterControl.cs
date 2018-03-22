@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// Authors: Tori, Nick Sciacqua
 public class CharacterControl : MonoBehaviour {
 
 	public const int RAT = 0;
@@ -14,7 +16,6 @@ public class CharacterControl : MonoBehaviour {
 	public GameObject player;
 	public float jump_velocity;
 	public int characterNumber;
-	public bool immortal;
 
 	void Awake () {
 		if (instance == null) {
@@ -25,7 +26,6 @@ public class CharacterControl : MonoBehaviour {
 		DontDestroyOnLoad (gameObject);
 
 		this.characterNumber = -1;
-		immortal = false;
 	}
 
 	public bool isRat() {
@@ -39,10 +39,6 @@ public class CharacterControl : MonoBehaviour {
     public bool isMonkey()
     {
         return characterNumber == MONKEY;
-    }
-
-    public void SuperHaungs() {
-    	immortal = !immortal;
     }
 
 }

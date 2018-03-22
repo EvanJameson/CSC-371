@@ -3,6 +3,8 @@ using UnityEngine;
 
 //namespace UnityStandardAssets._2D
 //{
+
+	// Authors: Tori,
 	public class Camera2DFollow : MonoBehaviour
 	{
 		public Transform target;
