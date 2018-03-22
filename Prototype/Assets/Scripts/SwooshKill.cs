@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Authors: Nick Sciacqua
 public class SwooshKill : MonoBehaviour {
 	// Use this for initialization
 	private string currentLevel;
@@ -33,15 +34,6 @@ public class SwooshKill : MonoBehaviour {
 	}
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.name.Equals ("BossGunner")) {
-			/*if (other.GetComponent<BossGunnerControl> ().phase == 0) {
-				other.GetComponent<BossGunnerControl> ().phase = 1;
-			}
-			if (other.GetComponent<BossGunnerControl> ().phase == 1) {
-				other.GetComponent<BossGunnerControl> ().phase = 2;
-			}
-			if (other.GetComponent<BossGunnerControl> ().phase == 2) {
-				other.GetComponent<BossGunnerControl> ().phase = 3;
-			}*/
 			other.GetComponent<BossGunnerControl> ().nextPhase ();
 			Debug.Log (other.GetComponent<BossGunnerControl> ().phase);
 

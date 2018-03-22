@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Authors: Tori
+// Authors: Tori, Nick Sciacqua
 public class CharacterSelector : MonoBehaviour {
 
 	public Character[] characters;

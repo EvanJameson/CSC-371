@@ -2,6 +2,7 @@
 using System;
 using UnityEngine;
 
+//Authors: Nick Sciacqua and Braden Saito with help from Brackeys Tutorials
 public class AudioManager : MonoBehaviour {
 	public Sound[] sounds;
 	// Use this for initialization

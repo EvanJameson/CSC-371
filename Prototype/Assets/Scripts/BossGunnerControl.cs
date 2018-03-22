@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Authors: Nick Sciacqua
 public class BossGunnerControl : MonoBehaviour {
 	private GameObject walls;
 	private GameObject player;

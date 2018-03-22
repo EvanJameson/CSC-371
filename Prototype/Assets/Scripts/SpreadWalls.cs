@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Authors: Nick Sciacqua
 public class SpreadWalls : MonoBehaviour {
 
 	private Transform wall1;
