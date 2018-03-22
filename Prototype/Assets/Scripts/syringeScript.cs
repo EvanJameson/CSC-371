@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Authors: Nick Sciacqua
 public class syringeScript : MonoBehaviour {
 
 	public int speed = 6;

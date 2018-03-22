@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Authors: Tori
+// Authors: Tori, Nick
 public class RatController : MonoBehaviour 
 {
 	public Animator anim;

@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+//Authors: Nick Sciacqua with help from Unity Tutorials
 public class AbilityCoolDown : MonoBehaviour {
 
 	public string abilityButtonAxisName = "Fire1";
