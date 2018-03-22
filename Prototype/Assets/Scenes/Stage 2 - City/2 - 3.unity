@@ -4097,16 +4097,16 @@ MonoBehaviour:
   goalPages: 1
   pagesGot: 0
   goalTime: 10
-  levelComplete: {fileID: 0}
-  nextLevelButton: {fileID: 0}
-  pageIcon: {fileID: 0}
-  pages: {fileID: 0}
-  timerIcon: {fileID: 0}
-  timed: {fileID: 0}
-  lifeIcon: {fileID: 0}
-  lives: {fileID: 0}
-  gradeIcon: {fileID: 0}
-  grade: {fileID: 0}
+  levelComplete: {fileID: 6418386}
+  nextLevelButton: {fileID: 2022866515}
+  pageIcon: {fileID: 400889684}
+  pages: {fileID: 941877039}
+  timerIcon: {fileID: 1613546456}
+  timed: {fileID: 273038297}
+  lifeIcon: {fileID: 1434289654}
+  lives: {fileID: 229771838}
+  gradeIcon: {fileID: 575843553}
+  grade: {fileID: 1016237044}
   currentLevel: 2 - 3
 --- !u!1 &334633097
 GameObject:
