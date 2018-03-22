@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-// Authors: Tori
+// Authors: Tori, Evan, Braden
 public class PauseMenu : MonoBehaviour {
 
 	public static bool isPaused = false;

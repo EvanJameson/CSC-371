@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//Author: Evan Jameson
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -44,13 +45,7 @@ public class LevelController : MonoBehaviour {
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
 			break;
-		case "1 - 4":
-			sewer1.SetActive (true);
-			sewer2.SetActive (true);
-			sewer3.SetActive (true);
-			sewer4.SetActive (true);
-			break;
-		
+
 
 			//--sewer zone//
 		
@@ -59,14 +54,14 @@ public class LevelController : MonoBehaviour {
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+
 			city1.SetActive (true);
 			break;
 		case "2 - 2":
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+		
 			city1.SetActive (true);
 			city2.SetActive (true);
 			break;
@@ -74,21 +69,12 @@ public class LevelController : MonoBehaviour {
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+
 			city1.SetActive (true);
 			city2.SetActive (true);
 			city3.SetActive (true);
 			break;
-		case "2 - 4":
-			sewer1.SetActive (true);
-			sewer2.SetActive (true);
-			sewer3.SetActive (true);
-			sewer4.SetActive (true);
-			city1.SetActive (true);
-			city2.SetActive (true);
-			city3.SetActive (true);
-			city4.SetActive (true);
-			break;
+
 
 
 
@@ -98,22 +84,22 @@ public class LevelController : MonoBehaviour {
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+
 			city1.SetActive (true);
 			city2.SetActive (true);
 			city3.SetActive (true);
-			city4.SetActive (true);
+
 			jungle1.SetActive (true);
 			break;
 		case "3 - 2":
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+
 			city1.SetActive (true);
 			city2.SetActive (true);
 			city3.SetActive (true);
-			city4.SetActive (true);
+
 			jungle1.SetActive (true);
 			jungle2.SetActive (true);
 			break;
@@ -121,29 +107,16 @@ public class LevelController : MonoBehaviour {
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+
 			city1.SetActive (true);
 			city2.SetActive (true);
 			city3.SetActive (true);
-			city4.SetActive (true);
+
 			jungle1.SetActive (true);
 			jungle2.SetActive (true);
 			jungle3.SetActive (true);
 			break;
-		case "3 - 4":
-			sewer1.SetActive (true);
-			sewer2.SetActive (true);
-			sewer3.SetActive (true);
-			sewer4.SetActive (true);
-			city1.SetActive (true);
-			city2.SetActive (true);
-			city3.SetActive (true);
-			city4.SetActive (true);
-			jungle1.SetActive (true);
-			jungle2.SetActive (true);
-			jungle3.SetActive (true);
-			jungle4.SetActive (true);
-			break;
+		
 
 
 			//--lab zone//
@@ -151,85 +124,49 @@ public class LevelController : MonoBehaviour {
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+
 			city1.SetActive (true);
 			city2.SetActive (true);
 			city3.SetActive (true);
-			city4.SetActive (true);
+
 			jungle1.SetActive (true);
 			jungle2.SetActive (true);
 			jungle3.SetActive (true);
-			jungle4.SetActive (true);
+
 			lab1.SetActive (true);
 			break;
 		case "4 - 2":
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+
 			city1.SetActive (true);
 			city2.SetActive (true);
 			city3.SetActive (true);
-			city4.SetActive (true);
+
 			jungle1.SetActive (true);
 			jungle2.SetActive (true);
 			jungle3.SetActive (true);
-			jungle4.SetActive (true);
+
 			lab1.SetActive (true);
 			lab2.SetActive (true);
 			break;
-		case "4 - 3":
-			sewer1.SetActive (true);
-			sewer2.SetActive (true);
-			sewer3.SetActive (true);
-			sewer4.SetActive (true);
-			city1.SetActive (true);
-			city2.SetActive (true);
-			city3.SetActive (true);
-			city4.SetActive (true);
-			jungle1.SetActive (true);
-			jungle2.SetActive (true);
-			jungle3.SetActive (true);
-			jungle4.SetActive (true);
-			lab1.SetActive (true);
-			lab2.SetActive (true);
-			lab3.SetActive (true);
-			break;
-		case "4 - 4":
-			sewer1.SetActive (true);
-			sewer2.SetActive (true);
-			sewer3.SetActive (true);
-			sewer4.SetActive (true);
-			city1.SetActive (true);
-			city2.SetActive (true);
-			city3.SetActive (true);
-			city4.SetActive (true);
-			jungle1.SetActive (true);
-			jungle2.SetActive (true);
-			jungle3.SetActive (true);
-			jungle4.SetActive (true);
-			lab1.SetActive (true);
-			lab2.SetActive (true);
-			lab3.SetActive (true);
-			lab4.SetActive (true);
-			break;
+		
 		case "EndGame":
 			sewer1.SetActive (true);
 			sewer2.SetActive (true);
 			sewer3.SetActive (true);
-			sewer4.SetActive (true);
+
 			city1.SetActive (true);
 			city2.SetActive (true);
 			city3.SetActive (true);
-			city4.SetActive (true);
 			jungle1.SetActive (true);
 			jungle2.SetActive (true);
 			jungle3.SetActive (true);
-			jungle4.SetActive (true);
+
 			lab1.SetActive (true);
 			lab2.SetActive (true);
-			lab3.SetActive (true);
-			lab4.SetActive (true);
+
 			break;
 		}
 	}
@@ -244,22 +181,22 @@ public class LevelController : MonoBehaviour {
 		s1.text += "  " + PlayerPrefs.GetString ("1 - 1");
 		s2.text += "  " + PlayerPrefs.GetString ("1 - 2");
 		s3.text += "  " + PlayerPrefs.GetString ("1 - 3");
-		s4.text += "  " + PlayerPrefs.GetString ("1 - 4");
+
 
 		c1.text += "  " + PlayerPrefs.GetString ("2 - 1");
 		c2.text += "  " + PlayerPrefs.GetString ("2 - 2");
 		c3.text += "  " + PlayerPrefs.GetString ("2 - 3");
-		c4.text += "  " + PlayerPrefs.GetString ("2 - 4");
+
 
 		j1.text += "  " + PlayerPrefs.GetString ("3 - 1");
 		j2.text += "  " + PlayerPrefs.GetString ("3 - 2");
 		j3.text += "  " + PlayerPrefs.GetString ("3 - 3");
-		j4.text += "  " + PlayerPrefs.GetString ("3 - 4");
+
 
 		l1.text += "  " + PlayerPrefs.GetString ("4 - 1");
 		l2.text += "  " + PlayerPrefs.GetString ("4 - 2");
 		l3.text += "  " + PlayerPrefs.GetString ("4 - 3");
-		l4.text += "  " + PlayerPrefs.GetString ("4 - 4");
+
 
 	}
 }
