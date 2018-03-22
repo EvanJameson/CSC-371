@@ -2823,7 +2823,7 @@ MonoBehaviour:
   nextLevel: 1 - 3
   goalPages: 1
   pagesGot: 0
-  goalTime: 10
+  goalTime: 45
   levelComplete: {fileID: 6418386}
   nextLevelButton: {fileID: 2022866515}
   pageIcon: {fileID: 400889684}
@@ -10959,7 +10959,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.345327
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
