@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelController: {fileID: 0}
-  speed: 5
+  speed: 3
 --- !u!212 &212001130758392410
 SpriteRenderer:
   m_ObjectHideFlags: 1
