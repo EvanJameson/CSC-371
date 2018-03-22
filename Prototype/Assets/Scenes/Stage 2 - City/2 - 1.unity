@@ -4389,7 +4389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5396894dc644e9592c33b735dcb06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 3 - 1
+  nextLevel: 2 - 2
   goalPages: 0
   pagesGot: 0
   goalTime: 40
