@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Author: Evan Jameson
 public class SavePrefs : MonoBehaviour {
 
 

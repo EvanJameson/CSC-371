@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//Authors: Evan Jameson
 
 public class RopeController : MonoBehaviour {
 
