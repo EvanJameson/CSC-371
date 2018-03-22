@@ -9,6 +9,8 @@ public class LabBossController : MonoBehaviour {
 
     public GameObject obj1;
     public GameObject obj2;
+    public GameObject obj3;
+    public GameObject obj4;
 
     public Transform ll1;
     public Transform ll2;
@@ -30,9 +32,14 @@ public class LabBossController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (count >= 180)
+        if (count == 180)
         {
             Instantiate(obj1, rl1);
+            
+        }
+        if(count == 240)
+        {
+            Instantiate(obj3, rl3);
             count = 0;
         }
         count++;
