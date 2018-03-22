@@ -4149,7 +4149,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326719215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -614.1, y: -229.7, z: 2.2528694}
+  m_LocalPosition: {x: -609.35, y: -229.86, z: 2.2528694}
   m_LocalScale: {x: 42.961666, y: 22.031494, z: 22.031494}
   m_Children: []
   m_Father: {fileID: 561038773}
@@ -4167,9 +4167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: EndGame
-  goalPages: 1
+  goalPages: 0
   pagesGot: 0
-  goalTime: 10
+  goalTime: 90
   levelComplete: {fileID: 6418386}
   nextLevelButton: {fileID: 2022866515}
   pageIcon: {fileID: 400889684}

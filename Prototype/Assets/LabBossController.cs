@@ -83,7 +83,7 @@ public class LabBossController : MonoBehaviour {
         if(wireCount >= 15)
         {
 			//have to keep it active so timer runs
-			levelComplete.GetComponent<Transform> ().position = new Vector3 (-614.1f, -206.6f, 2.25f);
+			levelComplete.GetComponent<Transform> ().position = new Vector3 (-10, -10, 2.25f);
         }
     }
     

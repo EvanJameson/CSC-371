@@ -2026,7 +2026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: 4 - 1
-  goalPages: 0
+  goalPages: 1
   pagesGot: 0
   goalTime: 120
   levelComplete: {fileID: 6418386}
