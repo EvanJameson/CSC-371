@@ -2039,7 +2039,7 @@ MonoBehaviour:
   lives: {fileID: 229771838}
   gradeIcon: {fileID: 575843553}
   grade: {fileID: 1016237044}
-  currentLevel: 3 - 4
+  currentLevel: 3 - 3
 --- !u!1 &373417367
 GameObject:
   m_ObjectHideFlags: 0
@@ -10465,7 +10465,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1891825554}
-  m_LocalRotation: {x: 0, y: 0, z: -0.16074246, w: 0.98699635}
+  m_LocalRotation: {x: 0, y: 0, z: -0.16074248, w: 0.9869964}
   m_LocalPosition: {x: 12.75, y: 1.14, z: 0}
   m_LocalScale: {x: 0.19995153, y: 0.19995153, z: 0.19995153}
   m_Children: []

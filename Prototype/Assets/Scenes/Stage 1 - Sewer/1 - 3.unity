@@ -14285,7 +14285,7 @@ MonoBehaviour:
   lives: {fileID: 1656252328}
   gradeIcon: {fileID: 1562019930}
   grade: {fileID: 2008998473}
-  currentLevel: 1 - 4
+  currentLevel: 1 - 3
 --- !u!61 &1206420430
 BoxCollider2D:
   m_ObjectHideFlags: 0
